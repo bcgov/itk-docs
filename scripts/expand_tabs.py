@@ -128,9 +128,88 @@ def expand_tabs(markdown: str) -> str:
     return "\n".join(result).rstrip() + "\n"
 
 
+TABLE_SEPARATOR_PATTERN = re.compile(r"^\s*\|?\s*:?-+:?\s*(\|\s*:?-+:?\s*)*\|?\s*$")
+TABLE_TOTAL_DASHES = 100
+TABLE_MAX_COLUMN_WEIGHT = 60
+MINIMAL_SEPARATOR_DASHES = 6
+
+
+def _split_row(line: str) -> list[str]:
+    row = line.strip()
+    row = row.removeprefix("|").removesuffix("|")
+    return [cell.strip() for cell in re.split(r"(?<!\\)\|", row)]
+
+
+def _plain_length(cell: str) -> int:
+    cell = re.sub(r"\[([^\]]*)\]\([^)]*\)", r"\1", cell)
+    return len(re.sub(r"[*_`]", "", cell))
+
+
+def _table_separator(header: list[str], separator: list[str], body: list[list[str]]) -> str:
+    """Rebuild a pipe-table separator: no centering, widths proportional to content.
+
+    Pandoc derives relative column widths from the dash counts, so the minimal
+    separators that converted tables carry (``:--:``, ``----``) give meaningless
+    widths. Tables whose authors spaced the dashes out deliberately keep their
+    widths and are only un-centered.
+    """
+    columns = len(separator)
+    dash_counts = [cell.strip(":").count("-") for cell in separator]
+    right_aligned = [cell.endswith(":") and not cell.startswith(":") for cell in separator]
+
+    if columns > 1 and max(dash_counts) <= MINIMAL_SEPARATOR_DASHES:
+        rows = [header, *body]
+        weights = []
+        for index in range(columns):
+            cells = [row[index] for row in rows if index < len(row)]
+            longest = max((_plain_length(cell) for cell in cells), default=1)
+            longest_word = max(
+                (len(word) for cell in cells for word in re.sub(r"[*_`]", "", cell).split()),
+                default=1,
+            )
+            weights.append(max(min(longest, TABLE_MAX_COLUMN_WEIGHT), longest_word + 2, 4))
+        total = sum(weights)
+        dash_counts = [max(3, round(weight / total * TABLE_TOTAL_DASHES)) for weight in weights]
+
+    cells = [
+        f"{'-' * dashes}:" if right else f":{'-' * dashes}"
+        for dashes, right in zip(dash_counts, right_aligned)
+    ]
+    return "|" + "|".join(cells) + "|"
+
+
+def normalize_pdf_tables(markdown: str) -> str:
+    lines = markdown.splitlines()
+    in_fence = False
+    index = 0
+    while index < len(lines):
+        stripped = lines[index].lstrip()
+        if stripped.startswith(("```", "~~~")):
+            in_fence = not in_fence
+        if (
+            not in_fence
+            and "|" in lines[index]
+            and index + 1 < len(lines)
+            and "-" in lines[index + 1]
+            and TABLE_SEPARATOR_PATTERN.match(lines[index + 1])
+            and len(_split_row(lines[index])) == len(_split_row(lines[index + 1]))
+        ):
+            end = index + 2
+            while end < len(lines) and lines[end].strip() and "|" in lines[end]:
+                end += 1
+            header = _split_row(lines[index])
+            separator = _split_row(lines[index + 1])
+            body = [_split_row(line) for line in lines[index + 2 : end]]
+            lines[index + 1] = _table_separator(header, separator, body)
+            index = end
+            continue
+        index += 1
+    return "\n".join(lines) + ("\n" if markdown.endswith("\n") else "")
+
+
 def prepare_pdf_markdown(markdown: str, external_link_icon: str | None = None) -> str:
     """Apply PDF-oriented Markdown transforms for Material syntax."""
-    transformed = expand_tabs(expand_admonitions(markdown))
+    transformed = normalize_pdf_tables(expand_tabs(expand_admonitions(markdown)))
     if external_link_icon:
         transformed = mark_external_links(transformed, external_link_icon)
     return transformed

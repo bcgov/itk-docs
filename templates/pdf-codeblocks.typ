@@ -13,3 +13,7 @@
 // Style hyperlinks like conventional web links.
 #show link: set text(fill: rgb("#0563C1"))
 #show link: underline
+
+// Tables: left-aligned, ragged-right, no hyphenation for narrow cells.
+#show table: set par(justify: false)
+#show table: set text(hyphenate: false)
