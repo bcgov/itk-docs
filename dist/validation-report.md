@@ -1,8 +1,8 @@
 # Validation report
 
 - Documents assembled: 54
-- Internal links rewritten: 87
-- External links preserved: 54
+- Internal links rewritten: 97
+- External links preserved: 44
 - Site-relative application links preserved: 0
 - Unresolved links: 3
 - Heading levels capped at H6: 0

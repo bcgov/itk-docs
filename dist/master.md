@@ -1,6 +1,10 @@
 # Provider Journey Master Documentation
 
-> Generated proof-of-concept output. Review before use or publication.
+This document brings together the existing Connected Services documentation into a single master document.
+
+It is an initial technical assembly of existing documentation. Content appears as written by each source team and has not yet been reorganized around provider journey stages, edited or rewritten. Each section links to its source so you can follow it back to the owning team's documentation.
+
+Generated at 2026-10-14 12:09 PDT. See the [source manifest](https://bcgov.github.io/itk-docs/manifest/) for details.
 
 ## Contents
 
@@ -79,6 +83,8 @@
 - [BC Data Catalogue](#source-bc-data-catalogue)
 
 # Building Trusted Digital Services {#source-building-trusted-digital-services}
+
+Source: [bcgov/connected-services-techdocs](https://github.com/bcgov/connected-services-techdocs) (`main` @ [`b05987f`](https://github.com/bcgov/connected-services-techdocs/commit/b05987f45ca7dad9aac3a749c0babfaaaf589516)) · [TechDocs](https://developer.gov.bc.ca/docs/default/component/building-trusted-digital-services-techdocs/)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/index.md -->
 
@@ -773,6 +779,8 @@ Common starting points:
 
 # Integration Toolkit {#source-integration-toolkit}
 
+Source: [bcgov/connected-services-techdocs](https://github.com/bcgov/connected-services-techdocs) (`main` @ [`b05987f`](https://github.com/bcgov/connected-services-techdocs/commit/b05987f45ca7dad9aac3a749c0babfaaaf589516)) · [TechDocs](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/)
+
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/index.md -->
 
 ## Integration Toolkit (ITK) {#integration-toolkit-docsindex}
@@ -897,6 +905,8 @@ Support tickets are the best channel for:
 
 
 # Authoritative Data Registers {#source-adr-techdoc}
+
+Source: `sources/ADR Techdocs_Draft V2.docx`
 
 <!-- source: sources/ADR Techdocs_Draft V2.docx -->
 
@@ -1639,6 +1649,8 @@ Submit feedback, request more information, or get help through the \[placeholder
 
 # Secure Data Exchange {#source-secure-data-exchange}
 
+Source: [bcgov/connected-services-techdocs](https://github.com/bcgov/connected-services-techdocs) (`main` @ [`b05987f`](https://github.com/bcgov/connected-services-techdocs/commit/b05987f45ca7dad9aac3a749c0babfaaaf589516)) · [TechDocs](https://developer.gov.bc.ca/docs/default/component/secure-data-exchange-techdocs/)
+
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/index.md -->
 
 ## Secure Data Exchange (SDX) {#secure-data-exchange-docsindex}
@@ -1696,7 +1708,7 @@ At a high level, SDX provides a secure connection between organizations that sha
 
 *Figure 1. High-level view of SDX*
 
-The diagram is intended as a high-level view. The technical details of how these components are configured are covered in the [SDX technical documentation](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/concepts/secure-data-exchange/).
+The diagram is intended as a high-level view. The technical details of how these components are configured are covered in the [SDX technical documentation](#aps-infra-platform-sdx-documentationconceptssecure-data-exchange).
 
 Connected Services is about letting different organizations work together while keeping information secure and properly governed. SDX is the part that makes this possible. It does this by:
 
@@ -1821,7 +1833,7 @@ This guide provides the technical instructions for setting up and managing an or
 
 These activities are performed by the SDX Operator, Organization Admin, and System Admin, depending on the task.
 
-Technical guide: [Onboarding an Organization](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-org-onboarding/)
+Technical guide: [Onboarding an Organization](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/install-an-edge-runtime-group.md -->
 
@@ -1836,7 +1848,7 @@ An edge runtime group provides the infrastructure your organization uses to conn
 
 Good to know: Some consumer organizations can use the shared Public Consumer Gateway (PZGW) instead of running their own public-facing Edge Runtime Group. This does not replace the provider’s runtime group; providers still need their own runtime group.
 
-Technical guide: [Install an Edge Runtime Group](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-edge-runtime-groups/)
+Technical guide: [Install an Edge Runtime Group](#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/set-up-organization-signing.md -->
 
@@ -1849,7 +1861,7 @@ This guide provides the technical steps for setting up organization signing, inc
 
 This process is performed by the Organization Admin, with support from the APS team for certificate approval and signing.
 
-Technical guide: [Setup Organization Signing](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-org-signing/)
+Technical guide: [Setup Organization Signing](#aps-infra-platform-sdx-documentationhow-tosdx-org-signing)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/managing-subsystems.md -->
 
@@ -1862,7 +1874,7 @@ This guide provides the technical steps for registering a subsystem, assigning i
 
 This process is performed by the System Admin.
 
-Technical guide: [Managing Subsystems](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-subsystems/)
+Technical guide: [Managing Subsystems](#aps-infra-platform-sdx-documentationhow-tosdx-subsystems)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/managing-services.md -->
 
@@ -1875,7 +1887,7 @@ This guide provides the technical steps for registering a service using an OpenA
 
 Service management requires the appropriate permissions, which are set up by the System Admin for the organization.
 
-Technical guide: [Managing Services](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-services/)
+Technical guide: [Managing Services](#aps-infra-platform-sdx-documentationhow-tosdx-services)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/connecting-a-service.md -->
 
@@ -1888,7 +1900,7 @@ This guide provides the technical steps for requesting and approving access, con
 
 This process is managed by System Admins and users with the appropriate connection management permissions.
 
-Technical guide: [Connecting a Service](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-connections/)
+Technical guide: [Connecting a Service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/connection-resources.md -->
 
@@ -1923,7 +1935,7 @@ This guide provides the technical steps for registering an AsyncAPI service, con
 
 This process is managed by the System Admin.
 
-Technical guide: [Event Management](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-ape-event-mgmt/)
+Technical guide: [Event Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-event-mgmt)
 
 ### Policy Management {#secure-data-exchange-docsexperimental-features--policy-management}
 
@@ -1933,7 +1945,7 @@ This guide provides the technical steps for creating and registering OPA and CED
 
 This process is managed by the System Admin.
 
-Technical guide: [Policy Management](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-ape-policy-mgmt/)
+Technical guide: [Policy Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-policy-mgmt)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/references.md -->
 
@@ -1952,7 +1964,7 @@ This guide explains how to get help with the SDX platform and outlines the avail
 
 ### Before Contacting Support {#secure-data-exchange-docssupport--before-contacting-support}
 
-Before submitting a support request, review the SDX onboarding documentation and confirm you've completed the required organization registration and configuration steps. Many common onboarding questions are addressed in the [SDX technical documentation](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-org-onboarding/).
+Before submitting a support request, review the SDX onboarding documentation and confirm you've completed the required organization registration and configuration steps. Many common onboarding questions are addressed in the [SDX technical documentation](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding).
 
 ### Support Channels {#secure-data-exchange-docssupport--support-channels}
 
@@ -1998,6 +2010,8 @@ Support tickets are the preferred channel for:
 
 
 # API Services Portal - SDX Documentation {#source-aps-infra-platform-sdx}
+
+Source: [bcgov/aps-infra-platform](https://github.com/bcgov/aps-infra-platform) (`test` @ [`654c5f2`](https://github.com/bcgov/aps-infra-platform/commit/654c5f28a4f9195b7770dc2b77b3e9617a828d65)) · [TechDocs](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/)
 
 <!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/get-support.md -->
 
@@ -4600,6 +4614,8 @@ items := {row |
 
 
 # Eligibility Factor Verification {#source-efv-techdoc}
+
+Source: [bcgov/efv-itk-docs](https://github.com/bcgov/efv-itk-docs) (`main` @ [`e83f11c`](https://github.com/bcgov/efv-itk-docs/commit/e83f11c98640a69e46d814e8e11417bc8892f8e6)) · [TechDocs](https://developer.gov.bc.ca/docs/default/component/efv-itk-techdocs/)
 
 <!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/index.md -->
 
