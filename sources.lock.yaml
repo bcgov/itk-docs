@@ -1,52 +1,58 @@
 schema_version: 1
-generated_at: '2026-09-14T23:16:06.462564+00:00'
+generated_at: '2026-10-14T16:14:23.977027+00:00'
 sources:
-- id: connected-services-getting-started
-  title: Connected Services - Getting Started
+- id: building-trusted-digital-services
+  title: Building Trusted Digital Services
   type: git
   repository: https://github.com/bcgov/connected-services-techdocs.git
-  ref: feature/aps-4786-sdx-techdocs
-  revision: 50959b28d410f638f0bccdd48f49c35f4179c24e
+  ref: main
+  revision: b05987f45ca7dad9aac3a749c0babfaaaf589516
   root: getting-started
   order: 10
-  content_sha256: 63080f8d2279fbcbc62c6c79b4fcf8510ea7df42725c71017f97320368eb9b29
+  content_sha256: e3c9f820f6a206181918ffa44340d09351d341ad91273c3cf5d25c5cad58c96f
   files:
+  - path: docs/api-services-portal.md
+    sha256: 249d6a07d63301da5a60dbedf1e60701f6f09aa5de67af4067e53d9b1c05ab05
+    size_bytes: 2068
   - path: docs/authoritative-data-register.md
-    sha256: 98cfc8295e68cff2d600052996b852f9c4d8713eed25bbfd3071469305762916
-    size_bytes: 2044
+    sha256: 689ddc88c3f529244adbf326b6acbb108d660a8d6530e70de625c61b435d4337
+    size_bytes: 1802
   - path: docs/building-blocks.md
-    sha256: 557d6ec7873cc4b033a0d69126672081a23a73c86deab8eadca1a660a02d7d47
-    size_bytes: 1771
+    sha256: bf8834b9ec0198bd51c0ef1bc16bc4964d01246781d0312b6d79ad0aa41bac0b
+    size_bytes: 2859
   - path: docs/eligibility-factor-verification.md
-    sha256: 2f08f1996ba5cd2d88be183be1abec5c63b62291df7fead4d449eb0b40607e0e
-    size_bytes: 2763
+    sha256: 0a45a1aadba489fc560b108baf1ff7e5f0e9bb6f9e9f6029bf80dde76a9f307c
+    size_bytes: 2310
   - path: docs/governance-and-policy.md
-    sha256: bbd10d550abb97df1467ae9d8755b7d0e725ba7468a68be295274675416bf0fe
-    size_bytes: 2810
+    sha256: 9aa670d954c9a7365a51e322b5a03fce870a87db36b40c96a830119be979ae89
+    size_bytes: 3553
   - path: docs/index.md
-    sha256: e8af37b38824eb1e2857ddf9214e255bee178e768ba6c0717a6a94725729d08d
-    size_bytes: 1263
+    sha256: c68b37176b9c8288c67408c099336e88e5e92c75cb50231d71e9fc6e6b008bc5
+    size_bytes: 1646
+  - path: docs/integration-toolkit.md
+    sha256: 70f9c580f61552d59ff465bd6d64f4fe42d3666965836198585bd77283b1df13
+    size_bytes: 2101
   - path: docs/limits-and-constraints.md
-    sha256: 869832c19e9bc8dc32d819f7d5d39588c88606fc131277f158f0cafd7ff98f8f
-    size_bytes: 1558
+    sha256: 92510cf4b763615b19cd108b3e56b0358a2bfd82c2673646e43dec607761d137
+    size_bytes: 1451
   - path: docs/privacy-and-security.md
-    sha256: 73e3f2ab0ed612b8019c3b9cf3f7548fa7a1a9f2b3653c042cbd0304acc71b49
-    size_bytes: 2671
+    sha256: c1123ad219d9759f2c3b82749152801c16a280942dd1a2dd09cfcd81659d812f
+    size_bytes: 3160
   - path: docs/purpose-and-value.md
-    sha256: ad048ae3abed74aca9bfaa4ce833fd301e6c28b65d64586bb150657af915d9a6
-    size_bytes: 2392
+    sha256: 81d9fe5721319bf6c54b98330ca6cc720bfbb403626aa5d31c14e23fe31e6157
+    size_bytes: 4242
   - path: docs/roles-and-responsibilities.md
-    sha256: e17b3a86d733497b82cda247a16f2493d8354f4c237843b128924fa607d67962
-    size_bytes: 2370
+    sha256: 142bbb57cdded50ae021eb9596be719c07ea4e78819ed27ef1e8d4ad816e35b0
+    size_bytes: 2128
   - path: docs/secure-data-exchange.md
-    sha256: 8afa50e0b89da5e681bac68babd866940099cf58c64cb382968162a4eaff621c
-    size_bytes: 3135
+    sha256: 00bf7c480ec1df72da5ebe9feddf3a218b66f399db86a0470c7c1d2f7ffd8933
+    size_bytes: 3249
   - path: docs/support.md
-    sha256: 2a9b8b06ccc073dcbaf667316d1545205eb8240614e24161337729910cc06dc1
-    size_bytes: 3548
+    sha256: 150385ed7449cb294b029c12e7b4234324e7a6771fd30139c978b6b757b49667
+    size_bytes: 719
   navigation:
     path: mkdocs.yml
-    sha256: 9905fb55af5ad641e43ed271dd485faade32e4e3bb3b3010b56f21ccd8c00d3d
+    sha256: b340c2ae285b60a81766c1b17b9b08bdff6359e98c4851925e23856f73eac150
     docs_dir: docs
     unlisted_files: []
   document_order:
@@ -56,20 +62,188 @@ sources:
   - docs/authoritative-data-register.md
   - docs/eligibility-factor-verification.md
   - docs/secure-data-exchange.md
+  - docs/api-services-portal.md
+  - docs/integration-toolkit.md
   - docs/privacy-and-security.md
   - docs/governance-and-policy.md
   - docs/roles-and-responsibilities.md
   - docs/limits-and-constraints.md
+  - docs/support.md
+- id: integration-toolkit
+  title: Integration Toolkit
+  type: git
+  repository: https://github.com/bcgov/connected-services-techdocs.git
+  ref: main
+  revision: b05987f45ca7dad9aac3a749c0babfaaaf589516
+  root: integration-toolkit
+  order: 11
+  content_sha256: 701061733619bcbfbe8874bb9eb7f1e72f87a8f582b252105fed00e66e2fa263
+  files:
+  - path: docs/areas-of-itk.md
+    sha256: eda052131400f59dfaf0f872da68bc61c329462ca127be6fd10bc00ce8cebadd
+    size_bytes: 1972
+  - path: docs/finding-and-using-itk.md
+    sha256: 1449c0c7e2f910de5ad6c666b5c52a7d34f53be40ef05e1c5d87de056fad056c
+    size_bytes: 836
+  - path: docs/index.md
+    sha256: f145ad7fbd516770d3ae34f2964cd6cd5117007cae9eeaccf44bf067d77f9dc8
+    size_bytes: 2114
+  - path: docs/milestone-updates.md
+    sha256: 2cca9296f84b49c97b54cf9bd314d07a15b18d5a25e7320a2afb924c53a7805e
+    size_bytes: 131
+  - path: docs/support.md
+    sha256: 03619799f796f3a8feee0b17990499f8ef0f976581c2c9aea0da0b6109367a80
+    size_bytes: 2309
+  navigation:
+    path: mkdocs.yml
+    sha256: 2cbf1d0acadd9471b398d4ac4eb74908538197ea79e94615934c5742db007ee5
+    docs_dir: docs
+    unlisted_files: []
+  document_order:
+  - docs/index.md
+  - docs/areas-of-itk.md
+  - docs/finding-and-using-itk.md
+  - docs/milestone-updates.md
+  - docs/support.md
+- id: adr-techdoc
+  title: Authoritative Data Registers
+  type: docx
+  location: sources/ADR Techdocs_Draft V2.docx
+  order: 20
+  content_sha256: 14d62a03b7ca059f1279fcfa3e13bc7887c3395a3a8e137e664f21439a47b26d
+  files:
+  - path: ADR Techdocs_Draft V2.docx
+    sha256: c8f8bf0cf789e15e082f89025dc975b421cc827ac703cbe9456710bcdba67715
+    size_bytes: 212602
+- id: efv-techdoc
+  title: Eligibility Factor Verification
+  type: git
+  repository: https://github.com/bcgov/efv-itk-docs.git
+  ref: main
+  revision: e83f11c98640a69e46d814e8e11417bc8892f8e6
+  root: .
+  order: 25
+  content_sha256: 4fe8160dd63cc13e8dd2d4136a0fb4fd920c5392c8c4e6a54b7286f7ef719937
+  files:
+  - path: docs/eligibility-factors.md
+    sha256: 9fd724af0886ebfc9f209c3f8a48a3abe90a6e825c61102ffd76b5b24e17b03c
+    size_bytes: 2625
+  - path: docs/getting-started.md
+    sha256: 0fdb0f06072347f673f10c09460b2f7a058aa768603135d2798202471063332b
+    size_bytes: 3066
+  - path: docs/income-verification.md
+    sha256: 74fc27a913ad425b29fa37bf1fe3b196836b8c0251334d69f1828d20027a326f
+    size_bytes: 2512
+  - path: docs/index.md
+    sha256: 795421cf05e3fc3b5b5a623e21282a07f29aff1dd1fc0e7874c9487cf7181e59
+    size_bytes: 1772
+  - path: docs/support.md
+    sha256: 0a774233d220a3a75f5726fd46f784c7db3ac727417e925676960349982ac92f
+    size_bytes: 456
+  navigation:
+    path: mkdocs.yml
+    sha256: 980eb09cbffeefa275b95a9b01f804b218811eafe3fad7874fbd5f21e0a63b98
+    docs_dir: docs
+    unlisted_files: []
+  document_order:
+  - docs/index.md
+  - docs/getting-started.md
+  - docs/eligibility-factors.md
+  - docs/income-verification.md
+  - docs/support.md
+- id: secure-data-exchange
+  title: Secure Data Exchange
+  type: git
+  repository: https://github.com/bcgov/connected-services-techdocs.git
+  ref: main
+  revision: b05987f45ca7dad9aac3a749c0babfaaaf589516
+  root: secure-data-exchange
+  order: 30
+  content_sha256: ac60e2db1bb025b84828f7dce97ef3fee3267a582106e5fb57f98a34677f9f4f
+  files:
+  - path: docs/experimental-features.md
+    sha256: 2d778c6b8104931c102d2e866c31045ed8d5aca9decbc98b91ebbf4e17e7c4bd
+    size_bytes: 1642
+  - path: docs/getting-started-with-sdx/consume-a-service.md
+    sha256: 7d955cf300ad1f14446a75b8ef351c839270190921bffd8b2b135ec3f3d4b6d2
+    size_bytes: 1163
+  - path: docs/getting-started-with-sdx/environments.md
+    sha256: 895e89bccfdbd27e5028e9913dd2363dba0d527ce64e8790814ec2a21466c8fc
+    size_bytes: 809
+  - path: docs/getting-started-with-sdx/onboarding-process/connecting-a-service.md
+    sha256: e396564bd19d239a05692da50508c0774477a948aeb691ef99019e82e5869976
+    size_bytes: 781
+  - path: docs/getting-started-with-sdx/onboarding-process/connection-resources.md
+    sha256: 607caae3792f6d32fc4b769261ab314292f9b665fec6c959ff7a53ef73ce5da3
+    size_bytes: 825
+  - path: docs/getting-started-with-sdx/onboarding-process/install-an-edge-runtime-group.md
+    sha256: 91f12afd20aa40bbf0717121c057738b27eccd1266bb455e8b7ab9878f4f5f94
+    size_bytes: 1258
+  - path: docs/getting-started-with-sdx/onboarding-process/managing-services.md
+    sha256: f422d1b9bc6ee02ef27a18190ab7789cb4f53b1d337f3a91f118c03e597b686a
+    size_bytes: 672
+  - path: docs/getting-started-with-sdx/onboarding-process/managing-subsystems.md
+    sha256: 8a5d0ae321d3e5c6d23547006fe882a392a964240a5e6db9409b2ad041f394a4
+    size_bytes: 637
+  - path: docs/getting-started-with-sdx/onboarding-process/onboarding-an-organization.md
+    sha256: bfd7d227dafd65114c70af8d40bba512c2e4a517bf27251ce78ec1bfd33921ab
+    size_bytes: 568
+  - path: docs/getting-started-with-sdx/onboarding-process/onboarding-process.md
+    sha256: 8b6ccfdbf21f75d19a10e68a502f4f96bb45547762791e4fcd186011b119788b
+    size_bytes: 1002
+  - path: docs/getting-started-with-sdx/onboarding-process/set-up-organization-signing.md
+    sha256: 997762795232948453ccb6c2664fa3bd115b7f3b235171439f07046e750b67df
+    size_bytes: 906
+  - path: docs/getting-started-with-sdx/publish-a-service.md
+    sha256: e3dce3753265f2c50f65482915ce4bd9875c0af74512849316db4dc981766f81
+    size_bytes: 1458
+  - path: docs/getting-started-with-sdx/sdx-roles-and-responsibilities.md
+    sha256: 2593dddcef7eff188862fccdc64c5d60238882862e06dee6de0fb9c4cbae1f5d
+    size_bytes: 1339
+  - path: docs/index.md
+    sha256: df0c4bcdc377c208befebcf8d8be70c0859815c74089538b8adea3720d4613bf
+    size_bytes: 5337
+  - path: docs/references.md
+    sha256: cef4b130984dd6a540d604fd4622dac3165db71b1a7ef5808cb470ed03a004f6
+    size_bytes: 190
+  - path: docs/support.md
+    sha256: 1f566a6cc5af169df324cd939f3d87deb3df9b7a72e368627b1ab54fb8f42805
+    size_bytes: 2694
+  assets:
+  - path: docs/artifacts/SDX.svg
+    sha256: 1a5f35ac09327eb7cf2c50238eff35fb156ff85cf84fd2047f29218b89db6c83
+    size_bytes: 477714
+  navigation:
+    path: mkdocs.yml
+    sha256: 73069df143607c705fc08a45fe8b4ceebb08927cd76b09199e3c8c4c0652ad22
+    docs_dir: docs
+    unlisted_files: []
+  document_order:
+  - docs/index.md
+  - docs/getting-started-with-sdx/sdx-roles-and-responsibilities.md
+  - docs/getting-started-with-sdx/environments.md
+  - docs/getting-started-with-sdx/publish-a-service.md
+  - docs/getting-started-with-sdx/consume-a-service.md
+  - docs/getting-started-with-sdx/onboarding-process/onboarding-process.md
+  - docs/getting-started-with-sdx/onboarding-process/onboarding-an-organization.md
+  - docs/getting-started-with-sdx/onboarding-process/install-an-edge-runtime-group.md
+  - docs/getting-started-with-sdx/onboarding-process/set-up-organization-signing.md
+  - docs/getting-started-with-sdx/onboarding-process/managing-subsystems.md
+  - docs/getting-started-with-sdx/onboarding-process/managing-services.md
+  - docs/getting-started-with-sdx/onboarding-process/connecting-a-service.md
+  - docs/getting-started-with-sdx/onboarding-process/connection-resources.md
+  - docs/experimental-features.md
+  - docs/references.md
   - docs/support.md
 - id: aps-infra-platform-sdx
   title: API Services Portal - SDX Documentation
   type: git
   repository: https://github.com/bcgov/aps-infra-platform.git
   ref: test
-  revision: 5cfc532b822ce6a034764ff5437c68e85e42d01c
+  revision: 654c5f28a4f9195b7770dc2b77b3e9617a828d65
   root: .
-  order: 20
-  content_sha256: af5b32043074b2d80e83adf79b87f400a04a9d0fe57f3b706980f81b2068a732
+  order: 40
+  content_sha256: 5c774ac4ba468744df29074defcc7069351b98e0376263c1bf1409643999d6f7
   files:
   - path: documentation/concepts/secure-data-exchange.md
     sha256: 682e2c7faf92582d9bc677d08a2fc3d6a6c235855e1243b7e39d41c5e9bbdbc0
@@ -84,11 +258,11 @@ sources:
     sha256: 9b77e459a1098ef6cf3514e4c2234b98f99fa23c8d957c4cf4e2c88f7ba861a8
     size_bytes: 2391
   - path: documentation/how-to/sdx-connection-resources.md
-    sha256: 22391c4a2edc78aaca26091c7c17be9f7c07379f63084dd6684dcdc66ef84cf3
-    size_bytes: 8829
+    sha256: 0976f8432955a0c8c0bb82dd41384f8ad46a1b340502ef25a66f0e3753a99b90
+    size_bytes: 11894
   - path: documentation/how-to/sdx-connections.md
-    sha256: 4873dcf8591b6d79eda2be320eff2e78960d7211443e25e2012b838e9f03e2ee
-    size_bytes: 8272
+    sha256: 1080541a47d30a10c3fff4e38c0934d25fb017f6b684e03efc476c265160f174
+    size_bytes: 10294
   - path: documentation/how-to/sdx-edge-runtime-groups.md
     sha256: 0dae8aa149aeaff29e3217ccfe48e974390e1b11d6b5ad29cef6f7b6f2cbc6ba
     size_bytes: 12986
@@ -96,8 +270,8 @@ sources:
     sha256: 0cd19c5e19c7ff6abac2f94c47fed423519e3e5b9c41c697664a27ffdbc08740
     size_bytes: 5366
   - path: documentation/how-to/sdx-org-signing.md
-    sha256: a5869157907de03b3a3f29f382bf68afc4593375a093a759a1eb4e39db270a15
-    size_bytes: 6466
+    sha256: 342936d0d748ad9af4476d046d4b276deb51636fd0ea85ed0b853e9319ff0492
+    size_bytes: 6682
   - path: documentation/how-to/sdx-services.md
     sha256: 137406286e52ee3abf1f7a9d6f3e92da1c221bffb62036e0d8396df3a8d64baf
     size_bytes: 5593
@@ -108,8 +282,8 @@ sources:
     sha256: f1f816813f6c6dd8bba6308c1d114fe1d36024b4a6bccaa25f219e2154ce1cff
     size_bytes: 4605
   - path: documentation/reference/sdx/data-access-protocol.md
-    sha256: 54c9bb6fdf43c97e8cb2cd3932fb4b26685d1c33269e78301ccebb05cdfd5966
-    size_bytes: 6445
+    sha256: ea415c50ec8f2f40c5e007a817c131854a19346be5cbfef99b83c219ff4b078c
+    size_bytes: 9743
   - path: documentation/reference/sdx/environments.md
     sha256: 90b696c88a7f8e399ef5a4d918050c5992805b15377d63b8ffca59ffbbd6eec4
     size_bytes: 3638
@@ -140,13 +314,3 @@ sources:
   - documentation/how-to/sdx-ape-event-mgmt.md
   - documentation/how-to/sdx-ape-policy-mgmt.md
   techdocs_component: aps-infra-platform-docs
-- id: efv-techdoc
-  title: Eligibility Factor Verification TechDoc
-  type: docx
-  location: sources/EFV TechDoc - V3.docx
-  order: 30
-  content_sha256: 2af807e24a86a0b711ff528117e2ce0d360abf59449ae339b3fe4aa1c8306f56
-  files:
-  - path: EFV TechDoc - V3.docx
-    sha256: 5e0ec8e7ee9b2f0b814217d90e4d0f2f68cd0ca2b1f2e8d6c0d5050c4b7c9c60
-    size_bytes: 32351

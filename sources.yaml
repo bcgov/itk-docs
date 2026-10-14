@@ -35,6 +35,8 @@ sources:
     navigation: mkdocs.yml
     include:
       - docs/**/*.md
+    assets:
+      - docs/artifacts/SDX.svg
     order: 30
 
   - id: aps-infra-platform-sdx

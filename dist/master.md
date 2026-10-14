@@ -4,18 +4,63 @@
 
 ## Contents
 
-- [Connected Services - Getting Started](#source-connected-services-getting-started)
-    - [Connected Services overview](#connected-services-getting-started-docsindex)
-    - [Purpose and value](#connected-services-getting-started-docspurpose-and-value)
-    - [Connected services building blocks](#connected-services-getting-started-docsbuilding-blocks)
-    - [Authoritative Data Register (ADR)](#connected-services-getting-started-docsauthoritative-data-register)
-    - [Eligibility Factor Verification (EFV)](#connected-services-getting-started-docseligibility-factor-verification)
-    - [Secure Data Exchange (SDX)](#connected-services-getting-started-docssecure-data-exchange)
-    - [Privacy and security](#connected-services-getting-started-docsprivacy-and-security)
-    - [Governance and policy](#connected-services-getting-started-docsgovernance-and-policy)
-    - [Roles and responsibilities](#connected-services-getting-started-docsroles-and-responsibilities)
-    - [Limits and constraints](#connected-services-getting-started-docslimits-and-constraints)
-    - [Support](#connected-services-getting-started-docssupport)
+- [Building Trusted Digital Services](#source-building-trusted-digital-services)
+    - [Connected services overview](#building-trusted-digital-services-docsindex)
+    - [Purpose and value](#building-trusted-digital-services-docspurpose-and-value)
+    - [Trusted digital service building blocks](#building-trusted-digital-services-docsbuilding-blocks)
+    - [Authoritative Data Register (ADR)](#building-trusted-digital-services-docsauthoritative-data-register)
+    - [Eligibility Factor Verification (EFV)](#building-trusted-digital-services-docseligibility-factor-verification)
+    - [Secure Data Exchange (SDX)](#building-trusted-digital-services-docssecure-data-exchange)
+    - [API Services Portal](#building-trusted-digital-services-docsapi-services-portal)
+    - [Integration Toolkit (ITK)](#building-trusted-digital-services-docsintegration-toolkit)
+    - [Privacy and security](#building-trusted-digital-services-docsprivacy-and-security)
+    - [Governance and policy](#building-trusted-digital-services-docsgovernance-and-policy)
+    - [Roles and responsibilities](#building-trusted-digital-services-docsroles-and-responsibilities)
+    - [Limits and constraints](#building-trusted-digital-services-docslimits-and-constraints)
+    - [Support](#building-trusted-digital-services-docssupport)
+- [Integration Toolkit](#source-integration-toolkit)
+    - [Integration Toolkit (ITK)](#integration-toolkit-docsindex)
+    - [Areas of ITK](#integration-toolkit-docsareas-of-itk)
+    - [Finding and using ITK](#integration-toolkit-docsfinding-and-using-itk)
+    - [Milestone updates](#integration-toolkit-docsmilestone-updates)
+    - [Support](#integration-toolkit-docssupport)
+- [Authoritative Data Registers](#source-adr-techdoc)
+    - [Get started with data](#adr-techdoc-adr-techdocs-draft-v2)
+    - [Find and use datasets](#adr-techdoc-adr-techdocs-draft-v2--find-and-use-datasets)
+    - [Provide data](#adr-techdoc-adr-techdocs-draft-v2--provide-data-1)
+    - [How data is classified](#adr-techdoc-adr-techdocs-draft-v2--how-data-is-classified)
+    - [Publishing a dataset](#adr-techdoc-adr-techdocs-draft-v2--publishing-a-dataset)
+    - [High-value data](#adr-techdoc-adr-techdocs-draft-v2--high-value-data-2)
+    - [Authoritative data](#adr-techdoc-adr-techdocs-draft-v2--authoritative-data-2)
+    - [Authoritative Data Designation](#adr-techdoc-adr-techdocs-draft-v2--authoritative-data-designation)
+    - [Data registers](#adr-techdoc-adr-techdocs-draft-v2--data-registers-1)
+    - [Data Register Standard](#adr-techdoc-adr-techdocs-draft-v2--data-register-standard)
+    - [Semantics](#adr-techdoc-adr-techdocs-draft-v2--semantics-1)
+    - [Data dictionaries](#adr-techdoc-adr-techdocs-draft-v2--data-dictionaries-3)
+    - [Connected Services Data Glossary](#adr-techdoc-adr-techdocs-draft-v2--connected-services-data-glossary-3)
+- [Eligibility Factor Verification](#source-efv-techdoc)
+    - [Introduction](#efv-techdoc-docsindex)
+    - [Getting Started](#efv-techdoc-docsgetting-started)
+    - [Eligibility Factors](#efv-techdoc-docseligibility-factors)
+    - [Income Verification](#efv-techdoc-docsincome-verification)
+    - [Support](#efv-techdoc-docssupport)
+- [Secure Data Exchange](#source-secure-data-exchange)
+    - [Secure Data Exchange (SDX)](#secure-data-exchange-docsindex)
+    - [SDX Roles and Responsibilities](#secure-data-exchange-docsgetting-started-with-sdxsdx-roles-and-responsibilities)
+    - [Environments](#secure-data-exchange-docsgetting-started-with-sdxenvironments)
+    - [Publish a Service](#secure-data-exchange-docsgetting-started-with-sdxpublish-a-service)
+    - [Consume a Service](#secure-data-exchange-docsgetting-started-with-sdxconsume-a-service)
+    - [Onboarding Process](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-process)
+    - [Onboarding an Organization](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-an-organization)
+    - [Install an Edge Runtime Group](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processinstall-an-edge-runtime-group)
+    - [Set Up Organization Signing](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processset-up-organization-signing)
+    - [Managing Subsystems](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-subsystems)
+    - [Managing Services](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-services)
+    - [Connecting a Service](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnecting-a-service)
+    - [Connection Resources](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnection-resources)
+    - [Experimental Features – LAB Only](#secure-data-exchange-docsexperimental-features)
+    - [References](#secure-data-exchange-docsreferences)
+    - [Support](#secure-data-exchange-docssupport)
 - [API Services Portal - SDX Documentation](#source-aps-infra-platform-sdx)
     - [Get Support](#aps-infra-platform-sdx-documentationhow-toget-support)
     - [Onboarding an Organization](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding)
@@ -31,151 +76,182 @@
     - [SDX Environments](#aps-infra-platform-sdx-documentationreferencesdxenvironments)
     - [Event Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-event-mgmt)
     - [Policy Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-policy-mgmt)
-- [Eligibility Factor Verification TechDoc](#source-efv-techdoc)
-    - [Introduction](#efv-techdoc-efv-techdoc-v3)
-    - [Getting Started](#efv-techdoc-efv-techdoc-v3--getting-started)
-    - [Eligibility factors](#efv-techdoc-efv-techdoc-v3--eligibility-factors)
-    - [Income Verification](#efv-techdoc-efv-techdoc-v3--income-verification)
-    - [Support and Next Steps](#efv-techdoc-efv-techdoc-v3--support-and-next-steps)
 
-# Connected Services - Getting Started {#source-connected-services-getting-started}
+# Building Trusted Digital Services {#source-building-trusted-digital-services}
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/index.md -->
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/index.md -->
 
-## Connected Services overview {#connected-services-getting-started-docsindex}
+## Connected services overview {#building-trusted-digital-services-docsindex}
 
 
-_Connected Services_ provides reusable building blocks that help government programs securely share and reuse trusted data. 
 
-If you are building or managing a digital service, explore available APIs and datasets below, or learn more about Connected Services and its building blocks.
+[Connected Services BC](https://digital.gov.bc.ca/2025/07/21/building-connected-services/) is working toward a future where people and businesses in B.C. experience government services as simple, connected, and easy to access, no matter which ministry or program is behind them.
 
-### Find APIs and datasets {#connected-services-getting-started-docsindex--find-apis-and-datasets}
+This documentation is for the people who need to understand what's involved in building a trusted digital service: developers, product owners, data owners, and data custodians. It explains the building blocks involved and what makes this way of working different from how things have been done in the past.
 
-Use DevHub search or explore the catalogues to discover: 
+This documentation is the starting point for understanding these building blocks. Explore each one below to learn what it does and why it matters.
 
-- [APIs that use _Secure Data Exchange_ (SDX)](https://developer.gov.bc.ca/catalogue?filters%5Bkind%5D=api&filters%5Btags%5D=secure-data-exchange)
-- [_Authoritative Data_ sources](https://developer.gov.bc.ca/catalogue?filters%5Bkind%5D=api&filters%5Btags%5D=authoritative-data-register)
-- [Available _Eligibility Factor Verification_ (EFVs)](https://developer.gov.bc.ca/catalogue?filters%5Bkind%5D=api&filters%5Btags%5D=eligibility-factor-verification)
+### Explore the building blocks {#building-trusted-digital-services-docsindex--explore-the-building-blocks}
 
-### Availability {#connected-services-getting-started-docsindex--availability}
+- [Authoritative Data Register (ADR)](#building-trusted-digital-services-docsauthoritative-data-register)
+- [Eligibility Factor Verification (EFV)](#building-trusted-digital-services-docseligibility-factor-verification)
+- [Secure Data Exchange (SDX)](#building-trusted-digital-services-docssecure-data-exchange)
+- [API Services Portal](#building-trusted-digital-services-docsapi-services-portal)
+- BC Data Catalogue (BCDC)
+- [Integration Toolkit (ITK)](#building-trusted-digital-services-docsintegration-toolkit)
 
-Connected Services capabilities are introduced iteratively. New APIs, datasets, and components will be added over time. 
+### Availability {#building-trusted-digital-services-docsindex--availability}
 
-### Learn more {#connected-services-getting-started-docsindex--learn-more}
+This documentation is available now. Some building blocks, like Secure Data Exchange, are further along than others. Check each page for its current status.
 
-To understand the broader purpose behind these capabilities, review [Purpose and value](#connected-services-getting-started-docspurpose-and-value). 
+### Learn more {#building-trusted-digital-services-docsindex--learn-more}
 
-To understand how Connected Services components fit together, review [Connected Services building blocks](#connected-services-getting-started-docsbuilding-blocks). 
+To understand the broader purpose behind these building blocks, review [Purpose and value](#building-trusted-digital-services-docspurpose-and-value).
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/purpose-and-value.md -->
+To understand how these building blocks fit together, review [Trusted digital service building blocks](#building-trusted-digital-services-docsbuilding-blocks).
 
-## Purpose and value {#connected-services-getting-started-docspurpose-and-value}
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/purpose-and-value.md -->
 
+## Purpose and value {#building-trusted-digital-services-docspurpose-and-value}
 
 
-Government programs often need information that already exists in another ministry or system. 
 
-Today, this can result in delays, duplicate integrations, repeated data collection, inconsistent definitions, and manual verification processes. 
+Government programs often need information that already exists in another ministry or system.
 
-_Connected Services_ aims to improve service delivery by reducing duplication, supporting secure reuse of trusted data across government, and strengthening interoperability across ministries. 
+Today, this can cause real problems:
 
-It does this by establishing common building blocks that enable:
+- Delays
+- Duplicate integrations
+- Repeated data collection
+- Inconsistent definitions
+- Manual verification processes
 
-- [Access to authoritative data](#connected-services-getting-started-docsauthoritative-data-register)
-- [Reusable eligibility checks](https://developer.gov.bc.ca/catalogue?filters%5Bkind%5D=api&filters%5Btags%5D=eligibility-factor-verification)
-- [Secure, policy-aligned data exchange](#connected-services-getting-started-docssecure-data-exchange)
-- [Centralized discovery of APIs and datasets](https://developer.gov.bc.ca/catalogue?filters%5Bkind%5D=api&filters%5Btags%5D=authoritative-data)
+Connected Services BC is working toward a future where people and businesses experience government services as simple and connected. This is true regardless of which ministry or program is behind them. Delivering on that vision requires developers and program teams to connect, share, and reuse trusted data across government. This needs to happen securely and consistently.
 
-As these capabilities become available, teams will be able to use (and reuse) standardized components instead of building one-off integrations. 
+This works through common building blocks that enable:
 
-### What this means for you {#connected-services-getting-started-docspurpose-and-value--what-this-means-for-you}
+- Access to authoritative data
+- Reusable eligibility checks
+- Secure, policy-aligned data exchange
+- Dataset discovery
+- Documentation that helps you understand what's available across these areas
 
-For developers, Connected Services supports: 
+As these capabilities become available, they're designed to support both sides of this work: data providers who register, maintain, and share trusted data, and data consumers who access and reuse it. One of the aims of this work is a clear, easy path to discovering trusted data, replacing today's reality of word of mouth and manual digging to find the right source or contact. Over time, this means less duplicate effort for providers publishing the same data multiple ways, and fewer one-off integrations for consumers trying to access what they need. Teams will be able to use and reuse standardized components on both sides of that journey.
 
-- Faster integrations with reusable components 
-- Reduced custom validation logic 
-- Access to governed and trusted data sources 
-- Consistent integration guidance and sandbox environments 
+See [Trusted digital service building blocks](#building-trusted-digital-services-docsbuilding-blocks) for more on how these components work together, and [Roles and responsibilities](#building-trusted-digital-services-docsroles-and-responsibilities) for how provider and consumer roles fit into this work.
 
-For product owners and program leads, Connected Services supports: 
+### A quick example {#building-trusted-digital-services-docspurpose-and-value--a-quick-example}
 
-- Clear data ownership and accountability 
-- Reduced duplication of datasets 
-- More consistent eligibility decisions 
-- Scalable cross-ministry service design 
+Say a ministry is launching a new income-support program. It needs to confirm applicants meet an income requirement.
 
-For data custodians, data managers, and data providers, Connected Services supports: 
+Today, this usually means the applicant uploads tax documents. Staff then manually review them as part of the application.
 
-- Clear designation of authoritative data 
-- Defined access and reuse policies 
-- Reduced ad hoc data-sharing requests 
-- Improved visibility into how data is used 
-- Structured governance processes for oversight and accountability 
+Eligibility Factor Verification (EFV) is developing an income verification check, its first eligibility factor. In time, a program may be able to request that check directly, instead of asking applicants to upload documents. This is still in development, and available factors will depend on program need, data source agreements, and policy requirements.
 
-Connected Services establishes common foundations that support more consistent, secure, and interoperable digital services across government. 
+That's the value these building blocks are working toward: less duplicate work, more consistent decisions, and secure, accountable data reuse.
 
-Capabilities are being introduced iteratively. Availability of specific components will expand over time. 
+### What this means for you {#building-trusted-digital-services-docspurpose-and-value--what-this-means-for-you}
 
-### Explore the components {#connected-services-getting-started-docspurpose-and-value--explore-the-components}
+The building blocks are at different stages. Some are operating services today, while others are still being developed or expanded. The integrated journey described in this documentation is also evolving as the building blocks become more closely connected.
 
-Connected Services is delivered through reusable building blocks. 
+Together, the current and planned capabilities are intended to support the following outcomes.
 
-To see how these components work together, review [Connected Services building blocks](#connected-services-getting-started-docsbuilding-blocks). 
+For developers, these building blocks will support:
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/building-blocks.md -->
+- Faster integrations with reusable components
+- Less custom validation logic
+- Access to governed and trusted data sources
+- Consistent integration guidance and sandbox environments
 
-## Connected services building blocks {#connected-services-getting-started-docsbuilding-blocks}
+For product owners and program leads, they will support:
 
+- Clear data ownership and accountability
+- Less duplication of datasets
+- More consistent eligibility decisions
+- Scalable cross-ministry service design
 
+For data custodians, data managers, and data providers, they will support:
 
-_Connected Services_ is made up of reusable building blocks that work together to support secure, consistent data reuse across government. 
+- Clear designation of authoritative data
+- Defined access and reuse policies
+- Fewer ad hoc data-sharing requests
+- Improved visibility into how data is used
+- Structured governance processes for oversight and accountability
 
-Each building block has a specific role. Together, they reduce duplicate integrations, improve data trust, and support more seamless service delivery. 
+Together, these building blocks are intended to help developers and program teams create digital services that are consistent, secure and work well together across government. Available capabilities and the connections between them will continue to expand over time.
 
-### Authoritative Data Register (ADR) {#connected-services-getting-started-docsbuilding-blocks--authoritative-data-register-adr}
+### Explore the components {#building-trusted-digital-services-docspurpose-and-value--explore-the-components}
 
-_Authoritative Data_ is the official source of truth for specific information, such as residency, enrollment, property ownership, or program status. 
+A trusted digital service is delivered through reusable building blocks.
 
-It provides trusted, governed data that other programs can rely on. 
+To see how these components work together, review [Trusted digital service building blocks](#building-trusted-digital-services-docsbuilding-blocks).
 
-[Learn more about ADR](#connected-services-getting-started-docsauthoritative-data-register). 
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/building-blocks.md -->
 
-### Eligibility Factor Verification (EFV) {#connected-services-getting-started-docsbuilding-blocks--eligibility-factor-verification-efv}
+## Trusted digital service building blocks {#building-trusted-digital-services-docsbuilding-blocks}
 
-_Eligibility Factor Verification_ (EFV) checks whether the details an applicant provides meet the rules for a particular government program. 
 
-For example: 
 
-- Is this person a BC resident? Yes/no 
-- Is this individual enrolled in a specific program? Yes/no 
+Building a trusted digital service means drawing on reusable building blocks that work together to support secure, consistent data reuse across government.
 
-EFVs reduce manual verification and help standardize eligibility checks across programs. 
+Each building block plays a specific role in supporting the people who provide trusted data and the people who consume it. For example, a data custodian registering a dataset as authoritative is a provider. A developer connecting to that data through Secure Data Exchange is a consumer. Together, these building blocks reduce duplicate integrations, improve data trust, and support more seamless service delivery.
 
-[Learn more about EFV](#connected-services-getting-started-docseligibility-factor-verification). 
+### Authoritative Data Register (ADR) {#building-trusted-digital-services-docsbuilding-blocks--authoritative-data-register-adr}
 
-### Secure Data Exchange (SDX) {#connected-services-getting-started-docsbuilding-blocks--secure-data-exchange-sdx}
+*Authoritative Data Register* is the register that holds information on datasets designated as authoritative. These are official sources of truth for specific information, like residency, enrollment, property ownership, or program status.
 
-_Secure Data Exchange_ (SDX) provides a governed way to move approved data between systems. 
+It provides trusted, governed data that other programs can rely on.
 
-It ensures that data sharing is secure, policy-aligned, and auditable, without requiring custom integrations for each connection. 
+[Learn more about ADR](#building-trusted-digital-services-docsauthoritative-data-register).
 
-[Learn more about SDX](#connected-services-getting-started-docssecure-data-exchange). 
+### Eligibility Factor Verification (EFV) {#building-trusted-digital-services-docsbuilding-blocks--eligibility-factor-verification-efv}
 
-### Data and API catalogue {#connected-services-getting-started-docsbuilding-blocks--data-and-api-catalogue}
+*Eligibility Factor Verification* checks applicant details against program rules. It confirms whether someone meets the requirements for a specific government program.
 
-The Catalogue provides a centralized place to discover datasets, APIs, and related documentation. 
+For example:
 
-It supports consistent definitions, improved discoverability, and reuse across ministries. 
+- Is this person a BC resident? Yes/no
+- Is this individual enrolled in a specific program? Yes/no
 
-[Explore the Catalogue](https://developer.gov.bc.ca/catalogue). 
+EFVs reduce manual verification and help standardize eligibility checks across programs.
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/authoritative-data-register.md -->
+[Learn more about EFV](#building-trusted-digital-services-docseligibility-factor-verification).
 
-## Authoritative Data Register (ADR) {#connected-services-getting-started-docsauthoritative-data-register}
+### Secure Data Exchange (SDX) {#building-trusted-digital-services-docsbuilding-blocks--secure-data-exchange-sdx}
 
+*Secure Data Exchange* provides a governed way to move approved data between systems.
 
+It ensures that data sharing is secure, policy-aligned, and auditable. Teams don't need to build a custom integration for each connection.
 
-### What it is {#connected-services-getting-started-docsauthoritative-data-register--what-it-is}
+[Learn more about SDX](#building-trusted-digital-services-docssecure-data-exchange).
+
+### API Services Portal {#building-trusted-digital-services-docsbuilding-blocks--api-services-portal}
+
+*API Services Portal* is a central gateway for connecting APIs across government. It covers routing, access control, and general API management.
+
+[Learn more about API Services Portal](#building-trusted-digital-services-docsapi-services-portal).
+
+### BC Data Catalogue (BCDC) {#building-trusted-digital-services-docsbuilding-blocks--bc-data-catalogue-bcdc}
+
+*BC Data Catalogue* helps people find datasets available across government and understand how to access them.
+
+[Explore the BC Data Catalogue](https://catalogue.data.gov.bc.ca/).
+
+### Integration Toolkit (ITK) {#building-trusted-digital-services-docsbuilding-blocks--integration-toolkit-itk}
+
+*Integration Toolkit* is documentation that helps you understand the building blocks above, what each one does, and how they fit together.
+
+Over time, this is expected to grow into a compiled, end-to-end reference guide, refined as each building block matures, including checklists, templates, and more detailed guidance. Right now, ITK's job is to help you understand what's available and point you to each team's own documentation.
+
+[Learn more about ITK](#building-trusted-digital-services-docsintegration-toolkit).
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/authoritative-data-register.md -->
+
+## Authoritative Data Register (ADR) {#building-trusted-digital-services-docsauthoritative-data-register}
+
+
+
+### What it is {#building-trusted-digital-services-docsauthoritative-data-register--what-it-is}
 
 _Authoritative Data_ is a dataset formally designated as the trusted source for a specific purpose within government. 
 
@@ -183,7 +259,7 @@ The ADR service provides the governance process that identifies, assesses, certi
 
 Authoritative status is contextual. A dataset is authoritative for **a defined scope and use case**, not for all purposes. 
 
-### Who this is for {#connected-services-getting-started-docsauthoritative-data-register--who-this-is-for}
+### Who this is for {#building-trusted-digital-services-docsauthoritative-data-register--who-this-is-for}
 
 ADR supports both those who publish authoritative data and those who integrate with it. 
 
@@ -199,7 +275,7 @@ ADR supports both those who publish authoritative data and those who integrate w
 - Program and policy leads 
 - Data managers 
 
-### When to use authoritative data {#connected-services-getting-started-docsauthoritative-data-register--when-to-use-authoritative-data}
+### When to use authoritative data {#building-trusted-digital-services-docsauthoritative-data-register--when-to-use-authoritative-data}
 
 Use Authoritative Data when: 
 
@@ -211,7 +287,7 @@ Use Authoritative Data when:
 
 Do not assume that all datasets are authoritative. Always confirm status before integrating. 
 
-### How ADR works (high level) {#connected-services-getting-started-docsauthoritative-data-register--how-adr-works-high-level}
+### How ADR works (high level) {#building-trusted-digital-services-docsauthoritative-data-register--how-adr-works-high-level}
 
 ADR formalizes how datasets are reviewed and certified. 
 
@@ -223,36 +299,23 @@ ADR formalizes how datasets are reviewed and certified.
 
 Authoritative certification is not a one-time approval. It requires ongoing oversight. 
 
-### Where to go next {#connected-services-getting-started-docsauthoritative-data-register--where-to-go-next}
-<span style="color:red; font-weight:bold">TODO Add Links when available</span>
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/eligibility-factor-verification.md -->
 
-- Authoritative Data Certification Process 
-- Authoritative Data Directory 
-- Data Register Standards 
-- Glossary and Data Dictionary 
-
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/eligibility-factor-verification.md -->
-
-## Eligibility Factor Verification (EFV) {#connected-services-getting-started-docseligibility-factor-verification}
+## Eligibility Factor Verification (EFV) {#building-trusted-digital-services-docseligibility-factor-verification}
 
 
 
-### What it is {#connected-services-getting-started-docseligibility-factor-verification--what-it-is}
+### What it is {#building-trusted-digital-services-docseligibility-factor-verification--what-it-is}
 
-_Eligibility Factor Verification_ (EFV) is the administrative process of confirming that the information provided by an applicant is accurate and meets the rules for a specific government benefit or service. 
+*Eligibility Factor Verification*, or EFV, helps government programs check specific facts used in eligibility decisions. 
 
-It standardizes how programs verify deterministic facts such as income thresholds, residency status, or identity. 
+EFV is intended for situations where a program needs to verify information through an approved or trusted source, instead of relying only on applicant-submitted documents or manual review. 
 
-EFV serves as the bridge between authoritative data and a program’s eligibility rules. It helps confirm deterministic facts like income thresholds, residency status, and identity. 
+EFV can help programs reduce repeated document checks, support more consistent decisions, and keep a record of what was checked, when, and against what source. 
 
-The EFV framework supports: 
+EFV does not decide if someone is eligible for a program. It is not a program rule engine and does not approve or deny applications. Programs still own their eligibility rules and make the final decision. 
 
-- Connection to trusted and authoritative data sources 
-- Reduction of manual interpretation and document review 
-- Faster, more consistent decision support 
-- A defensible evidence trail for explainability and audit 
-
-### Who this is for {#connected-services-getting-started-docseligibility-factor-verification--who-this-is-for}
+### Who this is for {#building-trusted-digital-services-docseligibility-factor-verification--who-this-is-for}
 
 EFV supports both those building eligibility systems and those responsible for program outcomes. 
 
@@ -267,42 +330,37 @@ EFV supports both those building eligibility systems and those responsible for p
 - Program and policy leads defining eligibility criteria 
 - Adjudicators and intake staff using decision-support tools 
 
-### When to use Eligibility Factor Verification {#connected-services-getting-started-docseligibility-factor-verification--when-to-use-eligibility-factor-verification}
+### When to use Eligibility Factor Verification {#building-trusted-digital-services-docseligibility-factor-verification--when-to-use-eligibility-factor-verification}
 
-Use EFV when: 
+EFV may be useful when your program needs to check a specific fact used in an eligibility decision. 
 
-- You need to confirm a specific, verifiable fact (e.g., “Is this person a B.C. resident?”) 
-- You want to replace manual document collection and reviews with trusted automated data signals 
-- You require a defensible audit trail explaining how a determination was reached 
+EFV may help when your program wants to:
 
-EFV is best suited for deterministic checks. 
+- Use a trusted source instead of applicant-submitted documents 
+- Reduce manual document review or staff follow-up 
+- Support more consistent decisions 
+- Keep a record of what was checked, when, and against what source 
+- Help staff focus on exceptions or higher-risk cases 
+- Reuse a verification pattern that may also help other programs 
 
-It should not be used for complex cases requiring significant human discretion or contextual judgment unless those patterns are clearly defined and governed. 
+### How it works (high level) {#building-trusted-digital-services-docseligibility-factor-verification--how-it-works-high-level}
 
-### How it works (high level) {#connected-services-getting-started-docseligibility-factor-verification--how-it-works-high-level}
-
-1. A program identifies the specific eligibility factors required (e.g., income, residency). 
-2. The system connects to an Authoritative Data source. 
+1. A program needs to confirm whether an applicant meets a specific eligibility requirement. 
+2. With EFV, the program requests a verification check through a trusted Authoritative Data source.
 3. A verification check compares applicant information to the trusted dataset. 
-4. The system returns a verification signal (e.g., Pass/Fail) along with metadata such as source and verification timestamp. 
-5. Adjudicators use the signal to support automated approval or focus on exceptions requiring review. 
+4. The program applies its own rules and decides what happens next. 
 
-Verification is most effective when it reduces the need for applicants to upload scans or photographs of physical documents. 
+### Where to go next {#building-trusted-digital-services-docseligibility-factor-verification--where-to-go-next}
 
-### Where to go next {#connected-services-getting-started-docseligibility-factor-verification--where-to-go-next}
-<span style="color:red; font-weight:bold">TODO Add Links when available</span>
+- Read the [EFV documentation](https://developer.gov.bc.ca/docs/default/component/efv-itk-techdocs) for details
 
-- Eligibility Factor Verification Standards 
-- Authoritative Data Directory 
-- Trust Metadata and Lineage Guidelines  
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/secure-data-exchange.md -->
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/secure-data-exchange.md -->
-
-## Secure Data Exchange (SDX) {#connected-services-getting-started-docssecure-data-exchange}
+## Secure Data Exchange (SDX) {#building-trusted-digital-services-docssecure-data-exchange}
 
 
 
-### What it is {#connected-services-getting-started-docssecure-data-exchange--what-it-is}
+### What it is {#building-trusted-digital-services-docssecure-data-exchange--what-it-is}
 
 _Secure Data Exchange_ (SDX) helps organizations safely share sensitive information with each other.
 
@@ -319,7 +377,7 @@ SDX protects exchanges by:
 
 Together, these controls help organizations protect sensitive information and support B.C.'s security, privacy, and regulatory requirements.
 
-### Who should use SDX {#connected-services-getting-started-docssecure-data-exchange--who-should-use-sdx}
+### Who should use SDX {#building-trusted-digital-services-docssecure-data-exchange--who-should-use-sdx}
 
 SDX is for organizations participating in Connected Services that need to share sensitive information with other organizations.
 
@@ -331,7 +389,7 @@ An organization can:
 - Consume information or services provided by another organization
 - Do both
 
-### When you should use SDX {#connected-services-getting-started-docssecure-data-exchange--when-you-should-use-sdx}
+### When you should use SDX {#building-trusted-digital-services-docssecure-data-exchange--when-you-should-use-sdx}
 
 Use SDX when information needs to be shared between organizations and the exchange needs stronger security, access control, or accountability.
 
@@ -344,7 +402,7 @@ SDX may be appropriate when:
 
 SDX is generally not needed for public or non-sensitive information that does not require these additional controls.
 
-### How it works {#connected-services-getting-started-docssecure-data-exchange--how-it-works}
+### How it works {#building-trusted-digital-services-docssecure-data-exchange--how-it-works}
 
 Organizations complete the SDX onboarding process before exchanging information. Onboarding sets up the organization, its systems, roles, and secure connections.
 
@@ -356,367 +414,1823 @@ Once onboarded:
 
 SDX Edge Servers provide the secure connection used by participating organizations.
 
-For detailed setup instructions, see [SDX onboarding documentation](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding).
+For more details including setup instructions, see [Getting started with SDX documentation](https://developer.gov.bc.ca/docs/default/component/secure-data-exchange-techdocs/).
 
-### Privacy and security responsibilities {#connected-services-getting-started-docssecure-data-exchange--privacy-and-security-responsibilities}
+### Privacy and security responsibilities {#building-trusted-digital-services-docssecure-data-exchange--privacy-and-security-responsibilities}
 
 SDX provides technical controls that help organizations meet privacy and security requirements.
 
 Using SDX does not replace an organization's responsibility to meet its own privacy, security, governance, and data management requirements.
 
-See [Privacy and security](#connected-services-getting-started-docsprivacy-and-security) for more information about organizational responsibilities and accountability.
+See [Privacy and security](#building-trusted-digital-services-docsprivacy-and-security) for more information about organizational responsibilities and accountability.
 
-### Where to go next {#connected-services-getting-started-docssecure-data-exchange--where-to-go-next}
+### Where to go next {#building-trusted-digital-services-docssecure-data-exchange--where-to-go-next}
+- [Getting started with SDX documentation](https://developer.gov.bc.ca/docs/default/component/secure-data-exchange-techdocs/)
+- Or go directly to [SDX onboarding documentation](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding)
 
-- [SDX onboarding documentation](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding)
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/api-services-portal.md -->
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/privacy-and-security.md -->
+## API Services Portal {#building-trusted-digital-services-docsapi-services-portal}
 
-## Privacy and security {#connected-services-getting-started-docsprivacy-and-security}
 
 
+### What is this? {#building-trusted-digital-services-docsapi-services-portal--what-is-this}
 
-_Connected Services_ is built on a secure, policy-driven trust foundation. 
+The [*API Services Portal*](https://api.gov.bc.ca/) is a central online tool that helps government applications connect and talk to each other safely. Built on an open-source gateway system, it handles background traffic, checks permissions, and keeps network requests running smoothly. 
 
-Data remains with the ministry that owns it. Connected Services does not centralize or store program data. Instead, it enables secure, auditable exchange between trusted systems. 
+### Who should use API Services Portal? {#building-trusted-digital-services-docsapi-services-portal--who-should-use-api-services-portal}
 
-Privacy and security controls are embedded into the technical design, not added afterward. 
+- Teams sharing data: B.C. government developers who want to share and protect their system services. 
+- Teams looking for data: Developers who need to find, request access to, and connect existing government services to their own apps. 
 
-### Secure exchange by design {#connected-services-getting-started-docsprivacy-and-security--secure-exchange-by-design}
+### When should I use API Services Portal? {#building-trusted-digital-services-docsapi-services-portal--when-should-i-use-api-services-portal}
 
-All data exchange within Connected Services occurs through _Secure Data Exchange_ (SDX), which enforces: 
+Use the API Services Portal when you need a simple, secure way to send information between government applications. It is ideal when you need to: 
 
-- Authentication of participating systems 
-- Verification that requests are unaltered 
-- Real-time access control 
-- Timestamped logging of transactions 
+- Connect to standard government data feeds and web services. 
+- Protect your service from getting overloaded by controlling how many requests come in at once. 
+- Make sure only approved systems can log in and see your data. 
+- See clear reports on how often your service is being used and if any errors happen.
 
-These controls ensure that only authorized, policy-compliant requests are fulfilled. 
+!!! Note
+     If your team needs to transfer highly sensitive personal data between organizations with legal tracking, look at [Secure Data Exchange (SDX)](#building-trusted-digital-services-docssecure-data-exchange) as well.
 
-For technical details on how SDX implements these controls, including request verification and Edge Server architecture, see [Secure Data Exchange (SDX)](#connected-services-getting-started-docssecure-data-exchange). 
+### How it works (high-level) {#building-trusted-digital-services-docsapi-services-portal--how-it-works-high-level}
 
-### Data ownership and control {#connected-services-getting-started-docsprivacy-and-security--data-ownership-and-control}
+- Find: Search the API Directory to see what services are already available. 
+- Set up: Log in with your IDIR account to register your service and set basic security rules. 
+- Connect: The portal acts as a secure front door, checking each request before passing it safely to your system.
 
-Connected Services does not take ownership of ministry data. 
+### Where to go next {#building-trusted-digital-services-docsapi-services-portal--where-to-go-next}
 
-- Ministries remain custodians of their data 
-- Access decisions are enforced based on predefined policies 
-- Data is exchanged directly between approved participants 
-- No centralized data repository is created 
+- Read the beginner guide on how to [Connect to the API Services Portal](https://digital.gov.bc.ca/technology/api/portal/). 
+- Check out full technical details on [API Program Services documentation](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/).
+- Browse available tools on the [BC Government API Services Portal](https://api.gov.bc.ca/).
 
-This model supports interoperability while preserving program accountability. 
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/integration-toolkit.md -->
 
-### Identity and access enforcement {#connected-services-getting-started-docsprivacy-and-security--identity-and-access-enforcement}
+## Integration Toolkit (ITK) {#building-trusted-digital-services-docsintegration-toolkit}
 
-Access is controlled at request time using short-lived, scoped tokens. 
 
-Each request must: 
 
-- Be authenticated 
-- Meet defined access policies 
-- Be validated before any data is exchanged 
+### What is this? {#building-trusted-digital-services-docsintegration-toolkit--what-is-this}
 
-Access enforcement is automated and consistent across participants. 
+The *Integration Toolkit* (ITK) is documentation that brings together information about the building blocks used to build a trusted digital service: Authoritative Data Register (ADR), Eligibility Factor Verification (EFV), Secure Data Exchange (SDX), API Services Portal, and BC Data Catalogue (BCDC). It explains what each one does, how they relate to each other, and where to go to learn more.
 
-### Logging, audit, and transparency {#connected-services-getting-started-docsprivacy-and-security--logging-audit-and-transparency}
+ITK isn't a separate application, portal, or catalogue. Right now, it's documentation—this page and the pages it links to—and it's expected to grow into a more complete, end-to-end guide as the building blocks themselves mature.
 
-All transactions are logged automatically. 
+### Who is this for? {#building-trusted-digital-services-docsintegration-toolkit--who-is-this-for}
 
-- Requests are timestamped 
-- Actions are auditable 
-- Records support compliance and oversight 
-- Logging enables accountability without exposing underlying data 
+- Developers, product owners, data owners, and data custodians who need to understand what building a trusted digital service involves, including the building blocks they'll interact with and why they matter
+- Teams who already know they want to connect, share, or reuse trusted data, and are ready to start a conversation with a building block's team about what's possible today, since each team is progressing its own tools independently
 
-This design supports transparency while minimizing data exposure. 
+### When should I use this? {#building-trusted-digital-services-docsintegration-toolkit--when-should-i-use-this}
 
-### Scaling securely {#connected-services-getting-started-docsprivacy-and-security--scaling-securely}
+Use ITK when you're trying to understand what's involved in building a trusted digital service, before you dive into a specific building block's documentation, or when you're not yet sure which building block applies to what you're trying to do.
 
-As Connected Services expands, the same trust and security foundation applies. 
+### How it works (high-level) {#building-trusted-digital-services-docsintegration-toolkit--how-it-works-high-level}
 
-- New partners onboard under shared trust rules 
-- Policies are enforced consistently 
-- Security controls do not need to be rebuilt for each integration 
+Right now, ITK provides connective guidance across the provider journey. It explains how the building blocks, such as authoritative data, eligibility checks, and secure data exchange, relate to each other, and points you to each one's own documentation to go deeper.
 
-This supports scalable, secure interoperability across ministries. 
+Over time, the goal is for that path to become more guided, walking you through a full integration from start to finish, rather than handing you off to separate documentation for each piece.
 
-### How decisions are defined {#connected-services-getting-started-docsprivacy-and-security--how-decisions-are-defined}
+### Where to go next {#building-trusted-digital-services-docsintegration-toolkit--where-to-go-next}
 
-Privacy and security controls enforce rules — but those rules are established through governance and policy direction. 
+- Read the full [ITK documentation](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/)
 
-To understand how oversight, accountability, and decision-making structures shape Connected Services, review [Governance and policy](#connected-services-getting-started-docsgovernance-and-policy). 
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/privacy-and-security.md -->
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/governance-and-policy.md -->
+## Privacy and security {#building-trusted-digital-services-docsprivacy-and-security}
 
-## Governance and policy {#connected-services-getting-started-docsgovernance-and-policy}
 
 
+Secure Data Exchange (SDX) provides the secure, policy-driven trust foundation for data exchange that crosses privacy zones between organizations or that involves private information. For data exchange that doesn't meet that bar, the API Services Portal may be the right path instead. See [API Services Portal](#building-trusted-digital-services-docsapi-services-portal) for its approach to access and security.
 
-_Connected Services_ relies on clear governance and policy direction to support responsible, consistent data sharing across ministries. 
+This page describes the privacy and security model that applies when SDX is used.
 
-Governance defines how data is designated, accessed, exchanged, and overseen. It establishes who is accountable, how decisions are made, and how policies are enforced across Connected Services components. 
+SDX does not centralize or store program data. Data remains with the ministry or public body that owns it. Instead, it enables secure, auditable exchange between trusted systems.
 
-Some governance structures are already in place. Others will continue to evolve as Connected Services expands and additional capabilities are introduced. 
+Privacy and security controls are embedded into the technical design, not added afterward.
 
-Transparency about how decisions are made and how data is used is a core principle of Connected Services. 
+### Secure exchange by design {#building-trusted-digital-services-docsprivacy-and-security--secure-exchange-by-design}
 
-### Evolving governance model {#connected-services-getting-started-docsgovernance-and-policy--evolving-governance-model}
+When data exchange crosses privacy zones between organizations or involves private information, it goes through Secure Data Exchange (SDX). SDX enforces these controls:
 
-Connected Services is being introduced through an initial use case, with governance and policy frameworks actively being established to support that implementation. 
+- Authentication of participating systems
+- Verification that requests are unaltered
+- Real-time access control
+- Timestamped logging of transactions
 
-Governance structures, standards, and decision processes are being defined as part of the foundational work required to launch the first connected service. 
+These controls ensure that only authorized, policy-compliant requests are fulfilled.
 
-As additional capabilities are introduced over time, governance processes will continue to mature and expand to support broader adoption. 
+For technical details on how SDX implements these controls, including request verification and Edge Server architecture, see [Secure Data Exchange (SDX)](#building-trusted-digital-services-docssecure-data-exchange).
 
-Governance decisions, standards, and supporting documentation will be published as they are formalized. 
+### Data ownership and control {#building-trusted-digital-services-docsprivacy-and-security--data-ownership-and-control}
 
-### What governance covers {#connected-services-getting-started-docsgovernance-and-policy--what-governance-covers}
+SDX does not take ownership of ministry or public body data, such as ICBC data.
 
-Governance in Connected Services applies across: 
+- Ministries and public bodies remain custodians of their data
+- Access decisions are enforced based on predefined policies
+- Data is exchanged directly between approved participants
+- No centralized data repository is created
 
-- _Authoritative Data_ designation and certification 
-- Access control and authorization rules 
-- Shared standards for interoperability and data exchange 
-- Logging, oversight, and accountability mechanisms 
-- Policy alignment across participating ministries 
+This model supports working across systems while preserving program accountability.
 
-These governance areas ensure that data reuse occurs in a consistent, auditable, and policy-aligned manner. 
+### Identity and access enforcement {#building-trusted-digital-services-docsprivacy-and-security--identity-and-access-enforcement}
 
-### Roles and accountability {#connected-services-getting-started-docsgovernance-and-policy--roles-and-accountability}
+Access is controlled at request time using short-lived, scoped tokens.
 
-Governance does not remove data ownership from ministries. 
+Each request must meet these conditions:
 
-- Data custodians remain responsible for their data 
-- Access decisions are governed by defined policies 
-- Oversight bodies review and endorse authoritative designations 
-- Technical controls enforce policy decisions consistently 
+- Be authenticated
+- Meet defined access policies
+- Be validated before any data is exchanged
 
-Clear accountability across technical and program areas is essential to maintaining trust. 
+Access enforcement is automated and consistent across participants.
 
-### Relationship to privacy and security {#connected-services-getting-started-docsgovernance-and-policy--relationship-to-privacy-and-security}
+### Logging, audit, and transparency {#building-trusted-digital-services-docsprivacy-and-security--logging-audit-and-transparency}
 
-Governance and policy defines the rules and accountability structures. 
+All transactions are logged automatically.
 
-Privacy and security describes how those rules are technically enforced through _Secure Data Exchange_ (SDX) and related controls.   
+- Requests are timestamped
+- Actions are auditable
+- Records support compliance and oversight
+- Logging enables accountability without exposing underlying data
 
-Review [Privacy and security](#connected-services-getting-started-docsprivacy-and-security) for information on technical enforcement mechanisms. 
+This design supports transparency while minimizing data exposure.
 
-### Who participates {#connected-services-getting-started-docsgovernance-and-policy--who-participates}
+### Scaling securely {#building-trusted-digital-services-docsprivacy-and-security--scaling-securely}
 
-Governance depends on clearly defined roles across ministries and technical teams. 
+As more capabilities and partners are added over time, the same trust and security foundation applies.
 
-To see how different actors contribute to publishing, accessing, and overseeing data, review [Roles and responsibilities](#connected-services-getting-started-docsroles-and-responsibilities). 
+- New partners onboard under shared trust rules
+- Policies are enforced consistently
+- Security controls do not need to be rebuilt for each integration
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/roles-and-responsibilities.md -->
+This helps this work grow securely across ministries.
 
-## Roles and responsibilities {#connected-services-getting-started-docsroles-and-responsibilities}
+### How decisions are defined {#building-trusted-digital-services-docsprivacy-and-security--how-decisions-are-defined}
 
+Privacy and security controls enforce rules, but those rules are established through governance and policy direction.
 
+Oversight, accountability, and decision-making structures shape how these building blocks are governed. Review [Governance and policy](#building-trusted-digital-services-docsgovernance-and-policy) to learn more.
 
-_Connected Services_ involves multiple roles across technical, program, and governance areas. 
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/governance-and-policy.md -->
 
-Clear roles and responsibilities are essential to ensure that data is published, accessed, maintained, and exchanged responsibly. 
+## Governance and policy {#building-trusted-digital-services-docsgovernance-and-policy}
 
-As Connected Services is implemented through its initial use case, role definitions and associated responsibilities will continue to be refined and published. 
 
-### Data providers (Suppliers) {#connected-services-getting-started-docsroles-and-responsibilities--data-providers-suppliers}
 
-Data providers are responsible for managing and publishing authoritative data. 
+Clear governance and policy direction supports responsible, consistent data sharing across ministries.
 
-Roles may include: 
+Governance defines how data is designated, accessed, exchanged, and overseen. It also sets out who is accountable. It shows how decisions are made and how policies are enforced across these building blocks.
 
-- Data Custodian 
-- Data Manager 
-- Data Architect 
-- Developer 
-- Data Publisher / Editor 
+Some governance structures are already in place. Others will keep evolving as this work expands and new capabilities are introduced.
 
-Responsibilities typically include: 
+Transparency is a core principle of this governance model. It means being clear about how decisions are made and how data is used. This is also what makes Connected Services BC's broader commitment possible: giving people visibility over their own data.
 
-- Maintaining data quality and accuracy 
-- Defining appropriate use and access conditions 
-- Participating in authoritative data designation (where applicable) 
-- Ensuring compliance with governance and policy requirements 
+### Evolving governance model {#building-trusted-digital-services-docsgovernance-and-policy--evolving-governance-model}
 
-### Data consumers (Subscribers) {#connected-services-getting-started-docsroles-and-responsibilities--data-consumers-subscribers}
+These building blocks are starting with an initial use case. Governance and policy frameworks are actively being built to support it.
 
-Data consumers use authoritative data or reusable components within their applications and services. 
+Governance structures, standards, and decision processes are part of the foundational work needed to launch the first connected service.
 
-Roles may include: 
+As more capabilities are introduced over time, governance processes will mature and expand. This supports broader adoption.
 
-- Developer 
-- Solution Architect 
-- Application Manager 
-- Product Owner 
-- Policy Lead 
-- Data Analyst 
-- Data Scientist 
-- Program Staff 
+Governance decisions, standards, and supporting documentation will be published as they're formalized.
 
-Responsibilities typically include: 
+### What governance covers {#building-trusted-digital-services-docsgovernance-and-policy--what-governance-covers}
 
-- Integrating using approved and governed mechanisms 
-- Adhering to defined access policies 
-- Using data only for approved purposes 
-- Ensuring appropriate handling of sensitive information 
+This governance applies across:
 
-### Shared Responsibilities {#connected-services-getting-started-docsroles-and-responsibilities--shared-responsibilities}
+- Authoritative Data designation and certification
+- Access control and authorization rules
+- Shared standards for interoperability and data exchange
+- Logging, oversight, and accountability mechanisms
+- Policy alignment across participating ministries
 
-Connected Services requires collaboration between providers and consumers. 
+These areas help ensure data reuse is consistent, auditable, and policy-aligned.
 
-Shared responsibilities include: 
+### A quick example {#building-trusted-digital-services-docsgovernance-and-policy--a-quick-example}
 
-- Aligning on definitions and standards 
-- Respecting data ownership and accountability 
-- Participating in governance processes 
-- Supporting audit and transparency requirements 
+Say a ministry's address dataset is proposed as a candidate for authoritative designation. This is the kind of dataset that could eventually support a “tell us once” approach to address updates across programs.
 
-### Evolving role clarity {#connected-services-getting-started-docsroles-and-responsibilities--evolving-role-clarity}
+A data governance team reviews the proposal against defined criteria. Is the source verified? Is there a clearly accountable custodian? Is quality actively maintained? Are access and security conditions documented?
 
-As governance processes mature and additional building blocks are implemented, role definitions and associated responsibilities will be further defined and documented. 
+The review results in a decision. The dataset is designated, deferred, or declined. The decision also states the scope it's authoritative for and any conditions attached.
 
-Updates will be published as structures are formalized. 
+The ministry's data custodian stays responsible for keeping the dataset accurate afterward. Designation isn't a one-time check; it's an ongoing responsibility. The decision, and the reasoning behind it, becomes part of the governance record.
 
-### Working within current scope {#connected-services-getting-started-docsroles-and-responsibilities--working-within-current-scope}
+### Roles and accountability {#building-trusted-digital-services-docsgovernance-and-policy--roles-and-accountability}
 
-Roles and responsibilities continue to evolve alongside Connected Services implementation. 
+Governance does not remove data ownership from ministries.
 
-To understand the current boundaries and phased rollout of capabilities, review [Limits and constraints](#connected-services-getting-started-docslimits-and-constraints). 
+- Data custodians remain responsible for their data
+- Access decisions are governed by defined policies
+- Oversight bodies review and endorse authoritative designations
+- Technical controls enforce policy decisions consistently
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/limits-and-constraints.md -->
+Clear accountability across technical and program areas is essential to maintaining trust.
 
-## Limits and constraints {#connected-services-getting-started-docslimits-and-constraints}
+### Relationship to privacy and security {#building-trusted-digital-services-docsgovernance-and-policy--relationship-to-privacy-and-security}
 
+Governance and policy sets the rules and accountability structures. Privacy and security shows how those rules are technically enforced through Secure Data Exchange (SDX) and related controls.
 
+Review [Privacy and security](#building-trusted-digital-services-docsprivacy-and-security) for details on technical enforcement.
 
-_Connected Services_ is being introduced through an initial use case and will expand iteratively over time. 
+### Who participates {#building-trusted-digital-services-docsgovernance-and-policy--who-participates}
 
-While the long-term direction includes broader cross-ministry integration and life-event-based service delivery, current capabilities are focused on establishing foundational building blocks. 
+Governance depends on clearly defined roles across ministries and technical teams. To see how different people contribute, review [Roles and responsibilities](#building-trusted-digital-services-docsroles-and-responsibilities).
 
-### Current scope {#connected-services-getting-started-docslimits-and-constraints--current-scope}
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/roles-and-responsibilities.md -->
+
+## Roles and responsibilities {#building-trusted-digital-services-docsroles-and-responsibilities}
+
+
+
+Building a trusted digital service involves multiple roles. These span technical, program, and governance areas.
+
+Clear roles and responsibilities matter. They help ensure data is published, accessed, kept up to date, and shared safely.
+
+This work is starting with an initial use case. Roles and responsibilities will keep being refined and published as it grows.
+
+### Data providers (Suppliers) {#building-trusted-digital-services-docsroles-and-responsibilities--data-providers-suppliers}
+
+Data providers manage and publish authoritative data. These roles may include:
+
+- Data Custodian
+- Data Manager
+- Data Architect
+- Developer
+- Data Publisher / Editor
+
+Their responsibilities typically include:
+
+- Keeping data accurate and up to date
+- Defining who can use the data and how
+- Proposing a dataset for authoritative designation when they believe it qualifies
+- Meeting governance and policy requirements
+
+### Data consumers (Subscribers) {#building-trusted-digital-services-docsroles-and-responsibilities--data-consumers-subscribers}
+
+Data consumers use authoritative data or reusable components in their applications and services. These roles may include:
+
+- Developer
+- Solution Architect
+- Application Manager
+- Product Owner
+- Policy Lead
+- Data Analyst
+- Data Scientist
+- Program Staff
+
+Their responsibilities typically include:
+
+- Connecting only through approved, controlled methods
+- Meeting defined access policies
+- Using data only for approved purposes
+- Handling sensitive information carefully
+
+### Shared responsibilities {#building-trusted-digital-services-docsroles-and-responsibilities--shared-responsibilities}
+
+Delivering a trusted digital service means providers and consumers work together. They share these responsibilities:
+
+- Agreeing on shared definitions and standards
+- Respecting who owns the data and who's responsible for it
+- Taking part in governance decisions
+- Supporting audits and sharing information openly
+
+### Evolving role clarity {#building-trusted-digital-services-docsroles-and-responsibilities--evolving-role-clarity}
+
+As governance grows and more building blocks are added, roles will become clearer.
+
+Updates will be shared once these are set.
+
+### Working within current scope {#building-trusted-digital-services-docsroles-and-responsibilities--working-within-current-scope}
+
+Roles and responsibilities continue to evolve alongside this work.
+
+To understand the current limits, review [Limits and constraints](#building-trusted-digital-services-docslimits-and-constraints).
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/limits-and-constraints.md -->
+
+## Limits and constraints {#building-trusted-digital-services-docslimits-and-constraints}
+
+
+
+This work is starting with an initial use case. It will expand iteratively over time.
+
+Connected Services BC's long-term direction is for every high-impact life event or business interaction in B.C. to be a trusted, connected service by 2030. Right now, the focus is on building the foundational pieces that make that possible.
+
+### Current scope {#building-trusted-digital-services-docslimits-and-constraints--current-scope}
 
 At this stage: 
 
-- Implementation is focused on a defined MVP use case 
-- Not all ministries or datasets are onboarded 
-- Not all processes are consolidated 
-- Some discovery and integration workflows may remain fragmented 
-- Governance and standards are actively being refined 
+- Implementation is focused on a defined MVP use case
+- Not all ministries or datasets are onboarded yet
+- Not all processes are consolidated yet
+- Some discovery and integration workflows may still be fragmented
+- Governance and standards are still being refined
 
-Connected Services provides improved structure and consistency compared to previous approaches, but full consolidation and standardization will occur over time. 
+These building blocks already improve on past approaches. Full consolidation and standardization will take more time.
 
-### Incremental expansion {#connected-services-getting-started-docslimits-and-constraints--incremental-expansion}
+### Incremental expansion {#building-trusted-digital-services-docslimits-and-constraints--incremental-expansion}
 
-As additional building blocks and use cases are implemented: 
+As more building blocks and use cases are added, expect these changes:
 
-- More datasets and APIs will become available 
-- Discovery and catalogue functionality will mature 
-- Governance processes will be formalized and published 
-- Cross-ministry participation will expand 
+- More datasets and APIs will become available
+- Governance processes will be published as they're formalized
+- More ministries will take part
 
-Capabilities will grow iteratively rather than through a single comprehensive launch. 
+Capabilities will grow step by step, not all at once.
 
-### What this means for teams {#connected-services-getting-started-docslimits-and-constraints--what-this-means-for-teams}
+### What this means for teams {#building-trusted-digital-services-docslimits-and-constraints--what-this-means-for-teams}
 
-Teams should: 
+Teams should:
 
-- Expect phased availability of components 
-- Confirm authoritative status and access rules before integration 
-- Monitor updates to documentation and governance standards 
-- Engage early when planning integrations that depend on emerging capabilities 
+- Expect components to become available in phases
+- Confirm authoritative status and access rules before integrating
+- Watch for updates to documentation and governance standards
+- Engage early if planning depends on capabilities that aren't ready yet
 
-<!-- source: https://github.com/bcgov/connected-services-techdocs.git@50959b28d410f638f0bccdd48f49c35f4179c24e:getting-started/docs/support.md -->
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/support.md -->
 
-## Support {#connected-services-getting-started-docssupport}
-
+## Support {#building-trusted-digital-services-docssupport}
 
 
-Support is available for teams working with _Connected Services_.
 
-Connected Services brings together multiple components and supporting teams, so not all questions will go to the same place. Use the guidance below to help route your request.
+Support is available for teams building a trusted digital service.
 
-Not sure where to go? Start with one of the common scenarios below.
+This work brings together multiple building blocks. Not all questions will go to the same place. Use the guidance below to help route your request.
 
 Common starting points:
 
-- API or integration issues: [APS support](#connected-services-getting-started-docssupport--api-platform-and-integration-support)  
-- Understanding Connected Services: [Connected Services documentation](#connected-services-getting-started-docssupport--documentation-and-discovery-support)  
-- Specific API or dataset: [Record page guidance](#connected-services-getting-started-docssupport--questions-about-a-specific-api-or-dataset)  
+- Understanding what a trusted digital service involves: [Connected services overview](#building-trusted-digital-services-docsindex)
+- Understanding these building blocks and getting support with them: [ITK documentation and support](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/support/)
+- The bigger picture behind this work: [Building connected services in B.C.](https://digital.gov.bc.ca/2025/07/21/building-connected-services/)
 
-### When to seek support {#connected-services-getting-started-docssupport--when-to-seek-support}
 
-Seek support if:
+# Integration Toolkit {#source-integration-toolkit}
 
-- you are unsure whether a dataset or API is appropriate for your use case
-- you need help understanding how to access or use an API
-- you are blocked in onboarding, setup, or integration
-- you need clarification on technical documentation
-- you are not sure which team owns a component or process
-- you need help finding the correct next step in DevHub
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/index.md -->
 
-### API platform and integration support {#connected-services-getting-started-docssupport--api-platform-and-integration-support}
+## Integration Toolkit (ITK) {#integration-toolkit-docsindex}
 
-For support related to API platform services, onboarding, access, gateway setup, or technical issues, use the APS support guidance:
 
-[API Platform Services support](#aps-infra-platform-sdx-documentationhow-toget-support)
+Finding information about the government's technical products and services can be hard. You often need to check multiple systems or ask around to find out who owns what. 
 
-This is the primary source for current APS support channels and instructions.
+*Integration Toolkit* (ITK) is the landing zone for data providers. It's where you get a plain-language introduction to the areas involved, such as authoritative data, eligibility checks, secure data exchange, and datasets, before going deeper into any one area's own documentation. Over time, ITK is expected to grow into a single, end-to-end resource for the whole provider path, right now, it's your starting point for understanding what's out there. 
 
-### Documentation and discovery support {#connected-services-getting-started-docssupport--documentation-and-discovery-support}
+ITK isn't a separate application or portal. You won't find a button, portal, or menu item called "Integration Toolkit" in DevHub. Right now, ITK is documentation. This page, and the ones it links to, help you understand what's involved and how to get started. 
 
-If you are using Connected Services documentation to understand what components exist, how they fit together, or where to begin, you can:
+ITK points to [five areas](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/areas-of-itk/) that support data interoperability, managed by the Data Interoperability Foundational Teams (DIFT): 
 
-- review the relevant [Connected Services](#connected-services-getting-started-docsindex) pages in this TechDoc
-- use DevHub search to locate related APIs, datasets, and technical documentation
+- Authoritative Data Registers (ADR): shared terms, definitions, and standards for data 
+- Eligibility Factor Verification (EFV): checking eligibility against authoritative sources 
+- Secure Data Exchange (SDX): ensuring that data sharing is secure, policy-aligned, and auditable
+- API Services Portal: a central gateway for connecting APIs across government
+- BC Data Catalogue (BCDC): datasets available across government 
 
-If you are still unsure where to go, start with the APS support page above so your request can be routed appropriately.
+Each area is owned and maintained by its own government team. Each team works on its own timeline. This page explains the concept of ITK itself. We keep it up to date, just like each area keeps its own documentation current. But the updates are different. Our updates happen when the ITK concept changes. Their updates happen as their tools change.  
 
-### Questions about a specific API or dataset {#connected-services-getting-started-docssupport--questions-about-a-specific-api-or-dataset}
+### Explore the areas {#integration-toolkit-docsindex--explore-the-areas}
 
-If you are reviewing a specific API or dataset, first check the record page for:
+ITK points to five areas of data interoperability foundational tools.  
 
-- ownership information
-- related documentation
-- access guidance
-- linked contacts or support paths
+See [Areas of ITK](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/areas-of-itk/) for what each one does. 
 
-Where record-level support details exist, use those first.
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/areas-of-itk.md -->
 
-### Troubleshooting and when you're blocked {#connected-services-getting-started-docssupport--troubleshooting-and-when-youre-blocked}
+## Areas of ITK {#integration-toolkit-docsareas-of-itk}
 
-If you’re unable to proceed or something isn’t working as expected:
 
-- confirm you are using the correct API or dataset
-- review documentation and access requirements
-- check for available contacts or support guidance on the record page
-- use APS support if you are blocked on platform, onboarding, or integration steps
+This section introduces each area, what it contributes, and where to go for details. This list may grow as more areas are added over time. 
 
-### Before you ask for support {#connected-services-getting-started-docssupport--before-you-ask-for-support}
+### Integrated products and services {#integration-toolkit-docsareas-of-itk--integrated-products-and-services}
 
-When possible, include:
+### Authoritative Data Register (ADR) {#integration-toolkit-docsareas-of-itk--authoritative-data-register-adr}
 
-- the API, dataset, or component name
-- a link to the relevant DevHub page
-- a short description of what you are trying to do
-- where you are blocked
-- any error message or unexpected behaviour
-- the environment, if relevant
+Shared terms, definitions, relationships, and standards for data. ADR maintains the Connected Services Glossary, keeping shared terms consistent across government.  More detailed ADR documentation will be made available over time.  Read the [ADR overview](https://developer.gov.bc.ca/docs/default/component/building-trusted-digital-services-techdocs/authoritative-data-register/).
 
-Providing this information helps support teams direct requests and respond more efficiently.
+### Eligibility Factor Verification (EFV) {#integration-toolkit-docsareas-of-itk--eligibility-factor-verification-efv}
 
-### Related information {#connected-services-getting-started-docssupport--related-information}
+The ability to check eligibility against authoritative sources, for things like income or residency. More detailed EFV documentation will be made available over time. Read the [EFV documentation](https://developer.gov.bc.ca/docs/default/component/efv-itk-techdocs) for details.
 
-You may also want to review:
+### Secure Data Exchange (SDX) {#integration-toolkit-docsareas-of-itk--secure-data-exchange-sdx}
 
-- [Connected Services overview](#connected-services-getting-started-docsindex)
-- [Connected Services building blocks](#connected-services-getting-started-docsbuilding-blocks)
-- [Privacy and security](#connected-services-getting-started-docsprivacy-and-security)
-- [Governance and policy](#connected-services-getting-started-docsgovernance-and-policy)
-- [Roles and responsibilities](#connected-services-getting-started-docsroles-and-responsibilities)
+A service for secure, formal data exchange between specific government agencies and external partners. Read the [SDX documentation](https://developer.gov.bc.ca/docs/default/Component/secure-data-exchange-techdocs/) for details.
+
+### API Services Portal {#integration-toolkit-docsareas-of-itk--api-services-portal}
+
+A central gateway for connecting APIs across government. Covers routing, access control, and general API management.  Read the [API Services Portal overview](https://developer.gov.bc.ca/docs/default/component/building-trusted-digital-services-techdocs/api-services-portal/) for details and helpful links. 
+
+### BC Data Catalogue (BCDC) {#integration-toolkit-docsareas-of-itk--bc-data-catalogue-bcdc}
+
+Datasets available across government. If you're looking to make a dataset available for use, BCDC is where its metadata can be registered and maintained.  BCDC hasn't published its own documentation at this time.  Explore the [BC Data Catalogue](https://catalogue.data.gov.bc.ca/).
+
+### Put into practice {#integration-toolkit-docsareas-of-itk--put-into-practice}
+
+ Knowing what each area does is the first step. Here's how to actually start using ITK today.  See [Finding and using ITK](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/finding-and-using-itk/). 
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/finding-and-using-itk.md -->
+
+## Finding and using ITK {#integration-toolkit-docsfinding-and-using-itk}
+
+
+Right now, ITK is documentation. This documentation, and particularly [Areas of ITK](#integration-toolkit-docsareas-of-itk) will help you understand the pieces. They help you start asking the right questions. They help you explore what these tools can offer.
+
+Over time, this will grow into one compiled reference guide with end-to-end onboarding guidance, including checklists, templates, and more detailed instructions. It will improve step by step, as each area's tools and documentation mature. One of the outcomes we're working toward is a complete provider path from start to finish, though that's not the only outcome this work supports. 
+
+### Learn more {#integration-toolkit-docsfinding-and-using-itk--learn-more}
+
+For the latest on what's been delivered, see [Milestone updates](#integration-toolkit-docsmilestone-updates). 
+
+If you have questions along the way, see [Support](#integration-toolkit-docssupport). 
+
+
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/milestone-updates.md -->
+
+## Milestone updates {#integration-toolkit-docsmilestone-updates}
+
+
+This page will be updated with milestone updates and release notes as progress
+continues on ITK.
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/support.md -->
+
+## Support {#integration-toolkit-docssupport}
+
+
+ITK is documentation right now, not one single system. Because of this, support works a bit differently than a single help desk. Is your question about the ITK concept itself, like what it is or how the pieces fit together? Submit a support ticket. APS will answer directly or point you to the right team. 
+
+### MS Teams Support Channels {#integration-toolkit-docssupport--ms-teams-support-channels}
+
+The APS team runs Microsoft Teams channels for ITK. Here you can ask questions and get help. You can also stay informed about ITK updates. These channels are open to BC Public Service employees. 
+
+Join by clicking [*IntegrationToolkit-howto*](https://teams.microsoft.com/l/channel/19%3A985f194f790a443d8b3345ff784d9eed%40thread.tacv2/IntegrationToolkit-howto?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc) and [*IntegrationToolkit-alerts*](https://teams.microsoft.com/l/channel/19%3A82b39b1a908b484286712f977bce47ad%40thread.tacv2/IntegrationToolkit-alerts?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc) and sign in with your IDIR.
+
+Use the [IntegrationToolkit-howto](https://teams.microsoft.com/l/channel/19%3A985f194f790a443d8b3345ff784d9eed%40thread.tacv2/IntegrationToolkit-howto?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc) channel for: 
+
+- Questions about what ITK is and how it works 
+- Help getting involved with a contributing product or service 
+- Feedback on the documentation, and general questions 
+
+Use the [IntegrationToolkit-alerts](https://teams.microsoft.com/l/channel/19%3A82b39b1a908b484286712f977bce47ad%40thread.tacv2/IntegrationToolkit-alerts?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc) channel to stay informed about: 
+
+- ITK milestone updates and release notes 
+- Documentation changes as they are published 
+
+### Support Portal {#integration-toolkit-docssupport--support-portal}
+
+Do you have a complex request, or an issue that needs investigation? 
+
+- Visit the [Support Portal](https://dpdd.atlassian.net/servicedesk/customer/portal/1/group/2/create/664).
+- Submit a support request. Describe your issue.
+- The APS team will respond within our service timelines. 
+
+Support tickets are the best channel for: 
+
+- Documentation feedback
+- Questions that need investigation or follow-up 
+
+
+# Authoritative Data Registers {#source-adr-techdoc}
+
+<!-- source: sources/ADR Techdocs_Draft V2.docx -->
+
+## Get started with data {#adr-techdoc-adr-techdocs-draft-v2}
+
+
+**Placeholder: Temporary audience-routing page**
+
+For now its purpose is to split users by intent. Long term, this page will change because the wider ITK experience should already know which path the person is on before they reach this ADR content.
+
+Choose the path that best matches how you work with data.
+
+### Provide data {#adr-techdoc-adr-techdocs-draft-v2--provide-data}
+
+Determine what requirements and guidance apply to the data you want to provide.
+
+\[Get started\]
+
+### Find and use data {#adr-techdoc-adr-techdocs-draft-v2--find-and-use-data}
+
+Find data, understand what it means, and determine whether it fits your needs.
+
+\[Find and use data\]
+
+## Find and use datasets {#adr-techdoc-adr-techdocs-draft-v2--find-and-use-datasets}
+
+Use this guidance when using data through Connected Services to understand what the data represents and determine whether it is appropriate for your needs.
+
+### Search for datasets and APIs {#adr-techdoc-adr-techdocs-draft-v2--search-for-datasets-and-apis}
+
+Placeholder: link to the current approved discovery tools.
+
+**\[Search available datasets and APIs\]**
+
+### Understand how data is classified {#adr-techdoc-adr-techdocs-draft-v2--understand-how-data-is-classified}
+
+Connected Services uses classifications to provide context about the role and status of data.
+
+#### High-value data {#adr-techdoc-adr-techdocs-draft-v2--high-value-data}
+
+High-value data is data that has been identified as holding significant value and being worth sharing across government. Being high-value does not necessarily mean the data is authoritative.
+
+**\[Learn about high-value data\]**
+
+#### Authoritative data {#adr-techdoc-adr-techdocs-draft-v2--authoritative-data}
+
+Authoritative data is data that has been formally designated as the trusted source for a defined purpose and scope. A dataset must first be considered high-value before it can be considered for authoritative designation.
+
+**\[Learn about authoritative data\]**
+
+#### Other data {#adr-techdoc-adr-techdocs-draft-v2--other-data}
+
+Not all data is identified as high-value or designated authoritative. Other data may include operational data that supports programs and services, as well as published datasets that are available for reuse.
+
+**\[Learn about published datasets\]**
+
+### Understand what the data means {#adr-techdoc-adr-techdocs-draft-v2--understand-what-the-data-means}
+
+Classification tells you about the role and status of the data. Semantics helps you understand what the data means. Connected Services supports shared meaning through resources such as:
+
+#### Connected Services Data Glossary {#adr-techdoc-adr-techdocs-draft-v2--connected-services-data-glossary}
+
+Use the Data Glossary to understand shared concepts and terminology used across Connected Services.
+
+**\[Learn about the Data Glossary\]**
+
+#### Data dictionaries {#adr-techdoc-adr-techdocs-draft-v2--data-dictionaries}
+
+Use available data dictionary information to understand the meaning, structure and characteristics of individual fields within a dataset.
+
+**\[Learn about data dictionaries\]**
+
+### Evaluate whether the data fits your needs {#adr-techdoc-adr-techdocs-draft-v2--evaluate-whether-the-data-fits-your-needs}
+
+Before relying on a dataset, review:
+
+- **Purpose and scope:** What is the dataset intended to represent or support?
+
+- **Authoritative scope:** If it is authoritative, what specifically has been designated as trusted?
+
+- **Source and custodian:** Where does the data come from and who is responsible for it?
+
+- **Coverage:** Does it contain the population, subject matter or time period you need?
+
+- **Freshness:** How often is the data updated, and is it current enough for your use?
+
+- **Quality and limitations:** Are there known gaps, quality issues or conditions you need to account for?
+
+- **Definitions and business rules:** Do you understand what the data and its fields mean?
+
+- **Changes over time:** Could changes to the dataset affect how you use it?
+
+- **Access and reuse conditions:** Are there privacy, security, legal or policy requirements that affect your use?
+
+A dataset being authoritative or high-value can provide useful context, but it does not replace the need to assess whether the data fits your specific purpose.
+
+### After you start using the data {#adr-techdoc-adr-techdocs-draft-v2--after-you-start-using-the-data}
+
+Once your service, product or analysis relies on a dataset, continue to monitor changes that could affect how you use it.
+
+You may need to:
+
+- Keep track of changes to the dataset, definitions or authoritative scope
+
+- Review updated documentation and known limitations
+
+- Understand how changes to the source may affect your use
+
+- Confirm that the data continues to meet your business need
+
+- Update your own documentation when your use of the data changes
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us}
+
+Submit feedback, request more information, or get help through the **\[placeholder link\]**.
+
+## Provide data {#adr-techdoc-adr-techdocs-draft-v2--provide-data-1}
+
+If your team maintains a dataset that needs to be published or made available through Connected Services, start by determining which classification or path applies to your data.
+
+**Not sure how your data is classified?**
+
+Learn how high-value, authoritative and other data relate before you continue.
+
+\[Learn how data is classified\]
+
+### Step 1: Is your data high-value? {#adr-techdoc-adr-techdocs-draft-v2--step-1-is-your-data-high-value}
+
+Start by determining whether your dataset is considered high-value.
+
+#### Yes {#adr-techdoc-adr-techdocs-draft-v2--yes}
+
+Continue to the next step.
+
+#### No {#adr-techdoc-adr-techdocs-draft-v2--no}
+
+Your dataset can follow the standard publishing process.
+
+\[Follow standard data publishing\]
+
+#### Not sure {#adr-techdoc-adr-techdocs-draft-v2--not-sure}
+
+Review the high-value data guidance to determine whether your dataset qualifies.
+
+\[Learn about high-value data\]
+
+### Step 2: Could your high-value data be authoritative? {#adr-techdoc-adr-techdocs-draft-v2--step-2-could-your-high-value-data-be-authoritative}
+
+If your data is high-value, consider whether it may be a candidate for authoritative designation.
+
+Your dataset may be ready for an initial conversation when:
+
+- Its purpose and proposed authoritative scope are clear
+
+- Its source and authority can be verified
+
+- A responsible data custodian is identified
+
+- It can be made available in a machine-readable form
+
+- Sufficient metadata and definitions can be provided
+
+- Relevant security, privacy and Indigenous data considerations can be identified and addressed
+
+These conditions do not guarantee designation. They indicate that the dataset may be ready to be assessed.
+
+#### Yes, it may be authoritative {#adr-techdoc-adr-techdocs-draft-v2--yes-it-may-be-authoritative}
+
+\[Learn what authoritative data means\]
+
+#### No, it does not meet these criteria {#adr-techdoc-adr-techdocs-draft-v2--no-it-does-not-meet-these-criteria}
+
+\[Continue with high-value data guidance\]
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-1}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+## How data is classified {#adr-techdoc-adr-techdocs-draft-v2--how-data-is-classified}
+
+Connected Services uses data classification and designation status to help determine which guidance, requirements and processes may apply to your data. Start by understanding whether your data is high-value, may be authoritative, or follows another publishing path.
+
+#### High-value data {#adr-techdoc-adr-techdocs-draft-v2--high-value-data-1}
+
+High-value data is data that holds significant value and is worth sharing across government. Being identified as high-value may affect the guidance and requirements that apply when the data is provided through Connected Services.
+
+\[Learn about high-value data\]
+
+#### Authoritative data {#adr-techdoc-adr-techdocs-draft-v2--authoritative-data-1}
+
+Authoritative data is data that has been formally designated as the trusted source for a defined purpose and scope. A dataset must first be considered high-value before it can be considered for authoritative designation.
+
+\[Learn about authoritative data\]
+
+#### Other data {#adr-techdoc-adr-techdocs-draft-v2--other-data-1}
+
+Other data may include operational data that supports programs and services, as well as published datasets that are available for reuse without being identified as high-value or designated authoritative.
+
+\[Learn about published datasets\]
+
+### Data registers {#adr-techdoc-adr-techdocs-draft-v2--data-registers}
+
+Authoritative data may also be managed as a data register when it needs to be consistently maintained, shared or reused across services. Not every authoritative dataset needs to be a data register.
+
+\[Learn about data registers\]
+
+### Semantics {#adr-techdoc-adr-techdocs-draft-v2--semantics}
+
+Classification helps determine what role your data plays and which guidance or requirements apply. Semantics helps people and systems understand what the data means. Shared definitions and field-level documentation help make authoritative scope, classification and reuse clearer and more consistent.
+
+Connected Services supports shared meaning through:
+
+#### Data dictionaries {#adr-techdoc-adr-techdocs-draft-v2--data-dictionaries-1}
+
+Document the business and technical information needed to understand individual fields in a dataset or API.
+
+\[Learn more\]
+
+#### Connected Services Data Glossary {#adr-techdoc-adr-techdocs-draft-v2--connected-services-data-glossary-1}
+
+Provides shared definitions and terminology so concepts can be interpreted consistently across teams, systems and services.
+
+\[Learn more\]
+
+\[Learn about semantics\]
+
+### Ready to begin? {#adr-techdoc-adr-techdocs-draft-v2--ready-to-begin}
+
+Continue to the provider guidance to determine your next steps.
+
+\[Get started\]
+
+## Publishing a dataset {#adr-techdoc-adr-techdocs-draft-v2--publishing-a-dataset}
+
+**Placeholder only.** This page should explain how providers publish or manage data that does not follow the high-value or authoritative-data route.
+
+**\[Back to Provide data\]**
+
+## High-value data {#adr-techdoc-adr-techdocs-draft-v2--high-value-data-2}
+
+**Placeholder only.** This page should explain how high-value data is identified, prepared, published, and maintained. It should also explain that high-value data may or may not be authoritative.
+
+**\[Back to Provide data\]**
+
+## Authoritative data {#adr-techdoc-adr-techdocs-draft-v2--authoritative-data-2}
+
+Authoritative data is data that has been formally designated as the trusted source for a defined purpose and scope. Using authoritative data helps people and systems know which source should be relied on when the same or similar information exists in multiple places.
+
+### Why trusted data matters {#adr-techdoc-adr-techdocs-draft-v2--why-trusted-data-matters}
+
+Authoritative data helps reduce uncertainty about which information should be used and supports more consistent reuse across government.
+
+#### Without trusted data {#adr-techdoc-adr-techdocs-draft-v2--without-trusted-data}
+
+- Multiple versions of the same information
+
+- Duplicate collection and maintenance
+
+- Lower confidence in analysis and decision-making
+
+- Difficulty connecting and reusing data across services
+
+#### With trusted data {#adr-techdoc-adr-techdocs-draft-v2--with-trusted-data}
+
+- Clear accountability for the data
+
+- A trusted source for a defined purpose
+
+- Greater confidence when data is shared or reused
+
+- More consistent use of data across services and systems
+
+### When authoritative data may apply {#adr-techdoc-adr-techdocs-draft-v2--when-authoritative-data-may-apply}
+
+A **high-value dataset** may be a potential candidate for authoritative designation when:
+
+- Its purpose and proposed authoritative scope are clear
+
+- Its source and authority can be verified
+
+- A responsible data custodian is identified
+
+- It can be made available in a machine-readable form
+
+- Sufficient metadata and definitions can be provided
+
+- Relevant security, privacy and Indigenous data considerations can be identified and addressed
+
+Authoritative designation applies to a defined purpose and scope. It does not mean that a dataset is the authoritative source for every possible use of the information it contains.
+
+### Think your dataset may be authoritative? {#adr-techdoc-adr-techdocs-draft-v2--think-your-dataset-may-be-authoritative}
+
+If your dataset may be the trusted source for a defined purpose, review the Authoritative Data Designation Process to understand the assessment criteria, what your team needs to prepare, and what happens before and after designation.
+
+**\[Review Authoritative Data Designation Guidance\]**
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-2}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+\[Back to Provide data\]
+
+\[Next: Authoritative Data Designation\]
+
+## Authoritative Data Designation {#adr-techdoc-adr-techdocs-draft-v2--authoritative-data-designation}
+
+The purpose of the Authoritative Data Designation Process (ADDP) is to create confidence in which data source government should trust and reuse. It provides clear accountability, consistent assessment, government-wide recognition, and improved discoverability. The outcome is “Trusted data” that ministries and programs can rely on.
+
+**Already familiar with the designation process?**
+
+\[Jump to Ready to begin\]
+
+### On this page {#adr-techdoc-adr-techdocs-draft-v2--on-this-page}
+
+- \[What authoritative designation means\]
+
+- \[Assessment criteria\]
+
+- \[How the authoritative designation process works\]
+
+- \[Roles and responsibilities\]
+
+- \[When escalation may be required\]
+
+- \[What happens after designation\]
+
+- \[Ready to begin?\]
+
+- \[Contact us\]
+
+### What authoritative designation means {#adr-techdoc-adr-techdocs-draft-v2--what-authoritative-designation-means}
+
+An authoritative designation is the formal recognition of a dataset as the **official and trusted source of truth** for a specific subject area within government. It confirms that the dataset has been assessed against the **Assessment criteria**, supports clear accountability, and can be confidently reused as a trusted source of data.
+
+Designation does not guarantee:
+
+- High data quality or freedom from errors
+
+- Completeness, accuracy, or suitability for every use case
+
+- Unrestricted access, use, or sharing
+
+- Exemption from privacy, legal, policy, or security requirements
+
+Known limitations, data quality issues, and conditions of use should be documented so users understand how the dataset can—and cannot—be relied upon.
+
+### Assessment criteria {#adr-techdoc-adr-techdocs-draft-v2--assessment-criteria}
+
+A candidate dataset is assessed against the following criteria to determine whether it can be formally recognized as authoritative:
+
+- **Clear purpose:** The purpose of the dataset and the need it supports are clearly defined and documented.
+
+- **Verified source:** The dataset's source, authority and role are documented so it is clear why the dataset should be relied upon for the proposed authoritative purpose and scope.
+
+- **Assigned custodian:** A data custodian is identified and accountable for maintaining the dataset over time.
+
+- **High-value:** The data provides significant value to government programs, services, decision-making or reuse across teams and systems.
+
+- **Indigenous data considerations:** Relevant Indigenous data governance, sovereignty, access, use and sharing requirements have been identified and addressed where applicable.
+
+- **Machine-readable data:** The data can be processed, integrated and reused by systems where appropriate.
+
+- **Complete metadata:** The dataset includes sufficient metadata, definitions and context for users to understand and appropriately use the data.
+
+- **Security classification:** The dataset has been appropriately classified and relevant privacy, security and access requirements have been identified.
+
+Meeting one criterion alone does not make a dataset authoritative.
+
+### How the authoritative designation process works {#adr-techdoc-adr-techdocs-draft-v2--how-the-authoritative-designation-process-works}
+
+#### Step 1: Awareness {#adr-techdoc-adr-techdocs-draft-v2--step-1-awareness}
+
+A potential authoritative dataset is identified. A candidate may be identified by a data provider, the Data Governance Team or another governance participant.
+
+#### Step 2: Submission {#adr-techdoc-adr-techdocs-draft-v2--step-2-submission}
+
+The data provider prepares and submits information about the candidate dataset, including its purpose, proposed authoritative scope, custodian and supporting evidence.
+
+#### Step 3: Assessment {#adr-techdoc-adr-techdocs-draft-v2--step-3-assessment}
+
+The candidate is assessed against the authoritative data assessment criteria. The Data Governance Team works with the data provider and relevant subject matter experts to clarify information, identify gaps and understand whether the dataset can serve as the authoritative source for the proposed purpose.
+
+#### Step 4: Decision {#adr-techdoc-adr-techdocs-draft-v2--step-4-decision}
+
+The candidate may be approved as authoritative, not approved, or returned for additional information or updates before a decision is made.
+
+#### Step 5: Post-decision {#adr-techdoc-adr-techdocs-draft-v2--step-5-post-decision}
+
+Once approved, the authoritative designation is documented and the authoritative dataset information is published so users can discover and understand the trusted source. The **data provider** remains responsible for maintaining the dataset and keeping its authoritative information current.
+
+### Roles and responsibilities {#adr-techdoc-adr-techdocs-draft-v2--roles-and-responsibilities}
+
+- **Data Provider:** Identifies and submits datasets, provides context, and remains accountable post-designation
+
+- **Data Governance Team:** Facilitates intake, assessments, and process integrity; coordinates reviews and records decisions
+
+- **Executive Committee:** Provides direction for complex or unresolved cases
+
+### When escalation may be required {#adr-techdoc-adr-techdocs-draft-v2--when-escalation-may-be-required}
+
+Most designation requests are resolved through the standard assessment and governance process.
+
+Escalation may be required when:
+
+- More than one dataset could reasonably be considered authoritative for the same purpose
+
+- The proposed authoritative scope cannot be clearly agreed upon
+
+- Accountability or custodianship is unresolved
+
+- Significant legislative, policy, privacy or security issues require direction
+
+- Indigenous data governance or sovereignty considerations require additional review
+
+### What happens after designation {#adr-techdoc-adr-techdocs-draft-v2--what-happens-after-designation}
+
+Designation is not a one-time activity. Once a dataset is approved as authoritative, the approved purpose and scope are documented and the dataset must continue to be maintained as the trusted source.
+
+#### Maintain the designation {#adr-techdoc-adr-techdocs-draft-v2--maintain-the-designation}
+
+After designation, the data provider is responsible for keeping the authoritative information current. This includes:
+
+- Keeping the data and metadata current
+
+- Maintaining definitions, business rules and semantic information
+
+- Keeping source and lineage information current
+
+- Documenting known quality issues and limitations
+
+- Communicating significant changes
+
+- Reviewing the designation when the source, scope, custodian or use of the data changes
+
+#### Consider whether the data should be a data register {#adr-techdoc-adr-techdocs-draft-v2--consider-whether-the-data-should-be-a-data-register}
+
+Authoritative designation does not automatically mean the dataset needs to be managed as a data register. If the data needs to be consistently shared or reused across services, consider whether the data-register approach applies.
+
+\[Learn about data registers\]
+
+### Ready to begin? {#adr-techdoc-adr-techdocs-draft-v2--ready-to-begin-1}
+
+Before starting the designation process, your team should be able to:
+
+- Identify the data custodian
+
+- Explain the dataset’s purpose and proposed authoritative scope
+
+- Document the source and lineage
+
+- Confirm the data can be made available in a machine-readable form
+
+- Provide relevant metadata and definitions, including existing API specifications or schemas where applicable\
+  \[Review data dictionary guidance\]
+
+- Describe known quality and technical limitations
+
+- Explain how the data is maintained and updated
+
+- Identify the technical team responsible for making the data available and managing technical changes
+
+- Explain how significant changes will be managed
+
+If your team can provide this information, you are ready to begin the authoritative designation process and prepare the Candidate Dataset Submission Form.
+
+\[Complete the Candidate Dataset Submission Form\]
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-3}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+## Data registers {#adr-techdoc-adr-techdocs-draft-v2--data-registers-1}
+
+A data register is a set of data that contains authoritative data and follows a specific standard to ensure quality, interoperability and data sharing.
+
+### How data registers relate to authoritative data {#adr-techdoc-adr-techdocs-draft-v2--how-data-registers-relate-to-authoritative-data}
+
+Authoritative designation identifies the trusted source for a defined purpose and scope. A data register provides a standardized way to manage and make that authoritative data available for reuse by applying the requirements of the Data Register Standard.
+
+Not every authoritative dataset needs to become a data register. A data register is a more standardized model for authoritative data that needs to be consistently maintained, shared and reused across services or systems.
+
+### When to consider a data register {#adr-techdoc-adr-techdocs-draft-v2--when-to-consider-a-data-register}
+
+A data register may be appropriate when authoritative data needs to serve as a consistent, trusted source for a defined subject or domain, or when shared reference data is needed so other systems can classify or interpret data consistently.
+
+**Consider a data register when:**
+
+- The authoritative data represents a clearly defined subject or domain
+
+- Multiple systems or services need to rely on the same trusted source
+
+- The data needs to be managed consistently over time
+
+- Stable identifiers and a history of changes are important for reuse
+
+- Shared reference data or code sets need to be used consistently across systems
+
+If your team determines that the data should be managed as a data register, review the Data Register Standard to understand the technical specifications and requirements the register must meet.
+
+\[Read the Data Register Standard\]
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-4}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+\[Back Authoritative Data Designation\]
+
+## Data Register Standard {#adr-techdoc-adr-techdocs-draft-v2--data-register-standard}
+
+The Data Register Standard sets technical specifications for data registers. It is used by data delivery teams that collect and manage authoritative data in the form of data registers.
+
+### About the Data Register Standard {#adr-techdoc-adr-techdocs-draft-v2--about-the-data-register-standard}
+
+The Data Register Standard supports the development of a consistent and well-managed collection of authoritative data in data registers. Data registers that follow the Standard are intended to be trustworthy, secure, documented, discoverable and reusable. The Standard is the authoritative source for the requirements a data register must meet.
+
+\[**Read the Data Register Standard**\]
+
+### Why this standard is important {#adr-techdoc-adr-techdocs-draft-v2--why-this-standard-is-important}
+
+Using a consistent standard for data registers helps government manage and share authoritative data in reliable and interoperable ways.
+
+The Standard helps government:
+
+- Increase trust in services by providing timely, high-quality data
+
+- Support reusable data and more efficient software development
+
+- Improve decision-making, planning and service delivery
+
+- Provide a foundation for new digital products and services
+
+- Reduce duplication and unnecessary cost
+
+- Support progress toward collecting data once and reusing it across government
+
+### Guidance for applying the standard {#adr-techdoc-adr-techdocs-draft-v2--guidance-for-applying-the-standard}
+
+A set of guidelines are available to support the Data Register Standard. The guidelines help teams understand the concept of data registers and how to apply the Standard in practice.
+
+The Guidelines provide additional explanation, considerations and examples across the same areas covered by the Standard, including governance, data accessibility, data quality, architecture, security and privacy.
+
+\[Read the Data Register Standard Guidelines\]
+
+### Resources {#adr-techdoc-adr-techdocs-draft-v2--resources}
+
+Related resources will be added here as the supporting content and links are confirmed.
+
+\[Placeholder link\]
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-5}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+## Semantics {#adr-techdoc-adr-techdocs-draft-v2--semantics-1}
+
+The Connected Services semantic layer connects information through shared meaning. It provides a common framework for defining and organizing concepts, terms, relationships and information used across ministries, systems and services. By establishing a consistent understanding of business and technical concepts, it helps information be more easily discovered, connected, governed and reused.
+
+### Why semantics matter {#adr-techdoc-adr-techdocs-draft-v2--why-semantics-matter}
+
+Shared semantics help make sure your data can be understood consistently by the people and systems that use it.
+
+Clear definitions and field-level documentation can help:
+
+- Explain what the data represents
+
+- Reduce conflicting interpretations of the same concepts
+
+- Support consistent use across systems and services
+
+- Make data easier to share, integrate and reuse
+
+- Clarify the meaning and scope of authoritative data
+
+Without shared meaning, data can be interpreted differently across teams or systems, making it harder to reuse and govern consistently.
+
+### How Connected Services supports shared meaning {#adr-techdoc-adr-techdocs-draft-v2--how-connected-services-supports-shared-meaning}
+
+Authoritative designation and semantics address different aspects of how data is understood and used. Designation identifies which dataset is trusted for a defined purpose and scope. Semantics helps people and systems understand what the data means and how it should be interpreted.
+
+Connected Services supports shared meaning through data dictionaries, the Connected Services Data Glossary and taxonomy. Taxonomy helps organize concepts so information can be classified and discovered consistently.
+
+#### Data dictionaries {#adr-techdoc-adr-techdocs-draft-v2--data-dictionaries-2}
+
+Data dictionaries document the business and technical information needed to understand individual fields in a dataset or API.
+
+\[Learn about data dictionaries\]
+
+#### Connected Services Data Glossary {#adr-techdoc-adr-techdocs-draft-v2--connected-services-data-glossary-2}
+
+The Connected Services Data Glossary provides shared definitions for concepts and terminology so they can be interpreted consistently across teams, systems and services.
+
+\[Learn about the Data Glossary\]
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-6}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+## Data dictionaries {#adr-techdoc-adr-techdocs-draft-v2--data-dictionaries-3}
+
+A data dictionary documents the fields in a dataset or API and provides the business and technical information needed to understand and use those fields.
+
+Connected Services does not maintain a single master data dictionary. Field-level information may already exist in your organization’s API specifications, system documentation, schemas or other metadata.
+
+Use this guidance to understand what field-level information your team should be able to provide when sharing data through Connected Services. You do not need to recreate information that is already documented in an existing source.
+
+### What field-level information should you provide? {#adr-techdoc-adr-techdocs-draft-v2--what-field-level-information-should-you-provide}
+
+Field-level documentation should provide enough information to understand what each field means and how it is implemented.
+
+Depending on the field, this may include:
+
+- Field name
+
+- Business meaning or definition
+
+- Data type and format
+
+- Permissible values
+
+- Constraints and business rules
+
+- Source or lineage information
+
+- Ownership or custodianship information
+
+- Related Connected Services Data Glossary terms, where applicable
+
+This information helps other teams understand what the data represents, how it is structured and how it should be interpreted.
+
+### Use existing documentation {#adr-techdoc-adr-techdocs-draft-v2--use-existing-documentation}
+
+Field-level information does not need to be recreated in a separate document if it is already maintained in an existing technical source.
+
+#### OpenAPI specifications {#adr-techdoc-adr-techdocs-draft-v2--openapi-specifications}
+
+For APIs documented using OpenAPI, field-level information may be included directly in the specification, such as field descriptions, data types, formats, allowed values and other relevant metadata.
+
+#### Other machine-readable documentation {#adr-techdoc-adr-techdocs-draft-v2--other-machine-readable-documentation}
+
+Field-level information may also be documented through formats such as JSON Schema, GraphQL SDL, WSDL or other machine-readable documentation.
+
+#### Existing supporting documentation {#adr-techdoc-adr-techdocs-draft-v2--existing-supporting-documentation}
+
+Relevant information may also already exist in system documentation, data models or other supporting metadata.
+
+Use existing documentation where it provides the information needed to understand the fields rather than creating duplicate documentation solely for Connected Services.
+
+### For authoritative designation {#adr-techdoc-adr-techdocs-draft-v2--for-authoritative-designation}
+
+When a dataset is being considered for authoritative designation, the data dictionary helps demonstrate the proposed scope of authority by documenting the business attributes associated with the dataset.
+
+For the designation process, providers should be prepared to document:
+
+- System field name
+
+- Field description, including the business meaning and intended use
+
+- Provenance of the field, using the Candidate Dataset Submission Form categories: Master, Reference or Derived data
+
+- The source of reference or derived data, where applicable
+
+- Which fields fall within the proposed authoritative scope
+
+Include fields that are exposed to or shared with users and represent meaningful business concepts. Purely technical or system-generated fields generally do not need to be included unless they are required to understand the business meaning of the data.
+
+\[Complete the Data Dictionary section of the Candidate Dataset Submission Form\]
+
+### How data dictionaries relate to the Connected Services Data Glossary {#adr-techdoc-adr-techdocs-draft-v2--how-data-dictionaries-relate-to-the-connected-services-data-glossary}
+
+A data dictionary documents how data is represented in individual fields, including its business and technical details. The Connected Services Data Glossary provides shared definitions for concepts and terms used across Connected Services.
+
+Where an agreed Data Glossary definition exists, reference or align your field-level documentation with it where appropriate.
+
+\[Learn about the Connected Services Data Glossary\]
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-7}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+## Connected Services Data Glossary {#adr-techdoc-adr-techdocs-draft-v2--connected-services-data-glossary-3}
+
+The Connected Services semantic layer connects information through shared meaning. It provides a common framework for defining and organizing the concepts, terms, relationships and information used across ministries, systems and services. By establishing a consistent understanding of business and technical concepts, it enables information to be more easily discovered, connected, governed and reused across the Connected Services ecosystem.
+
+The Connected Services Data Glossary is part of this semantic layer. It provides shared definitions for concepts and terminology so they can be understood and used consistently across teams, systems and services.
+
+### How to use the Data Glossary {#adr-techdoc-adr-techdocs-draft-v2--how-to-use-the-data-glossary}
+
+#### If you use data {#adr-techdoc-adr-techdocs-draft-v2--if-you-use-data}
+
+Use the Data Glossary to confirm the agreed meaning of terms associated with the data you are using.
+
+#### If you provide or manage data {#adr-techdoc-adr-techdocs-draft-v2--if-you-provide-or-manage-data}
+
+Check the Data Glossary when documenting your data to determine whether a shared term or definition already exists. Where an applicable shared definition exists, reference or align your documentation with it.
+
+\[Open the Connected Services Data Glossary\]
+
+### What belongs in the Data Glossary {#adr-techdoc-adr-techdocs-draft-v2--what-belongs-in-the-data-glossary}
+
+The Data Glossary is for concepts and terminology that need a consistent meaning across teams, systems or services. Use the criteria below to determine whether a term belongs.
+
+| **Category** | **Include it when...** |
+|:--:|----|
+| **Business** | It describes a real-world entity, idea or relationship that business users would recognize independently of a system. |
+| **Data** | It defines or qualifies a business concept for use in data, reporting or measurement. |
+| **Data management** | It describes concepts related to data quality, lifecycle, stewardship or management. |
+| **Integration** | It describes the exchange, flow or coordination of data across systems or organizational boundaries. |
+| **Privacy and security** | It defines concepts related to access, protection, identity, permissions or privacy. |
+| **Technical** | It describes a shared system-level or data-architecture concept rather than a specific implementation detail. |
+| **Operational** | It describes shared concepts related to monitoring, reliability or operating data systems and services. |
+
+#### What does not belong {#adr-techdoc-adr-techdocs-draft-v2--what-does-not-belong}
+
+- **System- or tool-specific items:** Terms tied to a specific tool, product, platform or technology belong in the relevant product or technical documentation.
+
+- **Guidelines, principles and processes:** Content that describes how work is organized, governed or performed belongs in the relevant guidance or process documentation.
+
+- **Integration patterns and architectures:** Implementation mechanisms and technical infrastructure belong in architecture or technical guidance.
+
+- **Technical schema details:** Fields, formats, data types and schema structures belong in API specifications, schemas or data dictionaries.
+
+### How the Data Glossary relates to data dictionaries {#adr-techdoc-adr-techdocs-draft-v2--how-the-data-glossary-relates-to-data-dictionaries}
+
+The Data Glossary defines shared concepts and terminology. A data dictionary documents how those concepts are represented in the fields and structures of a specific dataset or API.
+
+Not every data field needs a corresponding Glossary term. Where a shared Glossary definition does apply, use it to help keep field-level documentation consistent.
+
+\[Learn about data dictionaries\]
+
+### Add or update a term {#adr-techdoc-adr-techdocs-draft-v2--add-or-update-a-term}
+
+The workflow for adding or updating a Data Glossary term is still being confirmed.
+
+**Placeholder:** This section is reserved for the confirmed workflow for adding or updating a term, including how to submit a request and what happens after it is submitted.
+
+### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-8}
+
+Submit feedback, request more information, or get help through the \[placeholder link\].
+
+
+# Eligibility Factor Verification {#source-efv-techdoc}
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/index.md -->
+
+## Introduction {#efv-techdoc-docsindex}
+
+
+Eligibility Factor Verification, or EFV, helps government programs check specific facts used in eligibility decisions.
+
+Many programs need to confirm similar things, such as income, residency, or other information an applicant provides. Today, this can involve manual document review, screenshots, forms, or staff follow-up. EFV is intended to reduce that effort by helping programs check certain facts against approved or trusted data sources, where available.
+
+EFV does not decide if someone is eligible for a program. EFV is not a program rule engine. It does not approve or deny applications. It helps check facts that a program may use in its own decision process. The program still owns its eligibility rules and makes the final decision.
+
+EFV can support a program by returning a verification result and related information, such as the source used, when the check happened, and any limits or caveats that apply. Program staff or systems can then use that result to support a decision, focus review on exceptions, or reduce the need for applicants to provide documents. EFV is in early development. The first focus is income verification.
+
+Future eligibility factors may be explored over time based on:
+- program need
+- source availability
+- agreements
+- policy authority
+- privacy and security requirements
+- technical feasibility
+
+### Example {#efv-techdoc-docsindex--example}
+
+A program may need to confirm whether an applicant meets an income rule.
+
+Without EFV, the applicant may need to upload tax documents, and staff may need to review them manually.
+
+With EFV, the program may be able to request an income verification check through a trusted source. The program receives a result and supporting details. The program then applies its own rules and decides what happens next.
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/getting-started.md -->
+
+## Getting Started {#efv-techdoc-docsgetting-started}
+
+
+Use this page to decide whether EFV may be useful for your program or service.
+
+EFV is still developing. The best first step is to [contact the EFV team](mailto:justin.hume@gov.bc.ca) with a clear use case. The team can help determine whether EFV is a good fit, whether an existing verification factor is available, and what other teams or approvals may be involved.
+
+### When EFV may be useful {#efv-techdoc-docsgetting-started--when-efv-may-be-useful}
+
+EFV may be useful when your program needs to check a specific fact used in an eligibility decision.
+EFV may help when your program wants to:
+
+- Use a trusted source instead of applicant-submitted documents
+- Reduce manual document review or staff follow-up
+- Support more consistent decisions
+- Keep a record of what was checked, when, and against what source
+- Help staff focus on exceptions or higher-risk cases
+- Reuse a verification pattern that may also help other programs
+
+### Understanding data-use requirements {#efv-techdoc-docsgetting-started--understanding-data-use-requirements}
+
+Using EFV may require more than a technical connection. Before information can be requested or used, the consuming program and data provider may need to confirm:
+
+- The applicable legal authority
+- Privacy requirements
+- Agreements
+- Consent or notice requirements
+- Security controls
+- Business rules
+
+These requirements will depend on the program, the eligibility factor, the data source, and the intended use. The EFV team can help identify the requirements and teams that may need to be involved. The consuming program remains responsible for confirming that it has the authority and approvals needed to request and use the information.
+
+### What makes a good EFV candidate {#efv-techdoc-docsgetting-started--what-makes-a-good-efv-candidate}
+
+A good EFV candidate is usually a verification need that is specific, repeatable, and connected to a trusted source.
+
+EFV may be a stronger fit when:
+
+- The same fact is checked often
+- The current process is manual
+- The information is not already easy to access or reuse
+- The verification pattern could help more than one program
+
+### When EFV may not be the right fit {#efv-techdoc-docsgetting-started--when-efv-may-not-be-the-right-fit}
+
+EFV may not be the right fit when:
+
+- The decision depends on case-by-case judgment
+- The fact cannot be checked through a trusted source
+- The program does not have authority to request or use the data
+- The information is already available through an existing dataset, API, service, or public source
+- The program needs broad data access instead of a specific verification need
+- The program needs policy design support, rather than verification support
+
+### Before you contact the EFV team {#efv-techdoc-docsgetting-started--before-you-contact-the-efv-team}
+
+You do not need a full solution before contacting the EFV team.
+
+Start with the eligibility fact you need to check, how you check it today, and what problem you are trying to solve.
+
+If you already know the potential data source or provider, intended use, legal authority, consent or notice requirements, privacy and security considerations, or agreement needs, include those as well. You do not need to have every requirement resolved before contacting the EFV team.
+
+To discuss whether EFV may be a fit for your program or service, [contact the EFV team](mailto:justin.hume@gov.bc.ca). 
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/eligibility-factors.md -->
+
+## Eligibility Factors {#efv-techdoc-docseligibility-factors}
+
+
+Use this page to understand how EFV looks at possible eligibility factors.
+
+An eligibility factor is a specific fact that a program may need to check before making a decision. This could include income or other information used in program rules.
+
+EFV is organized around these factors. Each factor may use a different source, need different approvals, or have different limits. Because of this, EFV does not treat every factor the same way.
+
+The first EFV factor is income verification. EFV is starting with income verification as the first reusable verification capability that programs may be able to consume.
+
+Future factors may be explored over time based on:
+- program need
+- source availability
+- agreements
+- policy authority
+- privacy and security requirements
+- technical feasibility
+
+Not every eligibility fact needs EFV. Some facts may already be supported through an existing dataset, API, service, or program process. EFV is intended for verification needs that are specific, repeatable, and not already easy for programs to access or reuse.
+
+Before a factor can be supported through EFV, the EFV team needs to understand:
+
+- What fact the program needs to check
+- Which program rule or workflow the check supports
+- Whether there is a trusted source for the information
+- Whether the program has authority to request or use the information
+- What legal authority, agreements, consent or notice requirements, privacy protections, security controls, audit requirements, or other provider conditions apply
+- Whether the data is current enough for the program’s use case
+- Whether the verification pattern could be reused by other programs
+- Whether there is a practical technical path to access or verify the information
+
+Data providers need confidence that their information will only be requested and used for an approved purpose and under the required conditions. As part of developing an eligibility factor, the EFV team can help identify what requirements may need to be supported. This may include:
+
+- technical requirements
+- legal requirements
+- privacy requirements
+- consent requirements
+- agreement requirements
+- business requirements
+
+This may also include determining whether a required authorization or consent check needs to occur before a verification request is sent. The specific approach will depend on the provider, program, data source, and approved use case.
+
+A factor should not be presented as available until the following are understood well enough to guide users:
+
+- the source
+- permitted purpose
+- authority
+- agreement needs
+- technical path
+- support needs
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/income-verification.md -->
+
+## Income Verification {#efv-techdoc-docsincome-verification}
+
+
+Income verification is the first eligibility factor **in development** through EFV.
+
+This page provides factor-specific information for programs that may need to check income as part of an eligibility process.
+
+### Status {#efv-techdoc-docsincome-verification--status}
+
+Income verification is in development as the first EFV use case.
+
+### What income verification may support {#efv-techdoc-docsincome-verification--what-income-verification-may-support}
+
+Income verification may support programs that need to check income-related information as part of an eligibility decision or review process.
+The type of response EFV returns will depend on the approved use case and source requirements.
+
+For example, a program may need to confirm whether an applicant meets an income rule without asking the applicant to upload tax documents for manual review.
+
+### What the response does not mean {#efv-techdoc-docsincome-verification--what-the-response-does-not-mean}
+
+An income verification response does not decide whether someone is eligible for a program.
+
+The program remains responsible for:
+
+- Defining eligibility rules
+- Applying program policy
+- Deciding how the response is used
+- Managing exceptions
+- Completing any required staff review
+- Making the final eligibility decision
+
+### Program readiness {#efv-techdoc-docsincome-verification--program-readiness}
+
+Before using income verification, a program may need to confirm:
+
+- The income rule or program requirement being supported
+- The purpose for using the income information
+- The authority to request or use the information
+- Consent requirements
+- Privacy and security requirements
+- Agreement or memorandum of understanding (MOU) requirements
+- Audit and monitoring expectations
+- How long records or consent evidence must be retained
+-	Who can access the result
+- How exceptions, denied responses, or incomplete matches will be handled
+
+Depending on the approved use case and source requirements, additional conditions may be required to send a request for income verification. These might include required authorization, consent, or other conditions. The EFV team will work with the consuming program, data provider, and appropriate privacy, legal, security, and technical teams to identify the required approach.
+
+### Caveats and limitations {#efv-techdoc-docsincome-verification--caveats-and-limitations}
+
+Income verification has source-specific requirements and constraints.
+
+Programs should not assume that income verification can be used until all of the following are confirmed:
+
+- authority
+- agreement path
+- consent model
+- permitted data elements
+- technical approach
+- operational support expectations
+
+**The EFV team can help determine whether income verification may be a fit for a program use case and what discovery is needed next.**
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/support.md -->
+
+## Support {#efv-techdoc-docssupport}
+
+
+EFV is still developing. Support channels and service expectations will be added as they are confirmed.
+
+To discuss whether EFV may be a fit for your program or service, contact the EFV team: [Justin.Hume@gov.bc.ca](mailto:justin.hume@gov.bc.ca).
+
+Include the program name, the eligibility factor you want to verify, the current process, and any timeline or pilot dependency.
+
+### Related resources {#efv-techdoc-docssupport--related-resources}
+
+Links will be added as they become available.
+
+
+# Secure Data Exchange {#source-secure-data-exchange}
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/index.md -->
+
+## Secure Data Exchange (SDX) {#secure-data-exchange-docsindex}
+
+
+### What is SDX? {#secure-data-exchange-docsindex--what-is-sdx}
+
+*Secure Data Exchange* (SDX) enables organizations to share information when additional security, governance, and privacy controls are required. When one organization needs to send information to another, like a government ministry sharing data with a delivery partner, SDX handles the security in the background. It makes sure the connection is protected, checks that only approved organizations are involved, and protects the information the whole way from sender to receiver. Every organization that uses SDX, whether they're providing data, using it, or both, gets the same consistent protection and rules built in.
+
+SDX is built around two foundational capabilities: security controls and governance and compliance.
+
+### Security Controls {#secure-data-exchange-docsindex--security-controls}
+
+When your organization sends or receives information through SDX, several protections work automatically to keep that information safe along the way.
+
+SDX automatically:
+
+- Protects the data while it's moving, so it can't be read if someone intercepts it (*encryption in transit*)
+- Checks that only approved, verified systems are sending or receiving the data (*authentication*)
+- Confirms the data arrives exactly as it was sent, with nothing changed along the way (*data integrity verification*)
+- Keeps the connection between organizations protected for the entire exchange (*secure communications*)
+
+**Example:** A ministry program needs to send a citizen's income information to a partner organization. Before the data leaves, SDX encrypts it so it can't be read if intercepted. SDX also confirms the receiving system is an approved participant, and checks that what arrives matches exactly what was sent, no tampering, no changes.
+
+### Governance and Compliance {#secure-data-exchange-docsindex--governance-and-compliance}
+
+When information is exchanged through SDX, governance controls automatically create a trusted record of what happened. These records help organizations show that information was shared the right way, and support security, privacy, and compliance requirements. These controls:
+
+- Keep a record of who exchanged information, when it happened, and what actions were taken
+- Only allow access that's been specifically approved ahead of time, based on what each system is permitted to do
+- Create proof of who sent and received each exchange, so no one can later deny it happened
+- Record the exact date and time of every exchange
+
+**Example:** A ministry shares information with another organization to verify a citizen's eligibility for a program. SDX records who started the exchange, confirms they had permission to do it, captures exactly when it happened, and keeps a record that can be checked later. Together, this shows the information was shared securely and by the rules.
+
+These controls help organizations meet B.C.'s security, privacy, and regulatory requirements for sharing information safely.
+
+### Why it matters {#secure-data-exchange-docsindex--why-it-matters}
+
+More government programs need to share sensitive information to deliver services that work well together. Without a shared, secure way to do this, every organization would have to build and maintain its own security systems and trust relationships, for every single partner. SDX solves this by giving every organization the same secure foundation to work from. This lets organizations:
+
+- Share sensitive information safely with other organizations
+- Protect citizen information the whole time it's being exchanged
+- Meet the same security and compliance rules every time, instead of figuring it out separately for each exchange
+- Set up trusted connections with partner organizations more easily
+- Keep a record of who did what during every exchange, so it can be checked later (auditability and accountability)
+
+### How SDX supports Connected Services {#secure-data-exchange-docsindex--how-sdx-supports-connected-services}
+
+#### SDX Architecture {#secure-data-exchange-docsindex--sdx-architecture}
+
+At a high level, SDX provides a secure connection between organizations that share or consume services. Each organization uses an SDX Edge Runtime Group to connect its systems to the SDX platform and to the other organization involved in an exchange. SDX also uses shared trust services to support secure, traceable exchanges.
+
+![SDX Architecture](assets/secure-data-exchange/docs/artifacts/SDX.svg)
+
+*Figure 1. High-level view of SDX*
+
+The diagram is intended as a high-level view. The technical details of how these components are configured are covered in the [SDX technical documentation](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/concepts/secure-data-exchange/).
+
+Connected Services is about letting different organizations work together while keeping information secure and properly governed. SDX is the part that makes this possible. It does this by:
+
+- Setting up trusted, verified connections between organizations
+- Applying the same security protections to every exchange
+- Deciding who's allowed to access what, based on rules set ahead of time (policy-based access)
+- Keeping a record of every exchange for auditing and accountability
+- Letting organizations securely exchange data anywhere across Connected Services
+
+Because SDX handles these shared protections, teams building services on Connected Services can focus on the actual work they're trying to do, instead of building their own security systems from scratch for every new connection.
+
+### Related services {#secure-data-exchange-docsindex--related-services}
+
+- [API Services Portal](https://api.gov.bc.ca/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/sdx-roles-and-responsibilities.md -->
+
+## SDX Roles and Responsibilities {#secure-data-exchange-docsgetting-started-with-sdxsdx-roles-and-responsibilities}
+
+
+Different roles are responsible for setting up and managing an organization within SDX. These roles help ensure that the right people have the appropriate access to manage organizations, systems, and services. The table below provides a high-level overview of the key SDX roles and their responsibilities.
+
+Note: System Admin is an organization-level role. Subsystem Owner is assigned to a specific subsystem and manages that subsystem and its related SDX resources.
+
+| **Role**           | **Responsibility**                                                            |
+|--------------------|-------------------------------------------------------------------------------|
+| SDX Operator       | Registers the organization in SDX and assigns the initial Organization Admin. |
+| Organization Admin | Assigns System Admin access for the organization.                             |
+| System Admin       | Manages systems within the organization.                                      |
+| Subsystem Owner    | Subsystem-level role for managing services for a subsystem.                   |
+| Tech Lead          | For service clients, request/revoke connections to another service.           |
+| Access Manager     | For service providers, review and approve client connection requests.         |
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/environments.md -->
+
+## Environments {#secure-data-exchange-docsgetting-started-with-sdxenvironments}
+
+
+SDX provides separate environments for learning, setup, and production use.
+
+**Playground:** Use the Playground to validate an installation and test new functionality before moving to Production. It does not provide data or service-quality guarantees.
+
+**Production:** Use Production for Test Data and Production Data SDX instances. The data and service quality are the same for both instances.
+
+| **Environment** | **Purpose**                   | **What to expect**                        |
+|-----------------|-------------------------------|-------------------------------------------|
+| Playground      | Installation and testing      | No data or service-quality guarantee      |
+| Production      | Test Data and Production Data | Production-level data and service quality |
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/publish-a-service.md -->
+
+## Publish a Service {#secure-data-exchange-docsgetting-started-with-sdxpublish-a-service}
+
+
+Every provider organization must complete onboarding before publishing a service through SDX. See [Onboarding Process Overview](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-process) to get started.
+
+Once onboarding is complete, System Admins can publish services through SDX. The provider journey includes:
+
+1. Complete organization onboarding – see [Onboarding Process](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-an-organization)
+2. Register systems and subsystems - see [Managing Subsystems](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-subsystems)
+3. Register an API using an OpenAPI Specification (OAS) that meets the SDX API Standard requirements – see [Managing Services](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-services).
+
+   - Note: review the [SDX API Standard Ruleset](https://developer.gov.bc.ca/docs/default/component/api-style-guides/sdx-style-guide/) before submitting your specification to understand the validation requirements your API must meet.
+
+4. Provision and configure an SDX Edge Runtime Group – see [Install an Edge Runtime Group](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processinstall-an-edge-runtime-group)
+5. Publish the service to the service catalogue – see [Managing Services](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-services)
+6. Enable secure data exchange with authorized consumers – see [Connecting a Service](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnecting-a-service)
+
+Throughout this process, SDX applies encryption, authentication, policy enforcement, and audit logging.
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/consume-a-service.md -->
+
+## Consume a Service {#secure-data-exchange-docsgetting-started-with-sdxconsume-a-service}
+
+
+Every consumer organization must complete onboarding before consuming a service through SDX. See [Onboarding Process Overview](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-process) to get started. Once onboarding is complete, System Admins can begin consuming services through SDX.
+
+The consumer journey includes:
+
+1. Complete organization onboarding – see [Onboarding Process](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-an-organization)
+2. Register systems and subsystems – see [Managing Subsystems](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-subsystems)
+3. Provision and configure an SDX Edge Runtime Group – see [Install an Edge Runtime Group](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processinstall-an-edge-runtime-group)
+4. Browse the service catalogue – see [Managing Services](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-services)
+5. Request access to provider services – see [Connecting a Service](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnecting-a-service)
+6. Establish secure connections and consume services – see [Connecting a Service](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnecting-a-service)
+
+SDX applies consistent security, authentication, and governance controls to exchanges made through the platform.
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/onboarding-process.md -->
+
+## Onboarding Process {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-process}
+
+
+Before your organization can publish or consume services through Secure Data Exchange (SDX), it must first be onboarded to the platform. Organization onboarding establishes your organization within SDX and assigns the roles required to manage systems and services. The process for onboarding is similar in both provider and consumer journeys.
+
+Organization onboarding consists of two primary activities:
+
+1. Register the organization
+   - The SDX Operator creates the organization within SDX.
+   - This establishes the organization as a trusted participant in the Secure Data Exchange ecosystem.
+2. Assign System Admin access
+   - The Organization Admin grants System Admin access to users responsible for managing systems and services.
+
+System Admin access allows users to manage systems within the organization. Once onboarding is complete, your organization is ready to:
+
+- Register systems
+- Manage service catalogue entries
+- Publish services
+- Consume services
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/onboarding-an-organization.md -->
+
+## Onboarding an Organization {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-an-organization}
+
+
+This guide provides the technical instructions for setting up and managing an organization in SDX. It covers how to:
+
+- Register an organization
+- Assign System Admin access
+- View organization information and access
+- Assign an SDX gateway to an organization
+
+These activities are performed by the SDX Operator, Organization Admin, and System Admin, depending on the task.
+
+Technical guide: [Onboarding an Organization](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-org-onboarding/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/install-an-edge-runtime-group.md -->
+
+## Install an Edge Runtime Group {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processinstall-an-edge-runtime-group}
+
+
+An edge runtime group provides the infrastructure your organization uses to connect systems to the SDX ecosystem. Organizations can either deploy a client-hosted runtime group in their own infrastructure or use a community-hosted runtime group provided through the SDX platform. This guide provides the technical steps for setting up a client-hosted runtime group, including registering the runtime group, configuring its gateway, deploying the required infrastructure, and completing verification. Organizations using a community-hosted runtime group should contact the APS team for guidance. This process is performed by the System Admin.
+
+!!! note "Alternative names"
+
+    SDX Edge Runtime Group is also referred to as “*Edge Runtime*”, “*Edge Runtime Group*”, or “*Runtime Group*”.
+
+Good to know: Some consumer organizations can use the shared Public Consumer Gateway (PZGW) instead of running their own public-facing Edge Runtime Group. This does not replace the provider’s runtime group; providers still need their own runtime group.
+
+Technical guide: [Install an Edge Runtime Group](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-edge-runtime-groups/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/set-up-organization-signing.md -->
+
+## Set Up Organization Signing {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processset-up-organization-signing}
+
+
+Organization signing provides an additional level of verification for information exchanged through SDX. When enabled, it helps confirm that an exchange was authorized by the participating organization and sent through an approved runtime group. Organization signing is optional and is enabled when required by the policies governing a connection.
+
+This guide provides the technical steps for setting up organization signing, including creating a signing key request, having it approved and signed by an authorized Certificate Authority (CA), and registering the signed certificate with SDX.
+
+This process is performed by the Organization Admin, with support from the APS team for certificate approval and signing.
+
+Technical guide: [Setup Organization Signing](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-org-signing/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/managing-subsystems.md -->
+
+## Managing Subsystems {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-subsystems}
+
+
+Subsystems represent the systems within your organization that participate in SDX. Managing them ensures each subsystem is connected to the appropriate runtime group and that the right people have access to manage it.
+
+This guide provides the technical steps for registering a subsystem, assigning it to a runtime group, managing subsystem roles and access, and deleting a subsystem when it is no longer required.
+
+This process is performed by the System Admin.
+
+Technical guide: [Managing Subsystems](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-subsystems/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/managing-services.md -->
+
+## Managing Services {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-services}
+
+
+Services represent the APIs your organization makes available through SDX for other authorized systems to discover and connect to.
+
+This guide provides the technical steps for registering a service using an OpenAPI Specification (OAS), viewing services available in the SDX service catalogue, retrieving registered API specifications, and deleting services that are no longer required.
+
+Service management requires the appropriate permissions, which are set up by the System Admin for the organization.
+
+Technical guide: [Managing Services](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-services/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/connecting-a-service.md -->
+
+## Connecting a Service {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnecting-a-service}
+
+
+Connecting a service establishes a secure connection between a system consuming a service and the organization providing it through SDX. The process allows consumers to request access and providers to review and approve those requests before a connection is established.
+
+This guide provides the technical steps for requesting and approving access, configuring the consumer and provider sides of a connection, opening the secure connection, and removing connections that are no longer required.
+
+This process is managed by System Admins and users with the appropriate connection management permissions.
+
+Technical guide: [Connecting a Service](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-connections/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/getting-started-with-sdx/onboarding-process/connection-resources.md -->
+
+## Connection Resources {#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnection-resources}
+
+
+Connection resources define how a secure connection between a service consumer and service provider is set up and managed in SDX. They provide a consistent way to apply the security and access requirements needed for each connection. 
+
+Connection resources are applied automatically as part of establishing and managing a connection in SDX. Depending on the connection, they can support capabilities such as: 
+
+- Authentication and access controls 
+- Token exchange between privacy zones 
+- Signing and verification 
+- Secure communication between organizations 
+
+Connection resources are managed as part of the connection rather than being configured separately. 
+
+Technical guide: [Connection Resources](#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/experimental-features.md -->
+
+## Experimental Features – LAB Only {#secure-data-exchange-docsexperimental-features}
+
+
+The following features are currently experimental and available in the LAB environment only. They are not currently available for production use.
+
+### Event Management {#secure-data-exchange-docsexperimental-features--event-management}
+
+Event Management enables organizations to publish and consume event-based messages through SDX using AsyncAPI services. It supports scenarios where consumers need to receive information when an event occurs, rather than requesting information directly from an API.
+
+This guide provides the technical steps for registering an AsyncAPI service, configuring an endpoint for publishing events, connecting consumers to the service, setting up webhooks to receive messages, and publishing messages.
+
+This process is managed by the System Admin.
+
+Technical guide: [Event Management](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-ape-event-mgmt/)
+
+### Policy Management {#secure-data-exchange-docsexperimental-features--policy-management}
+
+Policy Management enables organizations to define and apply rules that control access to services and data exchanged through SDX. These policies can use information about a request, such as the user, requested resource, or authorization data, to determine whether access should be permitted.
+
+This guide provides the technical steps for creating and registering OPA and CEDAR policies, applying a policy to an SDX connection for enforcement, and registering data sources that can provide additional information for access decisions.
+
+This process is managed by the System Admin.
+
+Technical guide: [Policy Management](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-ape-policy-mgmt/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/references.md -->
+
+## References {#secure-data-exchange-docsreferences}
+
+
+- [SDX API Standard Ruleset](https://developer.gov.bc.ca/docs/default/component/api-style-guides/sdx-style-guide/)
+- [API Services Portal](https://api.gov.bc.ca/)
+
+<!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:secure-data-exchange/docs/support.md -->
+
+## Support {#secure-data-exchange-docssupport}
+
+
+This guide explains how to get help with the SDX platform and outlines the available support channels.
+
+### Before Contacting Support {#secure-data-exchange-docssupport--before-contacting-support}
+
+Before submitting a support request, review the SDX onboarding documentation and confirm you've completed the required organization registration and configuration steps. Many common onboarding questions are addressed in the [SDX technical documentation](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/sdx-org-onboarding/).
+
+### Support Channels {#secure-data-exchange-docssupport--support-channels}
+
+- The APS team maintains two Microsoft Teams channels where users can ask questions, receive guidance, and stay informed about SDX updates. These channels are currently available to BC Public Service employees.
+- Join by clicking the links below and authenticating with your IDIR:
+
+  1.  [*SecureDataExchange-SDX-alerts*](https://teams.microsoft.com/l/channel/19%3A02f10e8a778e40e4896395353caf5d01%40thread.tacv2/SecureDataExchangeSDX-alerts?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc)
+
+  2.  [*SecureDataExchange-SDX-howto*](https://teams.microsoft.com/l/channel/19%3A3823539ac64b44dda53b93e4c06a8a1b%40thread.tacv2/SecureDataExchangeSDX-howto?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc)
+
+Use the [SecureDataExchange-SDX-alerts](https://teams.microsoft.com/l/channel/19%3A02f10e8a778e40e4896395353caf5d01%40thread.tacv2/SecureDataExchangeSDX-alerts?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc) channel to stay informed about:
+
+- Planned maintenance
+- Service outages
+- Incidents
+- Production releases
+- Important operational announcements
+
+Use the [SecureDataExchange-SDX-howto](https://teams.microsoft.com/l/channel/19%3A3823539ac64b44dda53b93e4c06a8a1b%40thread.tacv2/SecureDataExchangeSDX-howto?groupId=a80418da-c27b-406e-89ab-7695b61924d8&tenantId=6fdb5200-3d0d-4a8a-b036-d3685e359adc) channel for:
+
+- SDX onboarding questions
+- Secure connectivity and SDX Edge Runtime Group guidance
+- Organization registration support
+- API and service registration questions
+- General usage questions and troubleshooting
+
+### Support Portal {#secure-data-exchange-docssupport--support-portal}
+
+For more complex requests or issues requiring investigation:
+
+1. Visit the [Support Portal](https://dpdd.atlassian.net/servicedesk/customer/portal/1/group/2/create/665)
+2. Submit a support request describing your issue
+3. The APS team will respond within established service timelines
+
+Support tickets are the preferred channel for:
+
+- Technical issues
+- Access requests
+- Security concerns
+- Production support
+- Feature requests
+- Questions requiring investigation or follow-up
 
 
 # API Services Portal - SDX Documentation {#source-aps-infra-platform-sdx}
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/get-support.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/get-support.md -->
 
 ## Get Support {#aps-infra-platform-sdx-documentationhow-toget-support}
 
@@ -790,7 +2304,7 @@ To see our historical uptime and any current incidents, visit the [APS status pa
 - [Geographic Redundancy and Failover](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/concepts/geo-redundancy)
 - [Production Readiness Checklist](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/prod-checklist) 
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-org-onboarding.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-org-onboarding.md -->
 
 ## Onboarding an Organization {#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding}
 
@@ -1013,7 +2527,7 @@ public keys are managed.
 
 - [Install an Edge Runtime Group](#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-edge-runtime-groups.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-edge-runtime-groups.md -->
 
 ## Install an Edge Runtime Group {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups}
 
@@ -1390,7 +2904,7 @@ Steps to decommission:
 
 - [Setup Organization Signing](#aps-infra-platform-sdx-documentationhow-tosdx-org-signing)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-org-signing.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-org-signing.md -->
 
 ## Setup Organization Signing {#aps-infra-platform-sdx-documentationhow-tosdx-org-signing}
 
@@ -1490,69 +3004,69 @@ Use one of the root certificates from below depending on your environment.
 
 For details about environments, visit [SDX Environments](#aps-infra-platform-sdx-documentationreferencesdxenvironments).
 
-### Playground {#aps-infra-platform-sdx-documentationhow-tosdx-org-signing--playground}
+=== "Playground"
 
-```text
------BEGIN CERTIFICATE-----
-MIIBqjCCAVCgAwIBAgIRAOx+wUXYgyRY9VGzArB7V+swCgYIKoZIzj0EAwIwMzEx
-MC8GA1UEAxMoQ1NCQyBTZWN1cmUgRGF0YSBFeGNoYW5nZSBBUFNUU1QgUm9vdCBD
-QTAeFw0yNjA3MTYxNTE4MzBaFw0zNjA3MTMxNTE4MzBaMDMxMTAvBgNVBAMTKENT
-QkMgU2VjdXJlIERhdGEgRXhjaGFuZ2UgQVBTVFNUIFJvb3QgQ0EwWTATBgcqhkjO
-PQIBBggqhkjOPQMBBwNCAAQceMa6kWDVEqVnG9wZwD7zn3y67LGIcE8lBiQTzxRR
-h5LdqhryGnKIOsUMMujvFUTsuUsaG9KywMh/NuTMkaLMo0UwQzAOBgNVHQ8BAf8E
-BAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBAjAdBgNVHQ4EFgQUnbOhKEgO1Xkv1zeZ
-zCXusaEzQHEwCgYIKoZIzj0EAwIDSAAwRQIhAPue7wdiw/MocolfSBGZgEp4VO3Q
-5Ws2v0C/BBrWI+UTAiAqNqJxusfbu3t0VXjTNg4Z/+uH+bGIQgIMpasQamFQSQ==
------END CERTIFICATE-----
-```
+    ```text
+    -----BEGIN CERTIFICATE-----
+    MIIBqjCCAVCgAwIBAgIRAOx+wUXYgyRY9VGzArB7V+swCgYIKoZIzj0EAwIwMzEx
+    MC8GA1UEAxMoQ1NCQyBTZWN1cmUgRGF0YSBFeGNoYW5nZSBBUFNUU1QgUm9vdCBD
+    QTAeFw0yNjA3MTYxNTE4MzBaFw0zNjA3MTMxNTE4MzBaMDMxMTAvBgNVBAMTKENT
+    QkMgU2VjdXJlIERhdGEgRXhjaGFuZ2UgQVBTVFNUIFJvb3QgQ0EwWTATBgcqhkjO
+    PQIBBggqhkjOPQMBBwNCAAQceMa6kWDVEqVnG9wZwD7zn3y67LGIcE8lBiQTzxRR
+    h5LdqhryGnKIOsUMMujvFUTsuUsaG9KywMh/NuTMkaLMo0UwQzAOBgNVHQ8BAf8E
+    BAMCAQYwEgYDVR0TAQH/BAgwBgEB/wIBAjAdBgNVHQ4EFgQUnbOhKEgO1Xkv1zeZ
+    zCXusaEzQHEwCgYIKoZIzj0EAwIDSAAwRQIhAPue7wdiw/MocolfSBGZgEp4VO3Q
+    5Ws2v0C/BBrWI+UTAiAqNqJxusfbu3t0VXjTNg4Z/+uH+bGIQgIMpasQamFQSQ==
+    -----END CERTIFICATE-----
+    ```
 
-### Staging {#aps-infra-platform-sdx-documentationhow-tosdx-org-signing--staging}
+=== "Staging"
 
-```text
------BEGIN CERTIFICATE-----
-MIIBozCCAUqgAwIBAgIRAOqrFxwuBQzATeE2ybv4ci8wCgYIKoZIzj0EAwIwMDEu
-MCwGA1UEAxMlQ1NCQyBTZWN1cmUgRGF0YSBFeGNoYW5nZSBERVYgUm9vdCBDQTAe
-Fw0yNjAzMjEyMDE2MDFaFw0zNjAzMTgyMDE2MDFaMDAxLjAsBgNVBAMTJUNTQkMg
-U2VjdXJlIERhdGEgRXhjaGFuZ2UgREVWIFJvb3QgQ0EwWTATBgcqhkjOPQIBBggq
-hkjOPQMBBwNCAASkZrREActpsjEdst6vKcQmxEeO6OuVnoBQ7luxWymcSosJJCHD
-WEV/2e9EyGPLHpw5RstPgx+Ha5D6+BcKGzjio0UwQzAOBgNVHQ8BAf8EBAMCAQYw
-EgYDVR0TAQH/BAgwBgEB/wIBAjAdBgNVHQ4EFgQUYb2Jz7MuAOKY8bu9NM6tjvS6
-xkYwCgYIKoZIzj0EAwIDRwAwRAIgTFXSb8bq5Z8P8oICO3BVHkHxCm0GRcqL10TL
-GtlsuWYCIBPfZrhbZX4oFhEk0sq7HXlBJuh6Zaa6dcsO3RIUt1Gm
------END CERTIFICATE-----
-```
+    ```text
+    -----BEGIN CERTIFICATE-----
+    MIIBozCCAUqgAwIBAgIRAOqrFxwuBQzATeE2ybv4ci8wCgYIKoZIzj0EAwIwMDEu
+    MCwGA1UEAxMlQ1NCQyBTZWN1cmUgRGF0YSBFeGNoYW5nZSBERVYgUm9vdCBDQTAe
+    Fw0yNjAzMjEyMDE2MDFaFw0zNjAzMTgyMDE2MDFaMDAxLjAsBgNVBAMTJUNTQkMg
+    U2VjdXJlIERhdGEgRXhjaGFuZ2UgREVWIFJvb3QgQ0EwWTATBgcqhkjOPQIBBggq
+    hkjOPQMBBwNCAASkZrREActpsjEdst6vKcQmxEeO6OuVnoBQ7luxWymcSosJJCHD
+    WEV/2e9EyGPLHpw5RstPgx+Ha5D6+BcKGzjio0UwQzAOBgNVHQ8BAf8EBAMCAQYw
+    EgYDVR0TAQH/BAgwBgEB/wIBAjAdBgNVHQ4EFgQUYb2Jz7MuAOKY8bu9NM6tjvS6
+    xkYwCgYIKoZIzj0EAwIDRwAwRAIgTFXSb8bq5Z8P8oICO3BVHkHxCm0GRcqL10TL
+    GtlsuWYCIBPfZrhbZX4oFhEk0sq7HXlBJuh6Zaa6dcsO3RIUt1Gm
+    -----END CERTIFICATE-----
+    ```
 
-### Non-Prod {#aps-infra-platform-sdx-documentationhow-tosdx-org-signing--non-prod}
+=== "Non-Prod"
 
-```text
------BEGIN CERTIFICATE-----
-MIIBpTCCAUugAwIBAgIQBYjl1y/VB9YWcN4ix0J9/jAKBggqhkjOPQQDAjAxMS8w
-LQYDVQQDEyZDU0JDIFNlY3VyZSBEYXRhIEV4Y2hhbmdlIFRFU1QgUm9vdCBDQTAe
-Fw0yNjA3MTcyMTM5MTBaFw0zNjA3MTQyMTM5MTBaMDExLzAtBgNVBAMTJkNTQkMg
-U2VjdXJlIERhdGEgRXhjaGFuZ2UgVEVTVCBSb290IENBMFkwEwYHKoZIzj0CAQYI
-KoZIzj0DAQcDQgAEDGVAeDHUrLvBGxuZP7PS/Z8c1RZBb4z8+S7qRySm8VQO6Qt9
-X9VTps3N8rXSk1LO15ELWT0WbWBAfOxi0om5MaNFMEMwDgYDVR0PAQH/BAQDAgEG
-MBIGA1UdEwEB/wQIMAYBAf8CAQIwHQYDVR0OBBYEFAyGhiqDdh67pQepVugBJ35P
-zupYMAoGCCqGSM49BAMCA0gAMEUCIQC0Z98oClh1Ngi63m9Jwvib4GUcfP7b894o
-MGzh5gHWSAIgHZw/p+dnqJiq/ukUIUWrWxTuNmuvgIYG+/HscgaV+yM=
------END CERTIFICATE-----
-```
+    ```text
+    -----BEGIN CERTIFICATE-----
+    MIIBpTCCAUugAwIBAgIQBYjl1y/VB9YWcN4ix0J9/jAKBggqhkjOPQQDAjAxMS8w
+    LQYDVQQDEyZDU0JDIFNlY3VyZSBEYXRhIEV4Y2hhbmdlIFRFU1QgUm9vdCBDQTAe
+    Fw0yNjA3MTcyMTM5MTBaFw0zNjA3MTQyMTM5MTBaMDExLzAtBgNVBAMTJkNTQkMg
+    U2VjdXJlIERhdGEgRXhjaGFuZ2UgVEVTVCBSb290IENBMFkwEwYHKoZIzj0CAQYI
+    KoZIzj0DAQcDQgAEDGVAeDHUrLvBGxuZP7PS/Z8c1RZBb4z8+S7qRySm8VQO6Qt9
+    X9VTps3N8rXSk1LO15ELWT0WbWBAfOxi0om5MaNFMEMwDgYDVR0PAQH/BAQDAgEG
+    MBIGA1UdEwEB/wQIMAYBAf8CAQIwHQYDVR0OBBYEFAyGhiqDdh67pQepVugBJ35P
+    zupYMAoGCCqGSM49BAMCA0gAMEUCIQC0Z98oClh1Ngi63m9Jwvib4GUcfP7b894o
+    MGzh5gHWSAIgHZw/p+dnqJiq/ukUIUWrWxTuNmuvgIYG+/HscgaV+yM=
+    -----END CERTIFICATE-----
+    ```
 
-### Prod {#aps-infra-platform-sdx-documentationhow-tosdx-org-signing--prod}
+=== "Prod"
 
-```text
------BEGIN CERTIFICATE-----
-MIIBpjCCAUygAwIBAgIRAMJMz93KjTyWx4EVe4SLeAEwCgYIKoZIzj0EAwIwMTEv
-MC0GA1UEAxMmQ1NCQyBTZWN1cmUgRGF0YSBFeGNoYW5nZSBQUk9EIFJvb3QgQ0Ew
-HhcNMjYwNzIxMjIzMzAzWhcNMzYwNzE4MjIzMzAzWjAxMS8wLQYDVQQDEyZDU0JD
-IFNlY3VyZSBEYXRhIEV4Y2hhbmdlIFBST0QgUm9vdCBDQTBZMBMGByqGSM49AgEG
-CCqGSM49AwEHA0IABNj3iloPdVoyfNAFAodzvf7Fcz4Pm8l2fYxeP9hZdA8wpk2J
-nOmK9hlgburDu3ehXREbEnZmDClxqhcwC/bfSxSjRTBDMA4GA1UdDwEB/wQEAwIB
-BjASBgNVHRMBAf8ECDAGAQH/AgECMB0GA1UdDgQWBBTNtqkvHMI2ZafMGoKv+NQy
-jIx4XDAKBggqhkjOPQQDAgNIADBFAiAFg+IddYG6zgqalUXVxT+PDfBgI/Jns2Mc
-jS6ocTR5cwIhAKl/0ak7GhWLPSbpKxR7woOz+Qe7CzPsjgidM8+SFH5d
------END CERTIFICATE-----
-```
+    ```text
+    -----BEGIN CERTIFICATE-----
+    MIIBpjCCAUygAwIBAgIRAMJMz93KjTyWx4EVe4SLeAEwCgYIKoZIzj0EAwIwMTEv
+    MC0GA1UEAxMmQ1NCQyBTZWN1cmUgRGF0YSBFeGNoYW5nZSBQUk9EIFJvb3QgQ0Ew
+    HhcNMjYwNzIxMjIzMzAzWhcNMzYwNzE4MjIzMzAzWjAxMS8wLQYDVQQDEyZDU0JD
+    IFNlY3VyZSBEYXRhIEV4Y2hhbmdlIFBST0QgUm9vdCBDQTBZMBMGByqGSM49AgEG
+    CCqGSM49AwEHA0IABNj3iloPdVoyfNAFAodzvf7Fcz4Pm8l2fYxeP9hZdA8wpk2J
+    nOmK9hlgburDu3ehXREbEnZmDClxqhcwC/bfSxSjRTBDMA4GA1UdDwEB/wQEAwIB
+    BjASBgNVHRMBAf8ECDAGAQH/AgECMB0GA1UdDgQWBBTNtqkvHMI2ZafMGoKv+NQy
+    jIx4XDAKBggqhkjOPQQDAgNIADBFAiAFg+IddYG6zgqalUXVxT+PDfBgI/Jns2Mc
+    jS6ocTR5cwIhAKl/0ak7GhWLPSbpKxR7woOz+Qe7CzPsjgidM8+SFH5d
+    -----END CERTIFICATE-----
+    ```
 
 You will then be able to use this information to update the
 public key details with the new certificate in the JWKS registry.
@@ -1574,7 +3088,7 @@ public key details with the new certificate in the JWKS registry.
       'parameters:{ environment: lab, certificatePem[0]: @new.crt, caCerts: @root.crt }'
     ```
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-subsystems.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-subsystems.md -->
 
 ## Managing Subsystems {#aps-infra-platform-sdx-documentationhow-tosdx-subsystems}
 
@@ -1882,7 +3396,7 @@ After a subsystem is deleted, the same subsystem name can be used again.
 
 - [Managing Services](#aps-infra-platform-sdx-documentationhow-tosdx-services)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-services.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-services.md -->
 
 ## Managing Services {#aps-infra-platform-sdx-documentationhow-tosdx-services}
 
@@ -2049,7 +3563,7 @@ After a service is deleted, the same service name can be used again.
 
 - [Connecting a Service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-connections.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-connections.md -->
 
 ## Connecting a Service {#aps-infra-platform-sdx-documentationhow-tosdx-connections}
 
@@ -2272,6 +3786,56 @@ go to [Connection Resources](#aps-infra-platform-sdx-documentationhow-tosdx-conn
     `sdx-p2p-consumer-access.r1` exists, since enabling `consumerMatch`
     ahead of a matching consumer blocks legitimate traffic.
 
+### Troubleshooting token-exchange scopes {#aps-infra-platform-sdx-documentationhow-tosdx-connections--troubleshooting-token-exchange-scopes}
+
+Verified-subject scope derivation fails before the token endpoint is called
+when the verified token is unavailable, its `scope` claim is missing or is not
+a string, or the claim is empty or contains only whitespace. Each condition
+returns HTTP 500:
+
+```json
+{
+  "message": "Token exchange failed",
+  "error": { "code": "E4" }
+}
+```
+
+This E4 response does not include a request ID. Kong logs `Unable to derive
+token exchange scopes:` followed by `verified subject token is unavailable`,
+`verified subject token has no string scope claim`, or `verified subject token
+has an empty scope claim`.
+
+This is distinct from an authorization-server `invalid_scope` response. In
+that case, the token endpoint was called and SDX returns
+`SDX_TOKEN_EXCHANGE_CONFIGURATION_ERROR` as described below.
+
+The SDX token-exchange client must be permitted to request every scope in the
+verified incoming token. If the authorization server rejects the exchange with
+`invalid_scope`, SDX returns HTTP 500 with a generic response:
+
+```json
+{
+  "message": "The SDX token-exchange client is not configured to complete this request. Refer to the SDX Kong token-exchange plugin logs using request ID <request-id> for details.",
+  "error": {
+    "code": "SDX_TOKEN_EXCHANGE_CONFIGURATION_ERROR"
+  }
+}
+```
+
+The `<request-id>` in the message matches the `X-Kong-Request-Id` response
+header. Provide that value to the SDX support team. SDX operators can use it to
+find the diagnostic entry in the Kong token-exchange plugin logs. That entry
+records the authorization server status and error code, requested scopes, and
+audience.
+
+The client response does not include the requested scopes, audience,
+authorization server response or error description, client assertion, or
+tokens.
+
+An explicit granted scope set that differs from the requested set is a warning,
+not an exchange failure. SDX continues with the successful exchanged token, and
+the provider's normal token validation and authorization rules apply.
+
 ### Connection management {#aps-infra-platform-sdx-documentationhow-tosdx-connections--connection-management}
 
 ### Deleting a connection {#aps-infra-platform-sdx-documentationhow-tosdx-connections--deleting-a-connection}
@@ -2327,7 +3891,7 @@ Then the connection can be deleted using its unique identifier.
     If gateway configuration still exists on either side, the request is
     rejected. Remove the remaining gateway configuration and try again.
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-connection-resources.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-connection-resources.md -->
 
 ## Connection Resources {#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources}
 
@@ -2424,7 +3988,7 @@ they should be configured. This page describes all the parameters that are avail
 | **tokenExchange**              | object   | optional            |
 | `.clientId`                    | string   | required            |
 | `.tokenEndpoint`               | string   | required, any value |
-| `.scopes`                      | string[] | optional            |
+| `.scopes`                      | string[] | configured mode only |
 | `.audience`                    | string   | optional            |
 
 ### serviceResources.gatewayPatterns {#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources--serviceresourcesgatewaypatterns}
@@ -2481,6 +4045,59 @@ The following upgrades to `sdx-p2p-consumer.r1` are required:
 | `verify`        | Verification of Edge Runtime token on response from Provider                                  |
 | `counterSign`   | Client organization transaction signature on request                                          |
 
+#### Token exchange scopes {#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources--token-exchange-scopes}
+
+When the `token` and `tokenExchange` upgrades are configured together, SDX
+obtains the requested scopes from the `scope` claim in the token already
+verified by the `token` upgrade. Duplicate values are removed, and the
+resulting list is sent to the authorization server in the token-exchange
+request. This prevents the exchange from defaulting to every scope available
+to the SDX exchange client.
+
+Kong determines execution order from plugin priority: `jwt-keycloak` (1005)
+runs before `token-exchange` (930), regardless of the order in which the
+upgrades appear in the connection.
+
+APS-4931 transfers only scopes already present in the verified subject token;
+it does not add or compose the target privacy-zone scope. APS-5006 must be
+completed before R1 activation so the required target privacy-zone scope is
+supplied.
+
+`SDX.R1.00` provisioning configures token exchange to require verified-token
+context. Scope derivation fails closed when:
+
+- the verified subject token context is unavailable;
+- the `scope` claim is missing or is not a string; or
+- the `scope` claim is empty or contains only whitespace.
+
+Each condition returns HTTP 500 without calling the token endpoint:
+
+```json
+{
+  "message": "Token exchange failed",
+  "error": { "code": "E4" }
+}
+```
+
+This E4 response does not include a request ID. Kong logs `Unable to derive
+token exchange scopes:` followed by the applicable diagnostic reason:
+`verified subject token is unavailable`, `verified subject token has no string
+scope claim`, or `verified subject token has an empty scope claim`.
+
+The paired `jwt-keycloak` plugin accepts the subject token only from the
+`Authorization` header; its JWT query parameter is disabled.
+
+The `tokenExchange.scopes` setting remains available only to plugin routes
+that explicitly use configured-scope mode. It is not an automatic fallback
+for an SDX scope-transfer route.
+
+The successful token response may omit `scope` when the granted scopes match
+the request, as defined by
+[RFC 8693 section 2.2.1](https://www.rfc-editor.org/rfc/rfc8693.html#section-2.2.1).
+If the response declares a different scope set, SDX logs the requested and
+granted sets as a warning and continues with the exchanged token. SDX does not
+decode or introspect the exchanged token to perform this comparison.
+
 ### Service Provider {#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources--service-provider}
 
 `sdx-p2p-provider.r1` pattern is required.
@@ -2494,7 +4111,21 @@ The following upgrades to this pattern are required:
 | `verify`      | Verification of Edge Runtime token on request from Client                      |
 | `counterSign` | Service organization transaction signature on response                         |
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/concepts/secure-data-exchange.md -->
+### Provider request identity headers {#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources--provider-request-identity-headers}
+
+Every request delivered to a provider includes
+`X-SDX-Client-Subsystem-Id`, populated from the client subsystem in the
+provisioned connection. `X-Client-Id` carries the same value because it remains
+part of the current connection-routing contract. Provider integrations should
+use `X-SDX-Client-Subsystem-Id` as the authoritative client identity.
+
+When the consumer Edge Runtime applies the `tokenExchange` upgrade, it also
+adds `X-SDX-Original-AZP`. This value comes from the `azp` claim of the token
+verified by the preceding `token` upgrade, before the exchanged token replaces
+the request authorization. Provider APIs can use this header when they need the
+original requesting OAuth client identifier.
+
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/concepts/secure-data-exchange.md -->
 
 ## Secure Data Exchange (SDX) {#aps-infra-platform-sdx-documentationconceptssecure-data-exchange}
 
@@ -2562,7 +4193,7 @@ How-to guides
 - [Managing services](#aps-infra-platform-sdx-documentationhow-tosdx-services)
 - [Connecting a service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/reference/restish-cli.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/reference/restish-cli.md -->
 
 ## Restish CLI {#aps-infra-platform-sdx-documentationreferencerestish-cli}
 
@@ -2707,7 +4338,7 @@ restish sdx organization-list | cat
 restish sdx organization-list -o yaml
 ```
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/reference/sdx/data-access-protocol.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/reference/sdx/data-access-protocol.md -->
 
 ## SDX Data Access Protocol {#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol}
 
@@ -2729,7 +4360,7 @@ token before passing the response to the calling client.
 
 | Header Name      | Description                                                               |
 | ---------------- | ------------------------------------------------------------------------- |
-| `X-Client-Id`    | Client subsystem identifier                                               |
+| `X-Client-Id`    | Client subsystem identifier used to select the provisioned connection            |
 | `Authorization`  | Client identity JWT                                                       |
 | `Correlation-Id` | Optional                                                                  |
 | `Content-Digest` | Optional - request content digest (RFC 9530)<br>`sha-256=:<hash-base64>:` |
@@ -2737,6 +4368,33 @@ token before passing the response to the calling client.
 The `Authorization` header MUST contain a token that is issued from an approved
 Identity and Authorization Provider. The `azp` claim maps to an SDX Subsystem
 and controls the client connection to the requested target service.
+
+### Privacy zone token exchange scopes {#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol--privacy-zone-token-exchange-scopes}
+
+When privacy zone token exchange is configured together with the `token`
+upgrade for token verification, the Client Edge Runtime reads the
+space-delimited `scope` claim from the verified incoming token, removes
+duplicate values, and sends those scopes in the token-exchange request. The
+`tokenExchange` upgrade alone does not imply that incoming-token verification
+or verified-subject scope transfer occurs. The configured SDX exchange client
+must be permitted to request every required scope.
+
+APS-4931 transfers only the scopes already present in the verified subject
+token. APS-5006, which supplies the target privacy-zone scope, is a prerequisite
+for R1 activation.
+
+For a successful exchange, SDX handles the token endpoint's `scope` response
+according to
+[RFC 8693 section 2.2.1](https://www.rfc-editor.org/rfc/rfc8693.html#section-2.2.1):
+
+- an omitted `scope` value means the granted scopes match the requested scopes;
+- an explicit matching set is accepted regardless of order; and
+- an explicit different set is logged as a warning, and the exchange continues.
+
+This comparison uses the token response metadata. SDX does not decode,
+validate, or introspect the new access token as part of the exchange. The
+Service Edge Runtime and provider API remain responsible for validating and
+authorizing the exchanged token before serving the request.
 
 ### Message transport {#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol--message-transport}
 
@@ -2749,14 +4407,16 @@ the JWT using the specified `jwks_uri` and checks it is in a defined allow list.
 The Client Edge Runtime creates the content digest if the client does not supply one.
 If the client supplies a digest, the Client Edge Runtime validates it.
 
-| Header Name      | Description                                                    |
-| ---------------- | -------------------------------------------------------------- |
-| `X-Edge-Token`   | JWT                                                            |
-| `X-Client-Id`    | Client subsystem identifier                                    |
-| `X-Service-Id`   | Service identifier                                             |
-| `Content-Digest` | Request content digest (RFC 9530)<br>`sha-256=:<hash-base64>:` |
-| `Authorization`  | Client identity JWT                                            |
-| `Correlation-Id` | If passed, forwards it; otherwise, generates a new UUID        |
+| Header Name                       | Description                                                               |
+| --------------------------------- | ------------------------------------------------------------------------- |
+| `X-Edge-Token`                    | JWT                                                                       |
+| `X-SDX-Client-Subsystem-Id`       | Client subsystem identifier set by SDX                                    |
+| `X-SDX-Original-AZP`              | Original verified JWT `azp`; present when SDX performs a token exchange   |
+| `X-Client-Id`                     | Client subsystem identifier used for provisioned connection routing      |
+| `X-Service-Id`                    | Service identifier                                                        |
+| `Content-Digest`                  | Request content digest (RFC 9530)<br>`sha-256=:<hash-base64>:`            |
+| `Authorization`                   | Client identity JWT                                                       |
+| `Correlation-Id`                  | If passed, forwards it; otherwise, generates a new UUID                   |
 
 **X-Edge-Token JWT:**
 
@@ -2798,14 +4458,35 @@ from the `X-Edge-Token` to populate this token.
 
 ### Edge to IS Service (request) {#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol--edge-to-is-service-request}
 
-| Header Name      | Description                                                    |
-| ---------------- | -------------------------------------------------------------- |
-| `X-Edge-Token`   | JWT                                                            |
-| `X-Client-Id`    | Client subsystem identifier                                    |
-| `X-Service-Id`   | Service identifier                                             |
-| `Content-Digest` | Request content digest (RFC 9530)<br>`sha-256=:<hash-base64>:` |
-| `Authorization`  | Client identity JWT                                            |
-| `Correlation-Id` | Passed from the client or generated by the Client Edge Runtime |
+| Header Name                       | Description                                                               |
+| --------------------------------- | ------------------------------------------------------------------------- |
+| `X-Edge-Token`                    | JWT                                                                       |
+| `X-SDX-Client-Subsystem-Id`       | Client subsystem identifier set by SDX                                    |
+| `X-SDX-Original-AZP`              | Original verified JWT `azp`; present when SDX performs a token exchange   |
+| `X-Client-Id`                     | Client subsystem identifier retained for routing and compatibility       |
+| `X-Service-Id`                    | Service identifier                                                        |
+| `Content-Digest`                  | Request content digest (RFC 9530)<br>`sha-256=:<hash-base64>:`            |
+| `Authorization`                   | Client identity JWT                                                       |
+| `Correlation-Id`                  | Passed from the client or generated by the Client Edge Runtime            |
+
+### Provider identity header rules {#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol--provider-identity-header-rules}
+
+SDX always sets `X-SDX-Client-Subsystem-Id` from the client subsystem on the
+provisioned connection. The `X-SDX` prefix identifies SDX as the source, and
+`Client-Subsystem-Id` states the value's catalog meaning. SDX removes a value
+supplied by the calling client before adding the authoritative value.
+
+`X-SDX-Original-AZP` records the `azp` claim from the verified token received
+before an SDX token exchange. The name identifies both the source claim and the
+fact that it predates the exchange. SDX replaces any caller-supplied value and
+omits this header on requests where it cannot obtain a usable `azp` from the
+verified subject token. The header contains one client identifier; it is not an
+exchange history.
+
+For backward compatibility with existing provider integrations, SDX continues
+to send `X-Client-Id` with the same subsystem identifier as
+`X-SDX-Client-Subsystem-Id`. Provider APIs should use
+`X-SDX-Client-Subsystem-Id` for new integrations.
 
 ### IS Service to Edge (response) {#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol--is-service-to-edge-response}
 
@@ -2813,7 +4494,7 @@ from the `X-Edge-Token` to populate this token.
 | ---------------- | -------------------------------------------------------------------------- |
 | `Content-Digest` | Optional - response content digest (RFC 9530)<br>`sha-256=:<hash-base64>:` |
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/reference/sdx/environments.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/reference/sdx/environments.md -->
 
 ## SDX Environments {#aps-infra-platform-sdx-documentationreferencesdxenvironments}
 
@@ -2902,7 +4583,7 @@ For access to services in `Prod`, the following token issuers are accepted:
 
 - `https://loginproxy.gov.bc.ca/auth/realms/standard`
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-ape-event-mgmt.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-ape-event-mgmt.md -->
 
 ## Event Management {#aps-infra-platform-sdx-documentationhow-tosdx-ape-event-mgmt}
 
@@ -3045,7 +4726,7 @@ The return, if successful, is a `202 Accepted`, payload:
 }
 ```
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@5cfc532b822ce6a034764ff5437c68e85e42d01c:./documentation/how-to/sdx-ape-policy-mgmt.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-ape-policy-mgmt.md -->
 
 ## Policy Management {#aps-infra-platform-sdx-documentationhow-tosdx-ape-policy-mgmt}
 
@@ -3147,215 +4828,3 @@ items := {row |
     row := dat["user-gateways"]
 }
 ```
-
-
-# Eligibility Factor Verification TechDoc {#source-efv-techdoc}
-
-<!-- source: sources/EFV TechDoc - V3.docx -->
-
-## Introduction {#efv-techdoc-efv-techdoc-v3}
-
-
-Eligibility Factor Verification, or EFV, helps government programs check specific facts used in eligibility decisions.
-
-Many programs need to confirm similar things, such as income, residency, or other information an applicant provides. Today, this can involve manual document review, screenshots, forms, or staff follow-up. EFV is intended to reduce that effort by helping programs check certain facts against approved or trusted data sources, where available.
-
-EFV does not decide if someone is eligible for a program. EFV is not a program rule engine. It does not approve or deny applications. It helps check facts that a program may use in its own decision process. The program still owns its eligibility rules and makes the final decision.
-
-EFV can support a program by returning a verification result and related information, such as the source used, when the check happened, and any limits or caveats that apply. Program staff or systems can then use that result to support a decision, focus review on exceptions, or reduce the need for applicants to provide documents.\
-\
-EFV is in early development. The first focus is income verification. Future eligibility factors may be explored over time based on program need, source availability, agreements, policy authority, privacy and security requirements, and technical feasibility.\
-\
-Example (in a call outbox)
-
-> A program may need to confirm whether an applicant meets an income rule.
->
-> Without EFV, the applicant may need to upload tax documents, and staff may need to review them manually.
->
-> With EFV, the program may be able to request an income verification check through a trusted source. The program receives a result and supporting details. The program then applies its own rules and decides what happens next.
-
-## Getting Started {#efv-techdoc-efv-techdoc-v3--getting-started}
-
-Use this page to decide whether EFV may be useful for your program or service.
-
-EFV is still developing. The best first step is to [contact the EFV team](#efv-techdoc-efv-techdoc-v3--support-and-next-steps) with a clear use case. The team can help determine whether EFV is a good fit, whether an existing verification factor is available, and what other teams or approvals may be involved.
-
-#### When EFV may be useful {#efv-techdoc-efv-techdoc-v3--when-efv-may-be-useful}
-
-EFV may be useful when your program needs to check a specific fact used in an eligibility decision.
-
-EFV may help when your program wants to:
-
-- Use a trusted source instead of applicant-submitted documents
-
-- Reduce manual document review or staff follow-up
-
-- Support more consistent decisions
-
-- Keep a record of what was checked, when, and against what source
-
-- Help staff focus on exceptions or higher-risk cases
-
-- Reuse a verification pattern that may also help other programs
-
-#### Understanding data-use requirements {#efv-techdoc-efv-techdoc-v3--understanding-data-use-requirements}
-
-Using EFV may require more than a technical connection. Before information can be requested or used, the consuming program and data provider may need to confirm the applicable legal authority, privacy requirements, agreements, consent or notice requirements, security controls, and business rules.
-
-These requirements will depend on the program, the eligibility factor, the data source, and the intended use. The EFV team can help identify the requirements and teams that may need to be involved. The consuming program remains responsible for confirming that it has the authority and approvals needed to request and use the information.
-
-#### What makes a good EFV candidate {#efv-techdoc-efv-techdoc-v3--what-makes-a-good-efv-candidate}
-
-A good EFV candidate is usually a verification need that is specific, repeatable, and connected to a trusted source.
-
-EFV may be a stronger fit when:
-
-- The same fact is checked often
-
-- The current process is manual
-
-- The information is not already easy to access or reuse
-
-- The verification pattern could help more than one program
-
-#### When EFV may not be the right fit {#efv-techdoc-efv-techdoc-v3--when-efv-may-not-be-the-right-fit}
-
-EFV may not be the right fit when:
-
-- The decision depends on case-by-case judgment
-
-- The fact cannot be checked through a trusted source
-
-- The program does not have authority to request or use the data
-
-- The information is already available through an existing dataset, API, service, or public source
-
-- The program needs broad data access instead of a specific verification need
-
-- The program needs policy design support, rather than verification support
-
-#### Before you contact the EFV team {#efv-techdoc-efv-techdoc-v3--before-you-contact-the-efv-team}
-
-You do not need a full solution before contacting the EFV team.
-
-Start with the eligibility fact you need to check, how you check it today, and what problem you are trying to solve.\
-\
-If you already know the potential data source or provider, intended use, legal authority, consent or notice requirements, privacy and security considerations, or agreement needs, include those as well. You do not need to have every requirement resolved before contacting the EFV team.
-
-## Eligibility factors {#efv-techdoc-efv-techdoc-v3--eligibility-factors}
-
-Use this page to understand how EFV looks at possible eligibility factors.
-
-An eligibility factor is a specific fact that a program may need to check before making a decision. This could include income or other information used in program rules.
-
-EFV is organized around these factors. Each factor may use a different source, need different approvals, or have different limits. Because of this, EFV does not treat every factor the same way.
-
-The first EFV factor is [income verification](#efv-techdoc-efv-techdoc-v3--income-verification). EFV is starting with income verification as the first reusable verification capability that programs may be able to consume.
-
-Future factors may be explored over time based on program need, source availability, agreements, policy authority, privacy and security requirements, and technical feasibility.
-
-Not every eligibility fact needs EFV. Some facts may already be supported through an existing dataset, API, service, or program process. EFV is intended for verification needs that are specific, repeatable, and not already easy for programs to access or reuse.
-
-Before a factor can be supported through EFV, the EFV team needs to understand:
-
-- What fact the program needs to check
-
-- Which program rule or workflow the check supports
-
-- Whether there is a trusted source for the information
-
-- Whether the program has authority to request or use the information
-
-- What legal authority, agreements, consent or notice requirements, privacy protections, security controls, audit requirements, or other provider conditions apply
-
-- Whether the data is current enough for the program’s use case
-
-- Whether the verification pattern could be reused by other programs
-
-- Whether there is a practical technical path to access or verify the information
-
-Data providers need confidence that their information will only be requested and used for an approved purpose and under the required conditions. As part of developing an eligibility factor, the EFV team can help identify what requirements may need to be supported. This may include technical, legal, privacy, consent, agreement, and business requirements. This may include determining whether a required authorization or consent check needs to occur before a verification request is sent. The specific approach will depend on the provider, program, data source, and approved use case.
-
-A factor should not be presented as available until the source, permitted purpose, authority, agreement needs, technical path, and support needs are understood well enough to guide users.
-
-## Income Verification {#efv-techdoc-efv-techdoc-v3--income-verification}
-
-Income verification is the first eligibility factor in development through EFV.
-
-This page provides factor-specific information for programs that may need to check income as part of an eligibility process.
-
-#### Status {#efv-techdoc-efv-techdoc-v3--status}
-
-Income verification is **in development** as the first EFV use case.
-
-#### What income verification may support {#efv-techdoc-efv-techdoc-v3--what-income-verification-may-support}
-
-Income verification may support programs that need to check income-related information as part of an eligibility decision or review process.
-
-The type of response EFV returns will depend on the approved use case and source requirements.
-
-For example, a program may need to confirm whether an applicant meets an income rule without asking the applicant to upload tax documents for manual review.
-
-#### What the response does not mean {#efv-techdoc-efv-techdoc-v3--what-the-response-does-not-mean}
-
-An income verification response does not decide whether someone is eligible for a program.
-
-The program remains responsible for:
-
-- Defining eligibility rules
-
-- Applying program policy
-
-- Deciding how the response is used
-
-- Managing exceptions
-
-- Completing any required staff review
-
-- Making the final eligibility decision
-
-#### Program readiness {#efv-techdoc-efv-techdoc-v3--program-readiness}
-
-Before using income verification, a program may need to confirm:
-
-- The income rule or program requirement being supported
-
-- The purpose for using the income information
-
-- The authority to request or use the information
-
-- Consent requirements
-
-- Privacy and security requirements
-
-- Agreement or MOU requirements
-
-- Audit and monitoring expectations
-
-- How long records or consent evidence must be retained
-
-- Who can access the result
-
-- How exceptions, denied responses, or incomplete matches will be handled
-
-Depending on the approved use case and source requirements, the income verification process may also need to confirm that required authorization, consent, or other conditions have been met before a request is sent. The EFV team will work with the consuming program, data provider, and appropriate privacy, legal, security, and technical teams to identify the required approach.
-
-#### Caveats and limitations {#efv-techdoc-efv-techdoc-v3--caveats-and-limitations}
-
-Income verification has source-specific requirements and constraints.
-
-Programs should not assume that income verification can be used until the authority, agreement path, consent model, permitted data elements, technical approach, and operational support expectations are confirmed.
-
-**The EFV team can help determine whether income verification may be a fit for a program use case and what discovery is needed next.**
-
-## Support and Next Steps {#efv-techdoc-efv-techdoc-v3--support-and-next-steps}
-
-EFV is still developing. Support channels and service expectations will be added as they are confirmed.
-
-To discuss whether EFV may be a fit for your program or service, contact the EFV team. (Email? Justin? Teams Channel?)
-
-Include the program name, the eligibility factor you want to verify, the current process, and any timeline or pilot dependency.
-
-#### Related resources {#efv-techdoc-efv-techdoc-v3--related-resources}
-
-Links will be added as they become available.
