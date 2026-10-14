@@ -1,5 +1,5 @@
 schema_version: 1
-generated_at: '2026-10-14T16:14:23.977027+00:00'
+generated_at: '2026-10-14T18:14:29.302019+00:00'
 sources:
 - id: building-trusted-digital-services
   title: Building Trusted Digital Services
@@ -69,6 +69,7 @@ sources:
   - docs/roles-and-responsibilities.md
   - docs/limits-and-constraints.md
   - docs/support.md
+  techdocs_component: building-trusted-digital-services-techdocs
 - id: integration-toolkit
   title: Integration Toolkit
   type: git
@@ -105,6 +106,7 @@ sources:
   - docs/finding-and-using-itk.md
   - docs/milestone-updates.md
   - docs/support.md
+  techdocs_component: integration-toolkit-techdocs
 - id: adr-techdoc
   title: Authoritative Data Registers
   type: docx
@@ -115,42 +117,6 @@ sources:
   - path: ADR Techdocs_Draft V2.docx
     sha256: c8f8bf0cf789e15e082f89025dc975b421cc827ac703cbe9456710bcdba67715
     size_bytes: 212602
-- id: efv-techdoc
-  title: Eligibility Factor Verification
-  type: git
-  repository: https://github.com/bcgov/efv-itk-docs.git
-  ref: main
-  revision: e83f11c98640a69e46d814e8e11417bc8892f8e6
-  root: .
-  order: 25
-  content_sha256: 4fe8160dd63cc13e8dd2d4136a0fb4fd920c5392c8c4e6a54b7286f7ef719937
-  files:
-  - path: docs/eligibility-factors.md
-    sha256: 9fd724af0886ebfc9f209c3f8a48a3abe90a6e825c61102ffd76b5b24e17b03c
-    size_bytes: 2625
-  - path: docs/getting-started.md
-    sha256: 0fdb0f06072347f673f10c09460b2f7a058aa768603135d2798202471063332b
-    size_bytes: 3066
-  - path: docs/income-verification.md
-    sha256: 74fc27a913ad425b29fa37bf1fe3b196836b8c0251334d69f1828d20027a326f
-    size_bytes: 2512
-  - path: docs/index.md
-    sha256: 795421cf05e3fc3b5b5a623e21282a07f29aff1dd1fc0e7874c9487cf7181e59
-    size_bytes: 1772
-  - path: docs/support.md
-    sha256: 0a774233d220a3a75f5726fd46f784c7db3ac727417e925676960349982ac92f
-    size_bytes: 456
-  navigation:
-    path: mkdocs.yml
-    sha256: 980eb09cbffeefa275b95a9b01f804b218811eafe3fad7874fbd5f21e0a63b98
-    docs_dir: docs
-    unlisted_files: []
-  document_order:
-  - docs/index.md
-  - docs/getting-started.md
-  - docs/eligibility-factors.md
-  - docs/income-verification.md
-  - docs/support.md
 - id: secure-data-exchange
   title: Secure Data Exchange
   type: git
@@ -235,6 +201,7 @@ sources:
   - docs/experimental-features.md
   - docs/references.md
   - docs/support.md
+  techdocs_component: secure-data-exchange-techdocs
 - id: aps-infra-platform-sdx
   title: API Services Portal - SDX Documentation
   type: git
@@ -314,3 +281,47 @@ sources:
   - documentation/how-to/sdx-ape-event-mgmt.md
   - documentation/how-to/sdx-ape-policy-mgmt.md
   techdocs_component: aps-infra-platform-docs
+- id: efv-techdoc
+  title: Eligibility Factor Verification
+  type: git
+  repository: https://github.com/bcgov/efv-itk-docs.git
+  ref: main
+  revision: e83f11c98640a69e46d814e8e11417bc8892f8e6
+  root: .
+  order: 50
+  content_sha256: 4fe8160dd63cc13e8dd2d4136a0fb4fd920c5392c8c4e6a54b7286f7ef719937
+  files:
+  - path: docs/eligibility-factors.md
+    sha256: 9fd724af0886ebfc9f209c3f8a48a3abe90a6e825c61102ffd76b5b24e17b03c
+    size_bytes: 2625
+  - path: docs/getting-started.md
+    sha256: 0fdb0f06072347f673f10c09460b2f7a058aa768603135d2798202471063332b
+    size_bytes: 3066
+  - path: docs/income-verification.md
+    sha256: 74fc27a913ad425b29fa37bf1fe3b196836b8c0251334d69f1828d20027a326f
+    size_bytes: 2512
+  - path: docs/index.md
+    sha256: 795421cf05e3fc3b5b5a623e21282a07f29aff1dd1fc0e7874c9487cf7181e59
+    size_bytes: 1772
+  - path: docs/support.md
+    sha256: 0a774233d220a3a75f5726fd46f784c7db3ac727417e925676960349982ac92f
+    size_bytes: 456
+  navigation:
+    path: mkdocs.yml
+    sha256: 980eb09cbffeefa275b95a9b01f804b218811eafe3fad7874fbd5f21e0a63b98
+    docs_dir: docs
+    unlisted_files: []
+  document_order:
+  - docs/index.md
+  - docs/getting-started.md
+  - docs/eligibility-factors.md
+  - docs/income-verification.md
+  - docs/support.md
+  techdocs_component: efv-itk-techdocs
+- id: bc-data-catalogue
+  title: BC Data Catalogue
+  type: placeholder
+  message: Documentation coming soon.
+  order: 60
+  content_sha256: aa0056d372ffea34117c989c653c5c8ccf6133c36c0882a60e776283365a2dbd
+  files: []

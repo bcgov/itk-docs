@@ -113,6 +113,9 @@ def main() -> None:
                 documents = normalize_markdown(source, source_output)
             case "docx":
                 documents = normalize_docx(source, source_output)
+            case "placeholder":
+                documents = []
+                source_output.mkdir(parents=True, exist_ok=True)
             case unsupported:
                 raise ValueError(f"Unsupported source type: {unsupported}")
 

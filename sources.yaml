@@ -11,6 +11,7 @@ sources:
     ref: main
     root: getting-started
     navigation: mkdocs.yml
+    techdocs_component: building-trusted-digital-services-techdocs
     include:
       - docs/**/*.md
     order: 10
@@ -22,6 +23,7 @@ sources:
     ref: main
     root: integration-toolkit
     navigation: mkdocs.yml
+    techdocs_component: integration-toolkit-techdocs
     include:
       - docs/**/*.md
     order: 11
@@ -33,6 +35,7 @@ sources:
     ref: main
     root: secure-data-exchange
     navigation: mkdocs.yml
+    techdocs_component: secure-data-exchange-techdocs
     include:
       - docs/**/*.md
     assets:
@@ -67,12 +70,20 @@ sources:
     ref: main
     root: .
     navigation: mkdocs.yml
+    techdocs_component: efv-itk-techdocs
     include:
       - docs/**/*.md
-    order: 25
+    order: 50
 
   - id: adr-techdoc
     title: Authoritative Data Registers
     type: docx
     location: sources/ADR Techdocs_Draft V2.docx
     order: 20
+
+  # Placeholder: no upstream content yet. Renders the title and message only.
+  - id: bc-data-catalogue
+    title: BC Data Catalogue
+    type: placeholder
+    message: Documentation coming soon.
+    order: 60

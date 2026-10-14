@@ -24,7 +24,9 @@ LINK_PATTERN = re.compile(
     r"(?P<image>!?)\[(?P<label>[^\]]*)\]\("
     r"(?P<target><[^>]+>|[^)\s]+)(?P<suffix>[^)]*)\)"
 )
-TECHDOCS_PATTERN = re.compile(r"^/docs/default/component/([^/]+)/(.+?)/?$")
+TECHDOCS_PATTERN = re.compile(
+    r"^/docs/default/component/([^/]+)(?:/(.*?))?/?$", re.IGNORECASE
+)
 LEGACY_ANCHOR_PATTERN = re.compile(
     r"""^\s*<a\s+(?:name|id)=["'][^"']+["']\s*></a>\s*$""",
     re.IGNORECASE,
@@ -213,10 +215,23 @@ def resolve_document(
     techdocs_match = TECHDOCS_PATTERN.match(target_path)
     if techdocs_match:
         component, component_path = techdocs_match.groups()
-        target_source = sources_by_component.get(component)
+        target_source = sources_by_component.get(component.lower())
         if not target_source:
             return None
-        return documents_by_alias.get((target_source["id"], component_path.rstrip("/")))
+        component_path = (component_path or "").rstrip("/")
+        document = documents_by_alias.get((target_source["id"], component_path))
+        if document or component_path:
+            return document
+        # Component root without an index page: link to the source's first document.
+        return min(
+            (
+                candidate
+                for (source_id, _), candidate in documents_by_alias.items()
+                if source_id == target_source["id"]
+            ),
+            key=lambda candidate: candidate["position"],
+            default=None,
+        )
 
     if target_path.startswith("/"):
         normalized = posixpath.normpath(target_path.lstrip("/"))
@@ -450,6 +465,8 @@ def main() -> None:
     for source, _, source_documents in prepared_sources:
         source_anchor = slugify(f"source--{source['id']}")
         output.extend(["", f"# {source['title']} {{#{source_anchor}}}", ""])
+        if source["type"] == "placeholder":
+            output.extend([f"*{source['message']}*", ""])
 
         for document in source_documents:
             output.extend(

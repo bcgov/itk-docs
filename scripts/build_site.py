@@ -97,6 +97,8 @@ def render_manifest_page(
             )
             if component := source.get("techdocs_component"):
                 lines.append(f"- TechDocs component: `{component}`")
+        elif source["type"] == "placeholder":
+            lines.append(f"- Placeholder message: {source['message']}")
         else:
             lines.append(f"- Location: `{source['location']}`")
 
@@ -121,6 +123,10 @@ def render_manifest_page(
             ]
         if not document_order:
             document_order = [file["path"] for file in source.get("files", [])]
+
+        if source["type"] == "placeholder":
+            lines.append("")
+            continue
 
         lines.extend(["", "### Included files", ""])
         for position, path in enumerate(document_order, start=1):

@@ -87,6 +87,22 @@ def fetch_local(source: dict[str, Any]) -> dict[str, Any]:
     }
 
 
+DEFAULT_PLACEHOLDER_MESSAGE = "Documentation coming soon."
+
+
+def fetch_placeholder(source: dict[str, Any]) -> dict[str, Any]:
+    message = source.get("message", DEFAULT_PLACEHOLDER_MESSAGE)
+    return {
+        "id": source["id"],
+        "title": source["title"],
+        "type": source["type"],
+        "message": message,
+        "order": source["order"],
+        "content_sha256": hashlib.sha256(message.encode()).hexdigest(),
+        "files": [],
+    }
+
+
 def fetch_git(source: dict[str, Any]) -> dict[str, Any]:
     checkout = REPO_DIR / source["id"]
     run_git(
@@ -209,6 +225,8 @@ def main() -> None:
                 locked_sources.append(fetch_local(source))
             case "git":
                 locked_sources.append(fetch_git(source))
+            case "placeholder":
+                locked_sources.append(fetch_placeholder(source))
             case unsupported:
                 raise ValueError(f"Unsupported source type: {unsupported}")
 

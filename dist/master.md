@@ -38,12 +38,6 @@
     - [Semantics](#adr-techdoc-adr-techdocs-draft-v2--semantics-1)
     - [Data dictionaries](#adr-techdoc-adr-techdocs-draft-v2--data-dictionaries-3)
     - [Connected Services Data Glossary](#adr-techdoc-adr-techdocs-draft-v2--connected-services-data-glossary-3)
-- [Eligibility Factor Verification](#source-efv-techdoc)
-    - [Introduction](#efv-techdoc-docsindex)
-    - [Getting Started](#efv-techdoc-docsgetting-started)
-    - [Eligibility Factors](#efv-techdoc-docseligibility-factors)
-    - [Income Verification](#efv-techdoc-docsincome-verification)
-    - [Support](#efv-techdoc-docssupport)
 - [Secure Data Exchange](#source-secure-data-exchange)
     - [Secure Data Exchange (SDX)](#secure-data-exchange-docsindex)
     - [SDX Roles and Responsibilities](#secure-data-exchange-docsgetting-started-with-sdxsdx-roles-and-responsibilities)
@@ -76,6 +70,13 @@
     - [SDX Environments](#aps-infra-platform-sdx-documentationreferencesdxenvironments)
     - [Event Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-event-mgmt)
     - [Policy Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-policy-mgmt)
+- [Eligibility Factor Verification](#source-efv-techdoc)
+    - [Introduction](#efv-techdoc-docsindex)
+    - [Getting Started](#efv-techdoc-docsgetting-started)
+    - [Eligibility Factors](#efv-techdoc-docseligibility-factors)
+    - [Income Verification](#efv-techdoc-docsincome-verification)
+    - [Support](#efv-techdoc-docssupport)
+- [BC Data Catalogue](#source-bc-data-catalogue)
 
 # Building Trusted Digital Services {#source-building-trusted-digital-services}
 
@@ -352,7 +353,7 @@ EFV may help when your program wants to:
 
 ### Where to go next {#building-trusted-digital-services-docseligibility-factor-verification--where-to-go-next}
 
-- Read the [EFV documentation](https://developer.gov.bc.ca/docs/default/component/efv-itk-techdocs) for details
+- Read the [EFV documentation](#efv-techdoc-docsindex) for details
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/secure-data-exchange.md -->
 
@@ -414,7 +415,7 @@ Once onboarded:
 
 SDX Edge Servers provide the secure connection used by participating organizations.
 
-For more details including setup instructions, see [Getting started with SDX documentation](https://developer.gov.bc.ca/docs/default/component/secure-data-exchange-techdocs/).
+For more details including setup instructions, see [Getting started with SDX documentation](#secure-data-exchange-docsindex).
 
 ### Privacy and security responsibilities {#building-trusted-digital-services-docssecure-data-exchange--privacy-and-security-responsibilities}
 
@@ -425,7 +426,7 @@ Using SDX does not replace an organization's responsibility to meet its own priv
 See [Privacy and security](#building-trusted-digital-services-docsprivacy-and-security) for more information about organizational responsibilities and accountability.
 
 ### Where to go next {#building-trusted-digital-services-docssecure-data-exchange--where-to-go-next}
-- [Getting started with SDX documentation](https://developer.gov.bc.ca/docs/default/component/secure-data-exchange-techdocs/)
+- [Getting started with SDX documentation](#secure-data-exchange-docsindex)
 - Or go directly to [SDX onboarding documentation](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/api-services-portal.md -->
@@ -464,7 +465,7 @@ Use the API Services Portal when you need a simple, secure way to send informati
 ### Where to go next {#building-trusted-digital-services-docsapi-services-portal--where-to-go-next}
 
 - Read the beginner guide on how to [Connect to the API Services Portal](https://digital.gov.bc.ca/technology/api/portal/). 
-- Check out full technical details on [API Program Services documentation](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/).
+- Check out full technical details on [API Program Services documentation](#aps-infra-platform-sdx-documentationhow-toget-support).
 - Browse available tools on the [BC Government API Services Portal](https://api.gov.bc.ca/).
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/integration-toolkit.md -->
@@ -496,7 +497,7 @@ Over time, the goal is for that path to become more guided, walking you through 
 
 ### Where to go next {#building-trusted-digital-services-docsintegration-toolkit--where-to-go-next}
 
-- Read the full [ITK documentation](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/)
+- Read the full [ITK documentation](#integration-toolkit-docsindex)
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:getting-started/docs/privacy-and-security.md -->
 
@@ -766,7 +767,7 @@ This work brings together multiple building blocks. Not all questions will go to
 Common starting points:
 
 - Understanding what a trusted digital service involves: [Connected services overview](#building-trusted-digital-services-docsindex)
-- Understanding these building blocks and getting support with them: [ITK documentation and support](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/support/)
+- Understanding these building blocks and getting support with them: [ITK documentation and support](#integration-toolkit-docssupport)
 - The bigger picture behind this work: [Building connected services in B.C.](https://digital.gov.bc.ca/2025/07/21/building-connected-services/)
 
 
@@ -783,7 +784,7 @@ Finding information about the government's technical products and services can b
 
 ITK isn't a separate application or portal. You won't find a button, portal, or menu item called "Integration Toolkit" in DevHub. Right now, ITK is documentation. This page, and the ones it links to, help you understand what's involved and how to get started. 
 
-ITK points to [five areas](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/areas-of-itk/) that support data interoperability, managed by the Data Interoperability Foundational Teams (DIFT): 
+ITK points to [five areas](#integration-toolkit-docsareas-of-itk) that support data interoperability, managed by the Data Interoperability Foundational Teams (DIFT): 
 
 - Authoritative Data Registers (ADR): shared terms, definitions, and standards for data 
 - Eligibility Factor Verification (EFV): checking eligibility against authoritative sources 
@@ -797,7 +798,7 @@ Each area is owned and maintained by its own government team. Each team works on
 
 ITK points to five areas of data interoperability foundational tools.  
 
-See [Areas of ITK](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/areas-of-itk/) for what each one does. 
+See [Areas of ITK](#integration-toolkit-docsareas-of-itk) for what each one does. 
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/areas-of-itk.md -->
 
@@ -810,19 +811,19 @@ This section introduces each area, what it contributes, and where to go for deta
 
 ### Authoritative Data Register (ADR) {#integration-toolkit-docsareas-of-itk--authoritative-data-register-adr}
 
-Shared terms, definitions, relationships, and standards for data. ADR maintains the Connected Services Glossary, keeping shared terms consistent across government.  More detailed ADR documentation will be made available over time.  Read the [ADR overview](https://developer.gov.bc.ca/docs/default/component/building-trusted-digital-services-techdocs/authoritative-data-register/).
+Shared terms, definitions, relationships, and standards for data. ADR maintains the Connected Services Glossary, keeping shared terms consistent across government.  More detailed ADR documentation will be made available over time.  Read the [ADR overview](#building-trusted-digital-services-docsauthoritative-data-register).
 
 ### Eligibility Factor Verification (EFV) {#integration-toolkit-docsareas-of-itk--eligibility-factor-verification-efv}
 
-The ability to check eligibility against authoritative sources, for things like income or residency. More detailed EFV documentation will be made available over time. Read the [EFV documentation](https://developer.gov.bc.ca/docs/default/component/efv-itk-techdocs) for details.
+The ability to check eligibility against authoritative sources, for things like income or residency. More detailed EFV documentation will be made available over time. Read the [EFV documentation](#efv-techdoc-docsindex) for details.
 
 ### Secure Data Exchange (SDX) {#integration-toolkit-docsareas-of-itk--secure-data-exchange-sdx}
 
-A service for secure, formal data exchange between specific government agencies and external partners. Read the [SDX documentation](https://developer.gov.bc.ca/docs/default/Component/secure-data-exchange-techdocs/) for details.
+A service for secure, formal data exchange between specific government agencies and external partners. Read the [SDX documentation](#secure-data-exchange-docsindex) for details.
 
 ### API Services Portal {#integration-toolkit-docsareas-of-itk--api-services-portal}
 
-A central gateway for connecting APIs across government. Covers routing, access control, and general API management.  Read the [API Services Portal overview](https://developer.gov.bc.ca/docs/default/component/building-trusted-digital-services-techdocs/api-services-portal/) for details and helpful links. 
+A central gateway for connecting APIs across government. Covers routing, access control, and general API management.  Read the [API Services Portal overview](#building-trusted-digital-services-docsapi-services-portal) for details and helpful links. 
 
 ### BC Data Catalogue (BCDC) {#integration-toolkit-docsareas-of-itk--bc-data-catalogue-bcdc}
 
@@ -830,7 +831,7 @@ Datasets available across government. If you're looking to make a dataset availa
 
 ### Put into practice {#integration-toolkit-docsareas-of-itk--put-into-practice}
 
- Knowing what each area does is the first step. Here's how to actually start using ITK today.  See [Finding and using ITK](https://developer.gov.bc.ca/docs/default/component/integration-toolkit-techdocs/finding-and-using-itk/). 
+ Knowing what each area does is the first step. Here's how to actually start using ITK today.  See [Finding and using ITK](#integration-toolkit-docsfinding-and-using-itk). 
 
 <!-- source: https://github.com/bcgov/connected-services-techdocs.git@b05987f45ca7dad9aac3a749c0babfaaaf589516:integration-toolkit/docs/finding-and-using-itk.md -->
 
@@ -1634,238 +1635,6 @@ The workflow for adding or updating a Data Glossary term is still being confirme
 ### Contact us {#adr-techdoc-adr-techdocs-draft-v2--contact-us-8}
 
 Submit feedback, request more information, or get help through the \[placeholder link\].
-
-
-# Eligibility Factor Verification {#source-efv-techdoc}
-
-<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/index.md -->
-
-## Introduction {#efv-techdoc-docsindex}
-
-
-Eligibility Factor Verification, or EFV, helps government programs check specific facts used in eligibility decisions.
-
-Many programs need to confirm similar things, such as income, residency, or other information an applicant provides. Today, this can involve manual document review, screenshots, forms, or staff follow-up. EFV is intended to reduce that effort by helping programs check certain facts against approved or trusted data sources, where available.
-
-EFV does not decide if someone is eligible for a program. EFV is not a program rule engine. It does not approve or deny applications. It helps check facts that a program may use in its own decision process. The program still owns its eligibility rules and makes the final decision.
-
-EFV can support a program by returning a verification result and related information, such as the source used, when the check happened, and any limits or caveats that apply. Program staff or systems can then use that result to support a decision, focus review on exceptions, or reduce the need for applicants to provide documents. EFV is in early development. The first focus is income verification.
-
-Future eligibility factors may be explored over time based on:
-- program need
-- source availability
-- agreements
-- policy authority
-- privacy and security requirements
-- technical feasibility
-
-### Example {#efv-techdoc-docsindex--example}
-
-A program may need to confirm whether an applicant meets an income rule.
-
-Without EFV, the applicant may need to upload tax documents, and staff may need to review them manually.
-
-With EFV, the program may be able to request an income verification check through a trusted source. The program receives a result and supporting details. The program then applies its own rules and decides what happens next.
-
-<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/getting-started.md -->
-
-## Getting Started {#efv-techdoc-docsgetting-started}
-
-
-Use this page to decide whether EFV may be useful for your program or service.
-
-EFV is still developing. The best first step is to [contact the EFV team](mailto:justin.hume@gov.bc.ca) with a clear use case. The team can help determine whether EFV is a good fit, whether an existing verification factor is available, and what other teams or approvals may be involved.
-
-### When EFV may be useful {#efv-techdoc-docsgetting-started--when-efv-may-be-useful}
-
-EFV may be useful when your program needs to check a specific fact used in an eligibility decision.
-EFV may help when your program wants to:
-
-- Use a trusted source instead of applicant-submitted documents
-- Reduce manual document review or staff follow-up
-- Support more consistent decisions
-- Keep a record of what was checked, when, and against what source
-- Help staff focus on exceptions or higher-risk cases
-- Reuse a verification pattern that may also help other programs
-
-### Understanding data-use requirements {#efv-techdoc-docsgetting-started--understanding-data-use-requirements}
-
-Using EFV may require more than a technical connection. Before information can be requested or used, the consuming program and data provider may need to confirm:
-
-- The applicable legal authority
-- Privacy requirements
-- Agreements
-- Consent or notice requirements
-- Security controls
-- Business rules
-
-These requirements will depend on the program, the eligibility factor, the data source, and the intended use. The EFV team can help identify the requirements and teams that may need to be involved. The consuming program remains responsible for confirming that it has the authority and approvals needed to request and use the information.
-
-### What makes a good EFV candidate {#efv-techdoc-docsgetting-started--what-makes-a-good-efv-candidate}
-
-A good EFV candidate is usually a verification need that is specific, repeatable, and connected to a trusted source.
-
-EFV may be a stronger fit when:
-
-- The same fact is checked often
-- The current process is manual
-- The information is not already easy to access or reuse
-- The verification pattern could help more than one program
-
-### When EFV may not be the right fit {#efv-techdoc-docsgetting-started--when-efv-may-not-be-the-right-fit}
-
-EFV may not be the right fit when:
-
-- The decision depends on case-by-case judgment
-- The fact cannot be checked through a trusted source
-- The program does not have authority to request or use the data
-- The information is already available through an existing dataset, API, service, or public source
-- The program needs broad data access instead of a specific verification need
-- The program needs policy design support, rather than verification support
-
-### Before you contact the EFV team {#efv-techdoc-docsgetting-started--before-you-contact-the-efv-team}
-
-You do not need a full solution before contacting the EFV team.
-
-Start with the eligibility fact you need to check, how you check it today, and what problem you are trying to solve.
-
-If you already know the potential data source or provider, intended use, legal authority, consent or notice requirements, privacy and security considerations, or agreement needs, include those as well. You do not need to have every requirement resolved before contacting the EFV team.
-
-To discuss whether EFV may be a fit for your program or service, [contact the EFV team](mailto:justin.hume@gov.bc.ca). 
-
-<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/eligibility-factors.md -->
-
-## Eligibility Factors {#efv-techdoc-docseligibility-factors}
-
-
-Use this page to understand how EFV looks at possible eligibility factors.
-
-An eligibility factor is a specific fact that a program may need to check before making a decision. This could include income or other information used in program rules.
-
-EFV is organized around these factors. Each factor may use a different source, need different approvals, or have different limits. Because of this, EFV does not treat every factor the same way.
-
-The first EFV factor is income verification. EFV is starting with income verification as the first reusable verification capability that programs may be able to consume.
-
-Future factors may be explored over time based on:
-- program need
-- source availability
-- agreements
-- policy authority
-- privacy and security requirements
-- technical feasibility
-
-Not every eligibility fact needs EFV. Some facts may already be supported through an existing dataset, API, service, or program process. EFV is intended for verification needs that are specific, repeatable, and not already easy for programs to access or reuse.
-
-Before a factor can be supported through EFV, the EFV team needs to understand:
-
-- What fact the program needs to check
-- Which program rule or workflow the check supports
-- Whether there is a trusted source for the information
-- Whether the program has authority to request or use the information
-- What legal authority, agreements, consent or notice requirements, privacy protections, security controls, audit requirements, or other provider conditions apply
-- Whether the data is current enough for the program’s use case
-- Whether the verification pattern could be reused by other programs
-- Whether there is a practical technical path to access or verify the information
-
-Data providers need confidence that their information will only be requested and used for an approved purpose and under the required conditions. As part of developing an eligibility factor, the EFV team can help identify what requirements may need to be supported. This may include:
-
-- technical requirements
-- legal requirements
-- privacy requirements
-- consent requirements
-- agreement requirements
-- business requirements
-
-This may also include determining whether a required authorization or consent check needs to occur before a verification request is sent. The specific approach will depend on the provider, program, data source, and approved use case.
-
-A factor should not be presented as available until the following are understood well enough to guide users:
-
-- the source
-- permitted purpose
-- authority
-- agreement needs
-- technical path
-- support needs
-
-<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/income-verification.md -->
-
-## Income Verification {#efv-techdoc-docsincome-verification}
-
-
-Income verification is the first eligibility factor **in development** through EFV.
-
-This page provides factor-specific information for programs that may need to check income as part of an eligibility process.
-
-### Status {#efv-techdoc-docsincome-verification--status}
-
-Income verification is in development as the first EFV use case.
-
-### What income verification may support {#efv-techdoc-docsincome-verification--what-income-verification-may-support}
-
-Income verification may support programs that need to check income-related information as part of an eligibility decision or review process.
-The type of response EFV returns will depend on the approved use case and source requirements.
-
-For example, a program may need to confirm whether an applicant meets an income rule without asking the applicant to upload tax documents for manual review.
-
-### What the response does not mean {#efv-techdoc-docsincome-verification--what-the-response-does-not-mean}
-
-An income verification response does not decide whether someone is eligible for a program.
-
-The program remains responsible for:
-
-- Defining eligibility rules
-- Applying program policy
-- Deciding how the response is used
-- Managing exceptions
-- Completing any required staff review
-- Making the final eligibility decision
-
-### Program readiness {#efv-techdoc-docsincome-verification--program-readiness}
-
-Before using income verification, a program may need to confirm:
-
-- The income rule or program requirement being supported
-- The purpose for using the income information
-- The authority to request or use the information
-- Consent requirements
-- Privacy and security requirements
-- Agreement or memorandum of understanding (MOU) requirements
-- Audit and monitoring expectations
-- How long records or consent evidence must be retained
--	Who can access the result
-- How exceptions, denied responses, or incomplete matches will be handled
-
-Depending on the approved use case and source requirements, additional conditions may be required to send a request for income verification. These might include required authorization, consent, or other conditions. The EFV team will work with the consuming program, data provider, and appropriate privacy, legal, security, and technical teams to identify the required approach.
-
-### Caveats and limitations {#efv-techdoc-docsincome-verification--caveats-and-limitations}
-
-Income verification has source-specific requirements and constraints.
-
-Programs should not assume that income verification can be used until all of the following are confirmed:
-
-- authority
-- agreement path
-- consent model
-- permitted data elements
-- technical approach
-- operational support expectations
-
-**The EFV team can help determine whether income verification may be a fit for a program use case and what discovery is needed next.**
-
-<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/support.md -->
-
-## Support {#efv-techdoc-docssupport}
-
-
-EFV is still developing. Support channels and service expectations will be added as they are confirmed.
-
-To discuss whether EFV may be a fit for your program or service, contact the EFV team: [Justin.Hume@gov.bc.ca](mailto:justin.hume@gov.bc.ca).
-
-Include the program name, the eligibility factor you want to verify, the current process, and any timeline or pilot dependency.
-
-### Related resources {#efv-techdoc-docssupport--related-resources}
-
-Links will be added as they become available.
 
 
 # Secure Data Exchange {#source-secure-data-exchange}
@@ -4828,3 +4597,240 @@ items := {row |
     row := dat["user-gateways"]
 }
 ```
+
+
+# Eligibility Factor Verification {#source-efv-techdoc}
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/index.md -->
+
+## Introduction {#efv-techdoc-docsindex}
+
+
+Eligibility Factor Verification, or EFV, helps government programs check specific facts used in eligibility decisions.
+
+Many programs need to confirm similar things, such as income, residency, or other information an applicant provides. Today, this can involve manual document review, screenshots, forms, or staff follow-up. EFV is intended to reduce that effort by helping programs check certain facts against approved or trusted data sources, where available.
+
+EFV does not decide if someone is eligible for a program. EFV is not a program rule engine. It does not approve or deny applications. It helps check facts that a program may use in its own decision process. The program still owns its eligibility rules and makes the final decision.
+
+EFV can support a program by returning a verification result and related information, such as the source used, when the check happened, and any limits or caveats that apply. Program staff or systems can then use that result to support a decision, focus review on exceptions, or reduce the need for applicants to provide documents. EFV is in early development. The first focus is income verification.
+
+Future eligibility factors may be explored over time based on:
+- program need
+- source availability
+- agreements
+- policy authority
+- privacy and security requirements
+- technical feasibility
+
+### Example {#efv-techdoc-docsindex--example}
+
+A program may need to confirm whether an applicant meets an income rule.
+
+Without EFV, the applicant may need to upload tax documents, and staff may need to review them manually.
+
+With EFV, the program may be able to request an income verification check through a trusted source. The program receives a result and supporting details. The program then applies its own rules and decides what happens next.
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/getting-started.md -->
+
+## Getting Started {#efv-techdoc-docsgetting-started}
+
+
+Use this page to decide whether EFV may be useful for your program or service.
+
+EFV is still developing. The best first step is to [contact the EFV team](mailto:justin.hume@gov.bc.ca) with a clear use case. The team can help determine whether EFV is a good fit, whether an existing verification factor is available, and what other teams or approvals may be involved.
+
+### When EFV may be useful {#efv-techdoc-docsgetting-started--when-efv-may-be-useful}
+
+EFV may be useful when your program needs to check a specific fact used in an eligibility decision.
+EFV may help when your program wants to:
+
+- Use a trusted source instead of applicant-submitted documents
+- Reduce manual document review or staff follow-up
+- Support more consistent decisions
+- Keep a record of what was checked, when, and against what source
+- Help staff focus on exceptions or higher-risk cases
+- Reuse a verification pattern that may also help other programs
+
+### Understanding data-use requirements {#efv-techdoc-docsgetting-started--understanding-data-use-requirements}
+
+Using EFV may require more than a technical connection. Before information can be requested or used, the consuming program and data provider may need to confirm:
+
+- The applicable legal authority
+- Privacy requirements
+- Agreements
+- Consent or notice requirements
+- Security controls
+- Business rules
+
+These requirements will depend on the program, the eligibility factor, the data source, and the intended use. The EFV team can help identify the requirements and teams that may need to be involved. The consuming program remains responsible for confirming that it has the authority and approvals needed to request and use the information.
+
+### What makes a good EFV candidate {#efv-techdoc-docsgetting-started--what-makes-a-good-efv-candidate}
+
+A good EFV candidate is usually a verification need that is specific, repeatable, and connected to a trusted source.
+
+EFV may be a stronger fit when:
+
+- The same fact is checked often
+- The current process is manual
+- The information is not already easy to access or reuse
+- The verification pattern could help more than one program
+
+### When EFV may not be the right fit {#efv-techdoc-docsgetting-started--when-efv-may-not-be-the-right-fit}
+
+EFV may not be the right fit when:
+
+- The decision depends on case-by-case judgment
+- The fact cannot be checked through a trusted source
+- The program does not have authority to request or use the data
+- The information is already available through an existing dataset, API, service, or public source
+- The program needs broad data access instead of a specific verification need
+- The program needs policy design support, rather than verification support
+
+### Before you contact the EFV team {#efv-techdoc-docsgetting-started--before-you-contact-the-efv-team}
+
+You do not need a full solution before contacting the EFV team.
+
+Start with the eligibility fact you need to check, how you check it today, and what problem you are trying to solve.
+
+If you already know the potential data source or provider, intended use, legal authority, consent or notice requirements, privacy and security considerations, or agreement needs, include those as well. You do not need to have every requirement resolved before contacting the EFV team.
+
+To discuss whether EFV may be a fit for your program or service, [contact the EFV team](mailto:justin.hume@gov.bc.ca). 
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/eligibility-factors.md -->
+
+## Eligibility Factors {#efv-techdoc-docseligibility-factors}
+
+
+Use this page to understand how EFV looks at possible eligibility factors.
+
+An eligibility factor is a specific fact that a program may need to check before making a decision. This could include income or other information used in program rules.
+
+EFV is organized around these factors. Each factor may use a different source, need different approvals, or have different limits. Because of this, EFV does not treat every factor the same way.
+
+The first EFV factor is income verification. EFV is starting with income verification as the first reusable verification capability that programs may be able to consume.
+
+Future factors may be explored over time based on:
+- program need
+- source availability
+- agreements
+- policy authority
+- privacy and security requirements
+- technical feasibility
+
+Not every eligibility fact needs EFV. Some facts may already be supported through an existing dataset, API, service, or program process. EFV is intended for verification needs that are specific, repeatable, and not already easy for programs to access or reuse.
+
+Before a factor can be supported through EFV, the EFV team needs to understand:
+
+- What fact the program needs to check
+- Which program rule or workflow the check supports
+- Whether there is a trusted source for the information
+- Whether the program has authority to request or use the information
+- What legal authority, agreements, consent or notice requirements, privacy protections, security controls, audit requirements, or other provider conditions apply
+- Whether the data is current enough for the program’s use case
+- Whether the verification pattern could be reused by other programs
+- Whether there is a practical technical path to access or verify the information
+
+Data providers need confidence that their information will only be requested and used for an approved purpose and under the required conditions. As part of developing an eligibility factor, the EFV team can help identify what requirements may need to be supported. This may include:
+
+- technical requirements
+- legal requirements
+- privacy requirements
+- consent requirements
+- agreement requirements
+- business requirements
+
+This may also include determining whether a required authorization or consent check needs to occur before a verification request is sent. The specific approach will depend on the provider, program, data source, and approved use case.
+
+A factor should not be presented as available until the following are understood well enough to guide users:
+
+- the source
+- permitted purpose
+- authority
+- agreement needs
+- technical path
+- support needs
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/income-verification.md -->
+
+## Income Verification {#efv-techdoc-docsincome-verification}
+
+
+Income verification is the first eligibility factor **in development** through EFV.
+
+This page provides factor-specific information for programs that may need to check income as part of an eligibility process.
+
+### Status {#efv-techdoc-docsincome-verification--status}
+
+Income verification is in development as the first EFV use case.
+
+### What income verification may support {#efv-techdoc-docsincome-verification--what-income-verification-may-support}
+
+Income verification may support programs that need to check income-related information as part of an eligibility decision or review process.
+The type of response EFV returns will depend on the approved use case and source requirements.
+
+For example, a program may need to confirm whether an applicant meets an income rule without asking the applicant to upload tax documents for manual review.
+
+### What the response does not mean {#efv-techdoc-docsincome-verification--what-the-response-does-not-mean}
+
+An income verification response does not decide whether someone is eligible for a program.
+
+The program remains responsible for:
+
+- Defining eligibility rules
+- Applying program policy
+- Deciding how the response is used
+- Managing exceptions
+- Completing any required staff review
+- Making the final eligibility decision
+
+### Program readiness {#efv-techdoc-docsincome-verification--program-readiness}
+
+Before using income verification, a program may need to confirm:
+
+- The income rule or program requirement being supported
+- The purpose for using the income information
+- The authority to request or use the information
+- Consent requirements
+- Privacy and security requirements
+- Agreement or memorandum of understanding (MOU) requirements
+- Audit and monitoring expectations
+- How long records or consent evidence must be retained
+-	Who can access the result
+- How exceptions, denied responses, or incomplete matches will be handled
+
+Depending on the approved use case and source requirements, additional conditions may be required to send a request for income verification. These might include required authorization, consent, or other conditions. The EFV team will work with the consuming program, data provider, and appropriate privacy, legal, security, and technical teams to identify the required approach.
+
+### Caveats and limitations {#efv-techdoc-docsincome-verification--caveats-and-limitations}
+
+Income verification has source-specific requirements and constraints.
+
+Programs should not assume that income verification can be used until all of the following are confirmed:
+
+- authority
+- agreement path
+- consent model
+- permitted data elements
+- technical approach
+- operational support expectations
+
+**The EFV team can help determine whether income verification may be a fit for a program use case and what discovery is needed next.**
+
+<!-- source: https://github.com/bcgov/efv-itk-docs.git@e83f11c98640a69e46d814e8e11417bc8892f8e6:./docs/support.md -->
+
+## Support {#efv-techdoc-docssupport}
+
+
+EFV is still developing. Support channels and service expectations will be added as they are confirmed.
+
+To discuss whether EFV may be a fit for your program or service, contact the EFV team: [Justin.Hume@gov.bc.ca](mailto:justin.hume@gov.bc.ca).
+
+Include the program name, the eligibility factor you want to verify, the current process, and any timeline or pilot dependency.
+
+### Related resources {#efv-techdoc-docssupport--related-resources}
+
+Links will be added as they become available.
+
+
+# BC Data Catalogue {#source-bc-data-catalogue}
+
+*Documentation coming soon.*
