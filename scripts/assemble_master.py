@@ -4,6 +4,8 @@ import posixpath
 import re
 import shutil
 import unicodedata
+from datetime import datetime
+from zoneinfo import ZoneInfo
 from pathlib import Path
 from typing import Any
 from urllib.parse import unquote
@@ -18,6 +20,7 @@ SOURCE_LOCK_PATH = PROJECT_ROOT / "sources.lock.yaml"
 OUTPUT_DIR = PROJECT_ROOT / "dist"
 MASTER_PATH = OUTPUT_DIR / "master.md"
 REPORT_PATH = OUTPUT_DIR / "validation-report.md"
+MANIFEST_URL = "https://bcgov.github.io/itk-docs/manifest/"
 
 HEADING_PATTERN = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
 LINK_PATTERN = re.compile(
@@ -378,6 +381,29 @@ def rewrite_line(
     return LINK_PATTERN.sub(replace, line)
 
 
+def source_line(source: dict[str, Any]) -> str | None:
+    """One-line source attribution shown under each source heading."""
+    match source["type"]:
+        case "git":
+            repository = source["repository"].removesuffix(".git")
+            name = repository.removeprefix("https://github.com/")
+            revision = source["revision"]
+            parts = [
+                f"[{name}]({repository}) "
+                f"(`{source['ref']}` @ [`{revision[:7]}`]({repository}/commit/{revision}))"
+            ]
+            if component := source.get("techdocs_component"):
+                parts.append(
+                    "[TechDocs](https://developer.gov.bc.ca/docs/default/component/"
+                    f"{component}/)"
+                )
+            return "Source: " + " · ".join(parts)
+        case "docx":
+            return f"Source: `{source['location']}`"
+        case _:
+            return None
+
+
 def provenance(source: dict[str, Any], document: dict[str, Any]) -> str:
     if source["type"] == "git":
         return (
@@ -446,10 +472,15 @@ def main() -> None:
         "unresolved": [],
         "capped_headings": 0,
     }
+    generated_at = (
+        datetime.fromisoformat(source_lock["generated_at"])
+        .astimezone(ZoneInfo("America/Vancouver"))
+        .strftime("%Y-%m-%d %H:%M %Z")
+    )
     output = [
         "# Provider Journey Master Documentation",
         "",
-        "> Generated proof-of-concept output. Review before use or publication.",
+        f"Generated at {generated_at}. See the [source manifest]({MANIFEST_URL}) for details.",
         "",
         "## Contents",
         "",
@@ -465,6 +496,8 @@ def main() -> None:
     for source, _, source_documents in prepared_sources:
         source_anchor = slugify(f"source--{source['id']}")
         output.extend(["", f"# {source['title']} {{#{source_anchor}}}", ""])
+        if line := source_line(source):
+            output.extend([line, ""])
         if source["type"] == "placeholder":
             output.extend([f"*{source['message']}*", ""])
 
