@@ -4,8 +4,8 @@
 schema_version: 1
 
 sources:
-  - id: connected-services-getting-started
-    title: Connected Services - Getting Started
+  - id: building-trusted-digital-services
+    title: Building Trusted Digital Services
     type: git
     repository: https://github.com/bcgov/connected-services-techdocs.git
     ref: main
@@ -16,7 +16,7 @@ sources:
     order: 10
 
   - id: integration-toolkit
-    title: Connected Services - Getting Started
+    title: Integration Toolkit
     type: git
     repository: https://github.com/bcgov/connected-services-techdocs.git
     ref: main
@@ -27,7 +27,7 @@ sources:
     order: 11
 
   - id: secure-data-exchange
-    title: Connected Services - Getting Started
+    title: Secure Data Exchange
     type: git
     repository: https://github.com/bcgov/connected-services-techdocs.git
     ref: main
@@ -59,7 +59,7 @@ sources:
     order: 40
 
   - id: efv-techdoc
-    title: Eligibility Factor Verification Documentation
+    title: Eligibility Factor Verification
     type: git
     repository: https://github.com/bcgov/efv-itk-docs.git
     ref: main
@@ -70,7 +70,7 @@ sources:
     order: 25
 
   - id: adr-techdoc
-    title: Authoritative Data Registers Dcoumentation
+    title: Authoritative Data Registers
     type: docx
     location: sources/ADR Techdocs_Draft V2.docx
     order: 20
