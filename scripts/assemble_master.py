@@ -27,6 +27,10 @@ LINK_PATTERN = re.compile(
     r"(?P<image>!?)\[(?P<label>[^\]]*)\]\("
     r"(?P<target><[^>]+>|[^)\s]+)(?P<suffix>[^)]*)\)"
 )
+PUBLIC_TECHDOCS_URL_PATTERN = re.compile(
+    r"^https?://developer\.gov\.bc\.ca(?P<path>/docs/default/component/.*)$",
+    re.IGNORECASE,
+)
 TECHDOCS_PATTERN = re.compile(
     r"^/docs/default/component/([^/]+)(?:/(.*?))?/?$", re.IGNORECASE
 )
@@ -270,7 +274,17 @@ def rewrite_target(
     wrapped = target.startswith("<") and target.endswith(">")
     raw_target = target[1:-1] if wrapped else target
 
-    if re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*:", raw_target) or raw_target.startswith("//"):
+    if match := PUBLIC_TECHDOCS_URL_PATTERN.match(raw_target):
+        # Absolute DevHub TechDocs URL: resolve internally when the component is
+        # one of our sources, otherwise leave it as the external link it is.
+        internal_path = match.group("path")
+        path_only = internal_path.partition("#")[0].split("?", maxsplit=1)[0]
+        if resolve_document(current, path_only, documents_by_alias, sources_by_component):
+            raw_target = internal_path
+        else:
+            validation["external_links"] += 1
+            return target
+    elif re.match(r"^[a-zA-Z][a-zA-Z0-9+.-]*:", raw_target) or raw_target.startswith("//"):
         validation["external_links"] += 1
         return target
 
