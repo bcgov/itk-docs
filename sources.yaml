@@ -4,22 +4,38 @@
 schema_version: 1
 
 sources:
-  - id: efv-techdoc
-    title: Eligibility Factor Verification TechDoc
-    type: docx
-    location: sources/EFV TechDoc - V3.docx
-    order: 30
-
   - id: connected-services-getting-started
     title: Connected Services - Getting Started
     type: git
     repository: https://github.com/bcgov/connected-services-techdocs.git
-    ref: feature/aps-4786-sdx-techdocs
+    ref: main
     root: getting-started
     navigation: mkdocs.yml
     include:
       - docs/**/*.md
     order: 10
+
+  - id: integration-toolkit
+    title: Connected Services - Getting Started
+    type: git
+    repository: https://github.com/bcgov/connected-services-techdocs.git
+    ref: main
+    root: integration-toolkit
+    navigation: mkdocs.yml
+    include:
+      - docs/**/*.md
+    order: 11
+
+  - id: secure-data-exchange
+    title: Connected Services - Getting Started
+    type: git
+    repository: https://github.com/bcgov/connected-services-techdocs.git
+    ref: main
+    root: secure-data-exchange
+    navigation: mkdocs.yml
+    include:
+      - docs/**/*.md
+    order: 30
 
   - id: aps-infra-platform-sdx
     title: API Services Portal - SDX Documentation
@@ -40,4 +56,21 @@ sources:
       - documentation/reference/sdx/environments.md
     assets:
       - documentation/artifacts/SDX.svg
+    order: 40
+
+  - id: efv-techdoc
+    title: Eligibility Factor Verification Documentation
+    type: git
+    repository: https://github.com/bcgov/efv-itk-docs.git
+    ref: main
+    root: .
+    navigation: mkdocs.yml
+    include:
+      - docs/**/*.md
+    order: 25
+
+  - id: adr-techdoc
+    title: Authoritative Data Registers Dcoumentation
+    type: docx
+    location: sources/ADR Techdocs_Draft V2.docx
     order: 20
