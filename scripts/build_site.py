@@ -27,9 +27,10 @@ def prepare_page(markdown: str) -> str:
     lines = markdown.splitlines()
     if not lines or not lines[0].startswith("# "):
         raise ValueError("Expected the master document to start with an H1")
-    lines[1:1] = [
-        "",
+    contents_index = lines.index("## Contents")
+    lines[contents_index:contents_index] = [
         "[Download PDF](master.pdf){ .md-button .md-button--primary }",
+        "",
     ]
 
     inside_source = False

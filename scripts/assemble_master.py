@@ -20,6 +20,7 @@ SOURCE_LOCK_PATH = PROJECT_ROOT / "sources.lock.yaml"
 OUTPUT_DIR = PROJECT_ROOT / "dist"
 MASTER_PATH = OUTPUT_DIR / "master.md"
 REPORT_PATH = OUTPUT_DIR / "validation-report.md"
+INTRO_PATH = PROJECT_ROOT / "templates" / "intro.md"
 MANIFEST_URL = "https://bcgov.github.io/itk-docs/manifest/"
 
 HEADING_PATTERN = re.compile(r"^(#{1,6})\s+(.+?)\s*$")
@@ -493,6 +494,8 @@ def main() -> None:
     )
     output = [
         "# Provider Journey Master Documentation",
+        "",
+        INTRO_PATH.read_text(encoding="utf-8").strip(),
         "",
         f"Generated at {generated_at}. See the [source manifest]({MANIFEST_URL}) for details.",
         "",

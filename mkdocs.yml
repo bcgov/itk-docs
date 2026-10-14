@@ -11,10 +11,10 @@ theme:
     - content.tabs.link
 
 nav:
-  - POC evaluation: poc-evaluation.md
   - Master documentation: index.md
   - Source manifest: manifest.md
   - Validation report: validation-report.md
+  - POC evaluation: poc-evaluation.md
 
 extra_css:
   - stylesheets/extra.css
