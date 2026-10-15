@@ -4,7 +4,7 @@ This document brings together the existing Connected Services documentation into
 
 It is an initial technical assembly of existing documentation. Content appears as written by each source team and has not yet been reorganized around provider journey stages, edited or rewritten. Each section links to its source so you can follow it back to the owning team's documentation.
 
-Generated at 2026-10-14 12:09 PDT. See the [source manifest](https://bcgov.github.io/itk-docs/manifest/) for details.
+Generated at 2026-10-15 12:09 PDT. See the [source manifest](https://bcgov.github.io/itk-docs/manifest/) for details.
 
 ## Contents
 
@@ -44,41 +44,48 @@ Generated at 2026-10-14 12:09 PDT. See the [source manifest](https://bcgov.githu
     - [Connected Services Data Glossary](#adr-techdoc-adr-techdocs-draft-v2--connected-services-data-glossary-3)
 - [Secure Data Exchange](#source-secure-data-exchange)
     - [Secure Data Exchange (SDX)](#secure-data-exchange-docsindex)
-    - [SDX Roles and Responsibilities](#secure-data-exchange-docsgetting-started-with-sdxsdx-roles-and-responsibilities)
-    - [Environments](#secure-data-exchange-docsgetting-started-with-sdxenvironments)
-    - [Publish a Service](#secure-data-exchange-docsgetting-started-with-sdxpublish-a-service)
-    - [Consume a Service](#secure-data-exchange-docsgetting-started-with-sdxconsume-a-service)
-    - [Onboarding Process](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-process)
-    - [Onboarding an Organization](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-an-organization)
-    - [Install an Edge Runtime Group](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processinstall-an-edge-runtime-group)
-    - [Set Up Organization Signing](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processset-up-organization-signing)
-    - [Managing Subsystems](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-subsystems)
-    - [Managing Services](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-services)
-    - [Connecting a Service](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnecting-a-service)
-    - [Connection Resources](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnection-resources)
+    - Getting Started with SDX
+        - [SDX Roles and Responsibilities](#secure-data-exchange-docsgetting-started-with-sdxsdx-roles-and-responsibilities)
+        - [Environments](#secure-data-exchange-docsgetting-started-with-sdxenvironments)
+        - [Publish a Service](#secure-data-exchange-docsgetting-started-with-sdxpublish-a-service)
+        - [Consume a Service](#secure-data-exchange-docsgetting-started-with-sdxconsume-a-service)
+        - Onboarding process
+            - [Onboarding Process](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-process)
+            - [Onboarding an Organization](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processonboarding-an-organization)
+            - [Install an Edge Runtime Group](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processinstall-an-edge-runtime-group)
+            - [Set Up Organization Signing](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processset-up-organization-signing)
+            - [Managing Subsystems](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-subsystems)
+            - [Managing Services](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processmanaging-services)
+            - [Connecting a Service](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnecting-a-service)
+            - [Connection Resources](#secure-data-exchange-docsgetting-started-with-sdxonboarding-processconnection-resources)
     - [Experimental Features – LAB Only](#secure-data-exchange-docsexperimental-features)
     - [References](#secure-data-exchange-docsreferences)
     - [Support](#secure-data-exchange-docssupport)
 - [API Services Portal - SDX Documentation](#source-aps-infra-platform-sdx)
-    - [Get Support](#aps-infra-platform-sdx-documentationhow-toget-support)
-    - [Onboarding an Organization](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding)
-    - [Install an Edge Runtime Group](#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups)
-    - [Setup Organization Signing](#aps-infra-platform-sdx-documentationhow-tosdx-org-signing)
-    - [Managing Subsystems](#aps-infra-platform-sdx-documentationhow-tosdx-subsystems)
-    - [Managing Services](#aps-infra-platform-sdx-documentationhow-tosdx-services)
-    - [Connecting a Service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)
-    - [Connection Resources](#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources)
-    - [Secure Data Exchange (SDX)](#aps-infra-platform-sdx-documentationconceptssecure-data-exchange)
-    - [Restish CLI](#aps-infra-platform-sdx-documentationreferencerestish-cli)
-    - [SDX Data Access Protocol](#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol)
-    - [SDX Environments](#aps-infra-platform-sdx-documentationreferencesdxenvironments)
+    - How-to Guides
+        - [Get Support](#aps-infra-platform-sdx-documentationhow-toget-support)
+        - Secure Data Exchange
+            - [Onboarding an Organization](#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding)
+            - [Install an Edge Runtime Group](#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups)
+            - [Setup Organization Signing](#aps-infra-platform-sdx-documentationhow-tosdx-org-signing)
+            - [Managing Subsystems](#aps-infra-platform-sdx-documentationhow-tosdx-subsystems)
+            - [Managing Services](#aps-infra-platform-sdx-documentationhow-tosdx-services)
+            - [Connecting a Service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)
+            - [Connection Resources](#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources)
+    - Concepts
+        - [Secure Data Exchange (SDX)](#aps-infra-platform-sdx-documentationconceptssecure-data-exchange)
+    - Reference
+        - [Restish CLI](#aps-infra-platform-sdx-documentationreferencerestish-cli)
+        - [SDX Data Access Protocol](#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol)
+        - [SDX Environments](#aps-infra-platform-sdx-documentationreferencesdxenvironments)
     - [Event Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-event-mgmt)
     - [Policy Management](#aps-infra-platform-sdx-documentationhow-tosdx-ape-policy-mgmt)
 - [Eligibility Factor Verification](#source-efv-techdoc)
     - [Introduction](#efv-techdoc-docsindex)
     - [Getting Started](#efv-techdoc-docsgetting-started)
-    - [Eligibility Factors](#efv-techdoc-docseligibility-factors)
-    - [Income Verification](#efv-techdoc-docsincome-verification)
+    - Eligibility factors
+        - [Eligibility Factors](#efv-techdoc-docseligibility-factors)
+        - [Income Verification](#efv-techdoc-docsincome-verification)
     - [Support](#efv-techdoc-docssupport)
 - [BC Data Catalogue](#source-bc-data-catalogue)
 
@@ -2011,9 +2018,9 @@ Support tickets are the preferred channel for:
 
 # API Services Portal - SDX Documentation {#source-aps-infra-platform-sdx}
 
-Source: [bcgov/aps-infra-platform](https://github.com/bcgov/aps-infra-platform) (`test` @ [`654c5f2`](https://github.com/bcgov/aps-infra-platform/commit/654c5f28a4f9195b7770dc2b77b3e9617a828d65)) · [TechDocs](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/)
+Source: [bcgov/aps-infra-platform](https://github.com/bcgov/aps-infra-platform) (`test` @ [`0e1f894`](https://github.com/bcgov/aps-infra-platform/commit/0e1f89442a90a42370c91f458e82e3a148be0ef6)) · [TechDocs](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/get-support.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/get-support.md -->
 
 ## Get Support {#aps-infra-platform-sdx-documentationhow-toget-support}
 
@@ -2087,7 +2094,7 @@ To see our historical uptime and any current incidents, visit the [APS status pa
 - [Geographic Redundancy and Failover](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/concepts/geo-redundancy)
 - [Production Readiness Checklist](https://developer.gov.bc.ca/docs/default/component/aps-infra-platform-docs/how-to/prod-checklist) 
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-org-onboarding.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-org-onboarding.md -->
 
 ## Onboarding an Organization {#aps-infra-platform-sdx-documentationhow-tosdx-org-onboarding}
 
@@ -2310,7 +2317,7 @@ public keys are managed.
 
 - [Install an Edge Runtime Group](#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-edge-runtime-groups.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-edge-runtime-groups.md -->
 
 ## Install an Edge Runtime Group {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups}
 
@@ -2327,9 +2334,10 @@ Group and a service Edge Runtime Group, visit the
 
 The steps described in this page are performed by the following roles:
 
-| Role         | Function                                                               |
-| ------------ | ---------------------------------------------------------------------- |
-| System Admin | Request a new runtime group, and manage onboarding a new runtime group |
+| Role                   | Function                                                                                  |
+| ---------------------- | ----------------------------------------------------------------------------------------- |
+| System Admin           | Request a runtime group, publish its routes, and publish and retire its public keys      |
+| Runtime group operator | Deploy the edge, prepare a replacement certificate, and restart the edge                 |
 
 !!! note "Community Hosted"
 
@@ -2346,11 +2354,11 @@ Use cases for `client-hosted`:
   - Apply default routes and controls
   - Verification test
   - Add public key to the registry
+- Rotate runtime group keys
 
 ### Prerequisites {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--prerequisites}
 
 - [Install Restish CLI](#aps-infra-platform-sdx-documentationreferencerestish-cli)
-- [Install Helm](https://helm.sh/docs/intro/install/) (if deploying the runtime group infrastructure)
 
 ### Establish a new runtime group {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--establish-a-new-runtime-group}
 
@@ -2413,10 +2421,9 @@ default routing policies for this runtime group.
     failed or interrupted attempt), rerunning registration for the same name
     fails rather than repairing the existing namespace, and manually deleting
     the namespace can leave retained Kong catalog services/routes with no
-    corresponding live data-plane configuration. There is currently no
-    documented preflight or reconcile command for this state — verify with
-    the APS team before deleting an existing runtime namespace to retry
-    registration.
+    corresponding live data-plane configuration. There is no documented
+    preflight or reconcile command for this state. Verify with the APS team
+    before deleting an existing runtime namespace to retry registration.
 
 === "Restish CLI"
 
@@ -2454,10 +2461,10 @@ default routes and controls for this runtime group.
     Services Portal's **Administration Access** page (GraphQL API), which
     itself requires the requesting user to hold `Namespace.Manage` on that
     namespace. Do not attempt to grant access by creating an ordinary
-    Keycloak authorization permission directly — the platform expects a
+    Keycloak authorization permission directly. The platform expects a
     resource-owner-managed UMA permission ticket, and the two are not
-    interchangeable. A namespace with no `Namespace.Manage` holder currently
-    has no self-service recovery path; contact the APS team.
+    interchangeable. A namespace with no `Namespace.Manage` holder has no
+    self-service recovery path. Contact the APS team.
 
 ### Deploy runtime group infrastructure {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--deploy-runtime-group-infrastructure}
 
@@ -2484,10 +2491,6 @@ This is performed by a System Admin to request a new cert signing token.
     restish sdx generate-one-time-use-token \
       my-org newrg lab
 
-    # Generate and save to "token"
-    restish sdx generate-one-time-use-token \
-      myo newrg lab | jq -r .token > token
-
     ```
 
 === "Reference"
@@ -2500,36 +2503,16 @@ This is performed by a System Admin to request a new cert signing token.
     - `{name}=<your-runtime-group-name>`
     - `{environment}=<target-environment>`
 
-It will return a token which can be extracted and stored in a local file
-for the next step.
+The response includes a one-time token. Send that token to the runtime group
+operator with the runtime group name and the IP address from `sdxEndpoint`.
+The operator uses it to deploy the edge. Do not reuse a token that has
+already been spent.
 
 ### Deploy the runtime group infrastructure {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--deploy-the-runtime-group-infrastructure}
 
-We have a helm chart available for deploying a runtime group into a Kubernetes/Openshift environment.
-
-There has been some exploratory work for deploying infrastructure in Azure.
-
-Please reach out to the APS team to discuss your requirements if the helm chart is not sufficient.
-
-```sh
-export IP="<ip specified in the sdxEndpoint above>"
-export EDGE_ID="<name specified above>"
-export ENV=lab
-export DOMAIN="${EDGE_ID}.${ENV}.servers.sdx"
-
-helm upgrade --install ${EDGE_ID} \
-  --set bootstrap.tls.token=$(cat token) \
-  --set bootstrap.tls.cn=${DOMAIN} \
-  --set bootstrap.tls.ip=${IP} \
-  --set route.host=${DOMAIN} \
-  oci://ghcr.io/bcgov/aps-devops/sdx-edge:0.3.7
-
-# If you want to upgrade to a newer helm chart version, you can run
-helm upgrade --install ${EDGE_ID} \
-  --reset-then-reuse-values \
-  --set bootstrap.tls.token="" \
-  oci://ghcr.io/bcgov/aps-devops/sdx-edge:0.3.7
-```
+The runtime group operator deploys the edge after you send the certificate
+signing token. If that deployment is not possible in your infrastructure,
+contact the APS team.
 
 ### Provision default routes and controls {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--provision-default-routes-and-controls}
 
@@ -2563,44 +2546,35 @@ Actions available:
 !!! note "Required authorization scope"
 
     The generated help for `provision-config-from-pattern` lists
-    `System.Manage` as the required scope. The effective requirement is
-    actually `GatewayPattern.Publish`, resolved against the runtime's
-    namespace (for example `<namespace>:GatewayPattern.Publish`), and it is
-    granted automatically to the runtime's registering System Admin.
-    Authorization happens in two stages: `GatewayPattern.Publish` gates the
-    `preview`/`diff`/`apply`/`delete` endpoint itself for the human caller,
-    and a separate `GatewayConfig.Publish` scope, held by the internal
-    `sdx-provisioner` client rather than the caller's own token, gates the
-    downstream GWA namespace publish that `diff` and `apply` trigger.
-    `preview` returns generated configuration before that downstream request
-    and therefore only needs the outer `GatewayPattern.Publish` scope.
+    `System.Manage` as the required scope. The endpoint checks
+    `GatewayPattern.Publish` on the runtime namespace (for example
+    `<namespace>:GatewayPattern.Publish`). Registration grants that scope to
+    the System Admin who registered the runtime.
+
+    `GatewayPattern.Publish` allows the caller to run `preview`, `diff`,
+    `apply`, and `delete`. `diff` and `apply` also publish to GWA. That step
+    uses `GatewayConfig.Publish` on the internal `sdx-provisioner` client.
+    `preview` returns the generated configuration before that publish, so it
+    only needs `GatewayPattern.Publish`.
 
 !!! note "Reading `diff` results"
 
-    `diff` is a dry run, but its response reuses mutation-sounding fields —
-    a top-level `applied` count and a per-provider `status: applied` — even
-    when nothing was changed. Those fields describe successful **processing**
-    of the dry run, not the number of gateway changes committed. Do not treat
-    a `diff` response as evidence that Kong configuration changed; check the
-    nested `details.message` (for example `Dry-run. No changes applied.`) and
-    the Created/Updated/Deleted summary for the actual proposed changes, and
-    use `apply` to commit them.
+    `diff` is a dry run. The response still includes an `applied` count and a
+    per-provider `status: applied` when nothing changed. Those fields mean
+    the dry run was processed. They are not the number of gateway changes
+    committed. Check `details.message` (for example
+    `Dry-run. No changes applied.`) and the Created/Updated/Deleted summary
+    for the proposed changes. Use `apply` to commit them.
 
 ### Verification test {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--verification-test}
 
 Running the following should return `400 No required SSL certificate was sent`.
+Replace the host with the runtime group domain and the IP with the address
+from `sdxEndpoint`.
 
 ```sh
-curl -v -k --resolve ${DOMAIN}:443:${IP} \
-  https://${DOMAIN}
-```
-
-You can verify the consumer internal endpoint by opening a terminal on the
-runtime group Kong pod and running:
-
-```sh
-curl -v --resolve internal.${DOMAIN}:8000:127.0.0.1 \
-  http://internal.${DOMAIN}:8000/hello
+curl -v -k --resolve <runtime-group-host>:443:<ip> \
+  https://<runtime-group-host>
 ```
 
 !!! note "Peer TLS trust"
@@ -2609,17 +2583,26 @@ curl -v --resolve internal.${DOMAIN}:8000:127.0.0.1 \
     trust between peer runtime groups. Before relying on an active
     peer-to-peer connection, confirm that the calling edge's Kong trusts the
     peer edge's issuing CA (Kong returns `HTTP 502` with an upstream TLS
-    verification failure otherwise). Also note that the endpoint host
-    displayed by the portal may be normalized by GWA to the namespace's
-    permitted environment domain rather than shown verbatim.
+    verification failure otherwise). The endpoint host displayed by the
+    portal may be normalized by GWA to the namespace's permitted environment
+    domain.
 
 ### Add public key to the registry {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--add-public-key-to-the-registry}
 
 The public key will be used for other runtime groups to verify the integrity
 of the request.
 
-The helm deployment and bootstrap job will create the sdx-edge secret for the tls certificate
-pair. Save the `tls.crt` contents to a `tls.crt` file locally.
+Ask the runtime group operator for the edge public certificate and save it
+as `tls.crt`. Publish only that public certificate. Do not publish the
+private key.
+
+Provisioning keys is done using the same `provision-config-from-pattern`
+operation/endpoint as the default Gateway routes and controls, but using the
+`sdx-keys.r1` pattern. The `sdx-keys.r1` pattern is also used later to rotate keys.
+
+The new public key is appended to the key set, and the key id (`kid`) is `{urn}:{8-hex}`
+(the first eight hex digits of a UUID). Example:
+`urn:ca:bc:sdx:edge:newrg:lab:8875a149`.
 
 === "Restish CLI"
 
@@ -2635,13 +2618,17 @@ pair. Save the `tls.crt` contents to a `tls.crt` file locally.
     restish sdx provision-config-from-pattern \
       my-org sdx-keys.r1 \
       --action apply \
-      'parameters:{ certificatePem[0]: @tls.crt, runtimeGroupName: newrg, environment: lab }'
+      'parameters:{
+        certificatePem[0]: @tls.crt,
+        runtimeGroupName: newrg,
+        environment: lab
+      }'
     ```
 
 === "Reference"
 
-    Using the same pattern endpoint from above, you can use the `sdx-keys.r1` pattern
-    to add the public key using the certificate from the runtime group.
+    - **API** `PUT /organizations/{org}/patterns/sdx-keys.r1` with query
+      `action={preview|diff|apply|delete}`
 
     ```json
     {
@@ -2649,15 +2636,50 @@ pair. Save the `tls.crt` contents to a `tls.crt` file locally.
       "parameters": {
         "runtimeGroupName": "<runtime-group-name>",
         "environment": "lab|dev|test|prod",
-        "certificatePem": ["<public-certificate-pem-format>"]
+        "certificatePem": ["<public-certificate-pem-format>"],
+        "operation": "add"
       }
     }
     ```
 
-    `certificatePem` is an array; only the public certificate is supplied
-    here, and the private key must remain mounted in the runtime group's
-    edge. `organization` is derived from the `{org}` path parameter and does
-    not need to be supplied in the body.
+    `certificatePem` is an array. The `add`, `rotate`, and `replace`
+    operations accept a single public certificate in that array. The private
+    key must remain mounted in the runtime group's edge.
+
+A successful `apply` or `diff` returns structured `changes` information:
+
+```json
+{
+  "operation": "add",
+  "added": [
+    {
+      "kid": "urn:ca:bc:sdx:edge:newrg:lab:8875a149",
+      "name": "sdx.keys.newrg.lab.edge:8875a149"
+    }
+  ],
+  "removed": [],
+  "retained": []
+}
+```
+
+The `info` result includes `details.endpoint`. That address is inside the
+operator cluster and does not resolve from your workstation.
+
+Confirm the key set on the public JWKS URL for the environment. See
+[SDX Environments](#aps-infra-platform-sdx-documentationreferencesdxenvironments). The path is:
+
+```text
+/keysets/sdx.edge.<runtime-group>.<environment>/.well-known/jwks.json
+```
+
+In APS Dev (`apsdev`) the host is
+`https://pzgw-api-gov-bc-ca.dev.api.gov.bc.ca`. For a runtime group `newrg`:
+
+```text
+https://pzgw-api-gov-bc-ca.dev.api.gov.bc.ca/keysets/sdx.edge.newrg.apsdev/.well-known/jwks.json
+```
+
+The listed `kid`s should include the value from `changes.added`.
 
 !!! warning "Prerequisite for signed connections"
 
@@ -2665,29 +2687,180 @@ pair. Save the `tls.crt` contents to a `tls.crt` file locally.
     mandatory prerequisite before enabling the `sign` upgrade on a consumer
     connection or the `verify` upgrade on a provider connection (see
     [Connecting a Service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)). The `trust-sign`
-    plugin embeds the runtime's JWKS URI in the signature but does not create
-    or publish the key set itself — until `sdx-keys.r1` has been applied, the
-    JWKS URL will return `404 Key set not found` and traffic relying on
-    verification will fail.
+    plugin embeds the runtime's JWKS URI in the signature. It does not create
+    or publish the key set. Until `sdx-keys.r1` has been applied, the JWKS
+    URL returns `404 Key set not found` and traffic that requires verification
+    fails.
 
-### Runtime Group management {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--runtime-group-management}
+### Runtime group management {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--runtime-group-management}
 
-### Decommission Runtime Group {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--decommission-runtime-group}
+### Rotate runtime group keys {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--rotate-runtime-group-keys}
+
+Rotate when the runtime group's edge certificate must change without
+dropping verification of in-flight signed traffic. `rotate` publishes the
+new public key and retains existing keys so both `kid`s appear in JWKS
+until you retire the old one.
+
+The runtime group operator must not restart the edge with the new private
+key until the rotate `apply` has succeeded. If the edge starts signing with
+a key that is not yet in JWKS, verification denies the requests.
+
+Query `action` is unchanged (`preview`, `diff`, `apply`, `delete`). Body
+parameter `operation` selects a targeted update:
+
+| `parameters.operation` | Effect                                                                                                                        |
+| ---------------------- | ----------------------------------------------------------------------------------------------------------------------------- |
+| `add`                  | Append a public key. Retries with the same public key are idempotent. Default when `operation` is omitted on a runtime group. |
+| `rotate`               | Append a **new** public key and retain existing keys for overlap.                                                             |
+| `replace`              | Atomically swap `targetKid` for the incoming public key.                                                                      |
+| `delete`               | Remove only `targetKid`. Refuses if it is the last remaining key.                                                             |
+
+`targetKid` is required for `replace` and `delete`. `certificatePem` (one
+entry) or `publicKeyPem` is required for `add`, `rotate`, and `replace`.
+A caller may supply a full `urn:ca:bc:sdx:edge:...` `kid` to address an
+existing key.
+
+!!! warning "Query parameter `action=delete` vs `operation=delete`"
+
+    Do not combine query parameter `action=delete` with body parameter
+    `operation=delete`. Query parameter `action=delete` removes the **entire**
+    key qualifier, including the key set and all keys. For targeted deletion,
+    use `action=apply` with `operation=delete`.
+
+The runtime group operator prepares the new edge certificate and restarts
+the edge. You publish and retire the public keys.
+
+Follow these steps for an overlap rotation:
+
+1. Request a new one-time certificate signing token, the same way as in
+   [Request a one-time-use certificate signing token](#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--request-a-one-time-use-certificate-signing-token).
+   Send the token to the runtime group operator. Ask the operator to prepare
+   the new certificate without restarting the edge, and to send you the new
+   public certificate. Save that certificate as `tls-next.crt`.
+
+1. Publish the new public certificate while retaining the existing keys:
+
+   ```sh
+   restish sdx provision-config-from-pattern \
+     my-org sdx-keys.r1 \
+     --action apply \
+     'parameters:{
+       operation: rotate,
+       certificatePem[0]: @tls-next.crt,
+       runtimeGroupName: newrg,
+       environment: lab
+     }'
+   ```
+
+   `operation=rotate` is rejected (`422`) when that public key is already in
+   the key set. The key set is unchanged. Use `operation=add` when you need
+   to publish a key that is already in the set.
+
+1. Record the new `kid` from `changes.added` and every outgoing `kid` from
+   `changes.retained`. Confirm that the public JWKS URL contains both the
+   new and outgoing `kid` values. See
+   [Add public key to the registry](#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--add-public-key-to-the-registry).
+
+1. Wait at least 300 seconds after publishing the new key.
+   `trust-verify-signature` reloads a cached key set after a missing `kid`
+   only when that cache is older than `iss_key_grace_period`. In the SDX
+   patterns that period is 300 seconds. Waiting before the edge restarts
+   keeps a verifier that cached only the old key from rejecting the new
+   `kid`.
+
+1. Ask the runtime group operator to switch the edge to the new certificate
+   and restart it. The operator should do this only after the rotate `apply`
+   has succeeded and the wait above has elapsed.
+
+1. Ask the runtime group operator to confirm that the edge certificate is
+   the public certificate you published. Make a representative SDX connection
+   request and confirm that the peer accepts it. The `kid` in a signed
+   `X-Edge-Token` is the new `kid` from `changes.added`.
+
+1. Wait another 300 seconds so requests signed with the outgoing key can
+   finish. Remove each outgoing `kid` from `changes.retained`. Keep the new
+   `kid` from `changes.added` (`8875a149` in the example above):
+
+   ```sh
+   restish sdx provision-config-from-pattern \
+     my-org sdx-keys.r1 \
+     --action apply \
+     'parameters:{
+       operation: delete,
+       targetKid: "urn:ca:bc:sdx:edge:newrg:lab:3a91b0e2",
+       runtimeGroupName: newrg,
+       environment: lab
+     }'
+   ```
+
+1. Confirm that the public JWKS URL contains the new `kid` and no retired
+   `kid`. Delete the local copy of the public certificate.
+
+The equivalent API request to publish the replacement certificate is:
+
+```json
+{
+  "pattern": "sdx-keys.r1",
+  "parameters": {
+    "runtimeGroupName": "newrg",
+    "environment": "lab",
+    "operation": "rotate",
+    "certificatePem": ["<new-public-certificate-pem-format>"]
+  }
+}
+```
+
+To remove an outgoing key, send `action=apply` with:
+
+```json
+{
+  "pattern": "sdx-keys.r1",
+  "parameters": {
+    "runtimeGroupName": "newrg",
+    "environment": "lab",
+    "operation": "delete",
+    "targetKid": "urn:ca:bc:sdx:edge:newrg:lab:3a91b0e2"
+  }
+}
+```
+
+!!! note "Recovery"
+
+    If rotate `apply` succeeds and the edge has not restarted, traffic still
+    signs with the old private key and old `kid`. Both public keys are in
+    JWKS, so verification continues.
+
+    If the edge restarts before the new public key is published, signing is
+    denied because the new private key has no matching `kid`. Publish the
+    new certificate with `operation=rotate`, or with `operation=add` if that
+    certificate is already in the set. Wait for the gateway configuration to
+    propagate, then test signing again.
+
+    To abandon a new certificate before the edge switches to it, ask the
+    runtime group operator to discard it. If you already published that
+    public key, remove its `kid` with `operation=delete`.
+
+    After the edge has switched, ask the runtime group operator to restore
+    the previous certificate and restart. Remove the new `kid` only after
+    verifiers no longer receive traffic signed with it.
+
+### Decommission runtime group {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--decommission-runtime-group}
 
 > To be documented..
 
 Steps to decommission:
 
-- uninstall infrastructure
+- runtime group operator uninstalls the edge
 - remove default routes
-- remove keys
+- remove keys (`sdx-keys.r1` with query `action=delete` and no `operation`
+  removes the entire key qualifier)
 - delete runtime group
 
 ### Next steps {#aps-infra-platform-sdx-documentationhow-tosdx-edge-runtime-groups--next-steps}
 
 - [Setup Organization Signing](#aps-infra-platform-sdx-documentationhow-tosdx-org-signing)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-org-signing.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-org-signing.md -->
 
 ## Setup Organization Signing {#aps-infra-platform-sdx-documentationhow-tosdx-org-signing}
 
@@ -2871,7 +3044,7 @@ public key details with the new certificate in the JWKS registry.
       'parameters:{ environment: lab, certificatePem[0]: @new.crt, caCerts: @root.crt }'
     ```
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-subsystems.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-subsystems.md -->
 
 ## Managing Subsystems {#aps-infra-platform-sdx-documentationhow-tosdx-subsystems}
 
@@ -3179,7 +3352,7 @@ After a subsystem is deleted, the same subsystem name can be used again.
 
 - [Managing Services](#aps-infra-platform-sdx-documentationhow-tosdx-services)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-services.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-services.md -->
 
 ## Managing Services {#aps-infra-platform-sdx-documentationhow-tosdx-services}
 
@@ -3346,7 +3519,7 @@ After a service is deleted, the same service name can be used again.
 
 - [Connecting a Service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-connections.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-connections.md -->
 
 ## Connecting a Service {#aps-infra-platform-sdx-documentationhow-tosdx-connections}
 
@@ -3674,7 +3847,7 @@ Then the connection can be deleted using its unique identifier.
     If gateway configuration still exists on either side, the request is
     rejected. Remove the remaining gateway configuration and try again.
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-connection-resources.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-connection-resources.md -->
 
 ## Connection Resources {#aps-infra-platform-sdx-documentationhow-tosdx-connection-resources}
 
@@ -3908,7 +4081,7 @@ verified by the preceding `token` upgrade, before the exchanged token replaces
 the request authorization. Provider APIs can use this header when they need the
 original requesting OAuth client identifier.
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/concepts/secure-data-exchange.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/concepts/secure-data-exchange.md -->
 
 ## Secure Data Exchange (SDX) {#aps-infra-platform-sdx-documentationconceptssecure-data-exchange}
 
@@ -3976,7 +4149,7 @@ How-to guides
 - [Managing services](#aps-infra-platform-sdx-documentationhow-tosdx-services)
 - [Connecting a service](#aps-infra-platform-sdx-documentationhow-tosdx-connections)
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/reference/restish-cli.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/reference/restish-cli.md -->
 
 ## Restish CLI {#aps-infra-platform-sdx-documentationreferencerestish-cli}
 
@@ -4121,7 +4294,7 @@ restish sdx organization-list | cat
 restish sdx organization-list -o yaml
 ```
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/reference/sdx/data-access-protocol.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/reference/sdx/data-access-protocol.md -->
 
 ## SDX Data Access Protocol {#aps-infra-platform-sdx-documentationreferencesdxdata-access-protocol}
 
@@ -4277,7 +4450,7 @@ to send `X-Client-Id` with the same subsystem identifier as
 | ---------------- | -------------------------------------------------------------------------- |
 | `Content-Digest` | Optional - response content digest (RFC 9530)<br>`sha-256=:<hash-base64>:` |
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/reference/sdx/environments.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/reference/sdx/environments.md -->
 
 ## SDX Environments {#aps-infra-platform-sdx-documentationreferencesdxenvironments}
 
@@ -4315,6 +4488,25 @@ Links to the different services for each environment:
 | APS Prod        | `stg`           | SDX Staging              |
 | APS Prod        | `bct`           | SDX Non-Prod             |
 | APS Prod        | `bc`            | SDX Prod                 |
+
+### Public key sets {#aps-infra-platform-sdx-documentationreferencesdxenvironments--public-key-sets}
+
+A runtime group's public keys are published at:
+
+```text
+https://<public-sdx-host>/keysets/sdx.edge.<runtime-group>.<environment>/.well-known/jwks.json
+```
+
+`<environment>` is the SDX environment label in the table above. The
+`info.details.endpoint` value returned by `sdx-keys.r1` is an address inside
+the operator cluster. Use the public URL instead.
+
+| SDX environment | Public host                                        |
+| --------------- | -------------------------------------------------- |
+| `apsdev`        | `https://pzgw-api-gov-bc-ca.dev.api.gov.bc.ca`   |
+| `apstst`        | `https://pzgw-api-gov-bc-ca.test.api.gov.bc.ca`  |
+| `bct`           | `https://pzgw.test.api.gov.bc.ca`                  |
+| `bc`            | `https://pzgw.api.gov.bc.ca`                       |
 
 ### Playground {#aps-infra-platform-sdx-documentationreferencesdxenvironments--playground}
 
@@ -4366,7 +4558,7 @@ For access to services in `Prod`, the following token issuers are accepted:
 
 - `https://loginproxy.gov.bc.ca/auth/realms/standard`
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-ape-event-mgmt.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-ape-event-mgmt.md -->
 
 ## Event Management {#aps-infra-platform-sdx-documentationhow-tosdx-ape-event-mgmt}
 
@@ -4509,7 +4701,7 @@ The return, if successful, is a `202 Accepted`, payload:
 }
 ```
 
-<!-- source: https://github.com/bcgov/aps-infra-platform.git@654c5f28a4f9195b7770dc2b77b3e9617a828d65:./documentation/how-to/sdx-ape-policy-mgmt.md -->
+<!-- source: https://github.com/bcgov/aps-infra-platform.git@0e1f89442a90a42370c91f458e82e3a148be0ef6:./documentation/how-to/sdx-ape-policy-mgmt.md -->
 
 ## Policy Management {#aps-infra-platform-sdx-documentationhow-tosdx-ape-policy-mgmt}
 

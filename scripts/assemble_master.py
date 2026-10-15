@@ -193,6 +193,35 @@ def is_section_heading(heading: dict[str, Any]) -> bool:
     return len(title.split()) <= 8
 
 
+def nested_toc_lines(source: dict[str, Any], source_documents: list[dict[str, Any]]) -> list[str] | None:
+    """TOC lines that keep the source's navigation groups as plain-text labels."""
+    tree = source.get("navigation", {}).get("tree")
+    if not tree or not any("group" in node for node in tree):
+        return None
+
+    documents_by_path = {document["path"]: document for document in source_documents}
+    placed: set[str] = set()
+    lines: list[str] = []
+
+    def walk(nodes: list[dict[str, Any]], depth: int) -> None:
+        for node in nodes:
+            indent = "    " * depth
+            if "group" in node:
+                lines.append(f"{indent}- {node['group']}")
+                walk(node["children"], depth + 1)
+            elif document := documents_by_path.get(node["path"]):
+                placed.add(node["path"])
+                lines.append(f"{indent}- [{document['title']}](#{document['anchor']})")
+
+    walk(tree, 1)
+    lines.extend(
+        f"    - [{document['title']}](#{document['anchor']})"
+        for document in source_documents
+        if document["path"] not in placed
+    )
+    return lines
+
+
 def toc_entries_for_source(
     source_documents: list[dict[str, Any]],
 ) -> list[dict[str, str]]:
@@ -505,6 +534,9 @@ def main() -> None:
     for source, _, source_documents in prepared_sources:
         source_anchor = slugify(f"source--{source['id']}")
         output.append(f"- [{source['title']}](#{source_anchor})")
+        if (nested := nested_toc_lines(source, source_documents)) is not None:
+            output.extend(nested)
+            continue
         output.extend(
             f"    - [{entry['title']}](#{entry['anchor']})"
             for entry in toc_entries_for_source(source_documents)

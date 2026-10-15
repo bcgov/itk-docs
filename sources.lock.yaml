@@ -1,5 +1,5 @@
 schema_version: 1
-generated_at: '2026-10-14T19:09:01.704869+00:00'
+generated_at: '2026-10-15T19:09:28.951111+00:00'
 sources:
 - id: building-trusted-digital-services
   title: Building Trusted Digital Services
@@ -55,6 +55,20 @@ sources:
     sha256: b340c2ae285b60a81766c1b17b9b08bdff6359e98c4851925e23856f73eac150
     docs_dir: docs
     unlisted_files: []
+    tree:
+    - path: docs/index.md
+    - path: docs/purpose-and-value.md
+    - path: docs/building-blocks.md
+    - path: docs/authoritative-data-register.md
+    - path: docs/eligibility-factor-verification.md
+    - path: docs/secure-data-exchange.md
+    - path: docs/api-services-portal.md
+    - path: docs/integration-toolkit.md
+    - path: docs/privacy-and-security.md
+    - path: docs/governance-and-policy.md
+    - path: docs/roles-and-responsibilities.md
+    - path: docs/limits-and-constraints.md
+    - path: docs/support.md
   document_order:
   - docs/index.md
   - docs/purpose-and-value.md
@@ -100,6 +114,12 @@ sources:
     sha256: 2cbf1d0acadd9471b398d4ac4eb74908538197ea79e94615934c5742db007ee5
     docs_dir: docs
     unlisted_files: []
+    tree:
+    - path: docs/index.md
+    - path: docs/areas-of-itk.md
+    - path: docs/finding-and-using-itk.md
+    - path: docs/milestone-updates.md
+    - path: docs/support.md
   document_order:
   - docs/index.md
   - docs/areas-of-itk.md
@@ -184,6 +204,27 @@ sources:
     sha256: 73069df143607c705fc08a45fe8b4ceebb08927cd76b09199e3c8c4c0652ad22
     docs_dir: docs
     unlisted_files: []
+    tree:
+    - path: docs/index.md
+    - group: Getting Started with SDX
+      children:
+      - path: docs/getting-started-with-sdx/sdx-roles-and-responsibilities.md
+      - path: docs/getting-started-with-sdx/environments.md
+      - path: docs/getting-started-with-sdx/publish-a-service.md
+      - path: docs/getting-started-with-sdx/consume-a-service.md
+      - group: Onboarding process
+        children:
+        - path: docs/getting-started-with-sdx/onboarding-process/onboarding-process.md
+        - path: docs/getting-started-with-sdx/onboarding-process/onboarding-an-organization.md
+        - path: docs/getting-started-with-sdx/onboarding-process/install-an-edge-runtime-group.md
+        - path: docs/getting-started-with-sdx/onboarding-process/set-up-organization-signing.md
+        - path: docs/getting-started-with-sdx/onboarding-process/managing-subsystems.md
+        - path: docs/getting-started-with-sdx/onboarding-process/managing-services.md
+        - path: docs/getting-started-with-sdx/onboarding-process/connecting-a-service.md
+        - path: docs/getting-started-with-sdx/onboarding-process/connection-resources.md
+    - path: docs/experimental-features.md
+    - path: docs/references.md
+    - path: docs/support.md
   document_order:
   - docs/index.md
   - docs/getting-started-with-sdx/sdx-roles-and-responsibilities.md
@@ -207,10 +248,10 @@ sources:
   type: git
   repository: https://github.com/bcgov/aps-infra-platform.git
   ref: test
-  revision: 654c5f28a4f9195b7770dc2b77b3e9617a828d65
+  revision: 0e1f89442a90a42370c91f458e82e3a148be0ef6
   root: .
   order: 40
-  content_sha256: 5c774ac4ba468744df29074defcc7069351b98e0376263c1bf1409643999d6f7
+  content_sha256: 06a478b4abe71e56f9b975e4f1dd1f794f3049863c6d0364ff37937942e0f27e
   files:
   - path: documentation/concepts/secure-data-exchange.md
     sha256: 682e2c7faf92582d9bc677d08a2fc3d6a6c235855e1243b7e39d41c5e9bbdbc0
@@ -231,8 +272,8 @@ sources:
     sha256: 1080541a47d30a10c3fff4e38c0934d25fb017f6b684e03efc476c265160f174
     size_bytes: 10294
   - path: documentation/how-to/sdx-edge-runtime-groups.md
-    sha256: 0dae8aa149aeaff29e3217ccfe48e974390e1b11d6b5ad29cef6f7b6f2cbc6ba
-    size_bytes: 12986
+    sha256: f5a94bf76f5f68f33f8568290b570d3a7dbfa673326fdb5da9328295890af8e4
+    size_bytes: 19761
   - path: documentation/how-to/sdx-org-onboarding.md
     sha256: 0cd19c5e19c7ff6abac2f94c47fed423519e3e5b9c41c697664a27ffdbc08740
     size_bytes: 5366
@@ -252,8 +293,8 @@ sources:
     sha256: ea415c50ec8f2f40c5e007a817c131854a19346be5cbfef99b83c219ff4b078c
     size_bytes: 9743
   - path: documentation/reference/sdx/environments.md
-    sha256: 90b696c88a7f8e399ef5a4d918050c5992805b15377d63b8ffca59ffbbd6eec4
-    size_bytes: 3638
+    sha256: b64e76c7e1b97f07f9edd3d9225ee21d0b054d09cff739e2081a35f5f7216eed
+    size_bytes: 4447
   assets:
   - path: documentation/artifacts/SDX.svg
     sha256: 1a5f35ac09327eb7cf2c50238eff35fb156ff85cf84fd2047f29218b89db6c83
@@ -265,6 +306,27 @@ sources:
     unlisted_files:
     - documentation/how-to/sdx-ape-event-mgmt.md
     - documentation/how-to/sdx-ape-policy-mgmt.md
+    tree:
+    - group: How-to Guides
+      children:
+      - path: documentation/how-to/get-support.md
+      - group: Secure Data Exchange
+        children:
+        - path: documentation/how-to/sdx-org-onboarding.md
+        - path: documentation/how-to/sdx-edge-runtime-groups.md
+        - path: documentation/how-to/sdx-org-signing.md
+        - path: documentation/how-to/sdx-subsystems.md
+        - path: documentation/how-to/sdx-services.md
+        - path: documentation/how-to/sdx-connections.md
+        - path: documentation/how-to/sdx-connection-resources.md
+    - group: Concepts
+      children:
+      - path: documentation/concepts/secure-data-exchange.md
+    - group: Reference
+      children:
+      - path: documentation/reference/restish-cli.md
+      - path: documentation/reference/sdx/data-access-protocol.md
+      - path: documentation/reference/sdx/environments.md
   document_order:
   - documentation/how-to/get-support.md
   - documentation/how-to/sdx-org-onboarding.md
@@ -311,6 +373,14 @@ sources:
     sha256: 980eb09cbffeefa275b95a9b01f804b218811eafe3fad7874fbd5f21e0a63b98
     docs_dir: docs
     unlisted_files: []
+    tree:
+    - path: docs/index.md
+    - path: docs/getting-started.md
+    - group: Eligibility factors
+      children:
+      - path: docs/eligibility-factors.md
+      - path: docs/income-verification.md
+    - path: docs/support.md
   document_order:
   - docs/index.md
   - docs/getting-started.md

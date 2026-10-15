@@ -69,6 +69,24 @@ def flatten_navigation(value: Any) -> list[str]:
     return []
 
 
+def navigation_tree(value: Any, docs_dir: Path, selected_paths: set[str]) -> list[dict[str, Any]]:
+    """Keep the nav hierarchy (groups and selected pages) for building a nested TOC."""
+    if isinstance(value, str):
+        path = (docs_dir / value).as_posix()
+        return [{"path": path}] if path in selected_paths else []
+    if isinstance(value, list):
+        return [node for item in value for node in navigation_tree(item, docs_dir, selected_paths)]
+    if isinstance(value, dict):
+        nodes = []
+        for label, child in value.items():
+            if isinstance(child, str):
+                nodes.extend(navigation_tree(child, docs_dir, selected_paths))
+            elif children := navigation_tree(child, docs_dir, selected_paths):
+                nodes.append({"group": label, "children": children})
+        return nodes
+    return []
+
+
 def fetch_local(source: dict[str, Any]) -> dict[str, Any]:
     location = PROJECT_ROOT / source["location"]
     if not location.is_file():
@@ -188,6 +206,7 @@ def fetch_git(source: dict[str, Any]) -> dict[str, Any]:
             "sha256": file_sha256(navigation_file),
             "docs_dir": docs_dir.as_posix(),
             "unlisted_files": unlisted,
+            "tree": navigation_tree(navigation.get("nav", []), docs_dir, selected_paths),
         }
         locked_source["document_order"] = [*document_order, *unlisted]
 
