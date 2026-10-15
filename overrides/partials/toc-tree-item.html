@@ -1,0 +1,21 @@
+{#- One entry of a front-matter toc_tree: a linked page/source, or a group label. -#}
+<li class="md-nav__item{% if toc_level == 0 %} toc-tree__source{% endif %}{% if not toc_item.url %} toc-tree__group{% endif %}">
+  {% if toc_item.url %}
+    <a href="{{ toc_item.url }}" class="md-nav__link">
+      <span class="md-ellipsis">{{ toc_item.title | e }}</span>
+    </a>
+  {% else %}
+    <span class="toc-tree__label">{{ toc_item.title | e }}</span>
+  {% endif %}
+  {% if toc_item.children %}
+    <nav class="md-nav" aria-label="{{ toc_item.title | e }}">
+      <ul class="md-nav__list">
+        {% set parent_level = toc_level %}
+        {% for toc_item in toc_item.children %}
+          {% set toc_level = parent_level + 1 %}
+          {% include "partials/toc-tree-item.html" %}
+        {% endfor %}
+      </ul>
+    </nav>
+  {% endif %}
+</li>

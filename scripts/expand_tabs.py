@@ -207,9 +207,65 @@ def normalize_pdf_tables(markdown: str) -> str:
     return "\n".join(lines) + ("\n" if markdown.endswith("\n") else "")
 
 
+TOC_ENTRY_PATTERN = re.compile(r"^(?P<indent> *)- (?:\[(?P<title>.+)\]\(#(?P<anchor>[^)]+)\)|(?P<label>.+))$")
+
+
+def _typst_string(value: str) -> str:
+    return '"' + value.replace("\\", "\\\\").replace('"', '\\"') + '"'
+
+
+def typst_contents(markdown: str) -> str:
+    """Render the Contents list as Typst (see toc-source in pdf-codeblocks.typ).
+
+    Gives the PDF its own TOC layout without touching ordinary lists, and keeps
+    each source's entries together on one page.
+    """
+    lines = markdown.splitlines()
+    try:
+        start = lines.index("## Contents") + 1
+    except ValueError:
+        return markdown
+    end = next(
+        (index for index in range(start, len(lines)) if lines[index].startswith("#")),
+        len(lines),
+    )
+
+    sources: list[tuple[str, str, list[str]]] = []
+    for line in lines[start:end]:
+        if not line.strip():
+            continue
+        match = TOC_ENTRY_PATTERN.match(line)
+        if not match:
+            return markdown
+        depth = len(match.group("indent")) // 4
+        if depth == 0:
+            sources.append((match.group("title"), match.group("anchor"), []))
+        elif match.group("anchor"):
+            sources[-1][2].append(
+                f"(depth: {depth}, title: {_typst_string(match.group('title'))}, "
+                f"target: label({_typst_string(match.group('anchor'))}))"
+            )
+        else:
+            sources[-1][2].append(
+                f"(depth: {depth}, title: {_typst_string(match.group('label'))}, target: none)"
+            )
+
+    block = ["", "```{=typst}"]
+    for title, anchor, entries in sources:
+        block.append(
+            f"#toc-source({_typst_string(title)}, label({_typst_string(anchor)}), ("
+        )
+        block.extend(f"  {entry}," for entry in entries)
+        block.append("))")
+    block.extend(["```", ""])
+    return "\n".join([*lines[:start], *block, *lines[end:]]) + "\n"
+
+
 def prepare_pdf_markdown(markdown: str, external_link_icon: str | None = None) -> str:
     """Apply PDF-oriented Markdown transforms for Material syntax."""
-    transformed = normalize_pdf_tables(expand_tabs(expand_admonitions(markdown)))
+    transformed = normalize_pdf_tables(
+        expand_tabs(expand_admonitions(typst_contents(markdown)))
+    )
     if external_link_icon:
         transformed = mark_external_links(transformed, external_link_icon)
     return transformed

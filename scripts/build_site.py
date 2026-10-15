@@ -21,14 +21,51 @@ SOURCE_LOCK_PATH = PROJECT_ROOT / "sources.lock.yaml"
 NORMALIZED_MANIFEST_PATH = PROJECT_ROOT / ".work" / "normalized" / "manifest.yaml"
 HEADING_PATTERN = re.compile(r"^(#{1,6})(\s+.+)$")
 SOURCE_HEADING_PATTERN = re.compile(r"^#\s+.+\{#source-[^}]+\}\s*$")
+CONTENTS_ENTRY_PATTERN = re.compile(
+    r"^(?P<indent> *)- (?:\[(?P<title>.+)\]\((?P<url>#[^)]+)\)|(?P<label>.+))$"
+)
+
+
+def contents_tree(lines: list[str]) -> list[dict[str, Any]]:
+    """Parse the master Contents list (sources, nav groups, pages) into a tree.
+
+    The site's sidebar is rendered from this (overrides/partials/toc.html) so
+    navigation groups, which are not headings, still appear.
+    """
+    start = lines.index("## Contents") + 1
+    roots: list[dict[str, Any]] = []
+    stack: list[tuple[int, list[dict[str, Any]]]] = [(-1, roots)]
+    for line in lines[start:]:
+        if line.startswith("#"):
+            break
+        if not (match := CONTENTS_ENTRY_PATTERN.match(line)):
+            continue
+        depth = len(match.group("indent")) // 4
+        node: dict[str, Any] = {
+            "title": match.group("title") or match.group("label"),
+            "url": match.group("url"),
+            "children": [],
+        }
+        while stack[-1][0] >= depth:
+            stack.pop()
+        stack[-1][1].append(node)
+        stack.append((depth, node["children"]))
+    return roots
 
 
 def prepare_page(markdown: str) -> str:
     lines = markdown.splitlines()
     if not lines or not lines[0].startswith("# "):
         raise ValueError("Expected the master document to start with an H1")
-    contents_index = lines.index("## Contents")
-    lines[contents_index:contents_index] = [
+    front_matter = yaml.safe_dump({"toc_tree": contents_tree(lines)}, sort_keys=False)
+    # The sidebar renders the Contents tree, so drop the in-body copy on the web.
+    contents_start = lines.index("## Contents")
+    contents_end = next(
+        index
+        for index in range(contents_start + 1, len(lines))
+        if lines[index].startswith("#")
+    )
+    lines[contents_start:contents_end] = [
         "[Download PDF](master.pdf){ .md-button .md-button--primary }",
         "",
     ]
@@ -48,7 +85,8 @@ def prepare_page(markdown: str) -> str:
             level = len(heading.group(1))
             lines[index] = f"{'#' * min(level + 1, 6)}{heading.group(2)}"
 
-    return mark_external_links("\n".join(lines) + "\n", "assets/external-link.svg")
+    page = mark_external_links("\n".join(lines) + "\n", "assets/external-link.svg")
+    return f"---\n{front_matter}---\n\n{page}"
 
 
 def _short_sha(value: str, length: int = 12) -> str:

@@ -23,8 +23,10 @@ uv sync --locked
 uv run python scripts/build.py
 ```
 
-Pandoc and Typst are downloaded automatically into `.tools/`. Open `site/index.html`
-to preview the result.
+Pandoc and Typst are downloaded automatically into `.tools/`. To preview the
+site after a build, run `uv run mkdocs serve` and open <http://127.0.0.1:8000/>.
+It reloads when `mkdocs.yml`, `overrides/` or the generated pages change; re-run
+`scripts/build.py` (or just `scripts/build_site.py`) to regenerate the pages.
 
 ## What the build does
 
